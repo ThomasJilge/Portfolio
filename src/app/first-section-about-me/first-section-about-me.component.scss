@@ -1,0 +1,91 @@
+.firstSectionAboutMeContainer {
+    max-width: 1920px;
+    margin-left: 140px;
+    margin-right: 140px;
+    width: 100%;
+}
+
+.firstSectionAboutMeContainerOne {
+    display: flex;
+    justify-content: end;
+    max-width: 1440px;
+    width: 100%;
+    width: 1337px;
+    height: 554px;
+    top: 2px;
+    border: 1px solid green;
+    left: -53px;
+}
+
+.firstSectionAboutMeContainerTwo {
+    display: flex;
+    // position: relative;
+    background-color: grey;
+    width: 1284px;
+    height: 556px;
+    top: 94px;
+    left: 105px;
+    border: 1px solid red;
+    // left: -53px;
+}
+
+.contactMeContainerOne {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 169px;
+    height: 52px;
+    top: 286px;
+    left: 50px;
+    gap: 10px;
+    transform: rotate(90deg);
+    transform-origin: center;
+    border: 1px solid #02F4BF;
+    display: flex;
+    justify-content: center;
+    >.contactMeContainerTwo {
+        width: 109px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        size: 18px;
+        transform: rotate(180deg);
+        color: #E15544;
+    }
+    &:hover .contactMeContainerTwo {
+        color: #02F4BF;
+        cursor: pointer;
+    }
+}
+
+.infoFieldOne {
+    position: relative;
+    width: 808px;
+    height: 142px;
+    top: 412px;
+    // left: 50px;
+    left: -60px;
+    gap: 8px;
+    border: 1px solid yellow;
+}
+
+.infoFieldTwo {
+    color: #02F4BF;
+}
+
+.infoFieldDescripton {
+    // width: 596px;
+    // height: 53px;
+    font-size: 54px;
+    font-weight: 500px;
+}
+
+.infoFieldName {
+    font-size: 82px;
+    font-weight: 700;
+}
+
+
+p {
+    margin: 0;
+}
