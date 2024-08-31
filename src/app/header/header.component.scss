@@ -1,0 +1,36 @@
+.header {
+    width: 1440px;
+    height: 92px;
+    color: #C64B41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 24px, 140px, 24px, 140px;
+    >.headerMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 636px;
+        height: 44px;
+        gap: 48px;
+    }
+    >.initialHeader {
+        width: 92px;
+        height: 44px;
+    }
+    >.headerLanguages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 62px;
+        height: 25px;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.initial {
+    font-size: 48px;
+}
