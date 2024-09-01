@@ -1,48 +1,43 @@
-.firstSectionAboutMeContainer {
-    max-width: 1920px;
-    margin-left: 140px;
-    margin-right: 140px;
-    width: 100%;
-}
-
 .firstSectionAboutMeContainerOne {
-    display: flex;
-    justify-content: end;
-    max-width: 1440px;
-    width: 100%;
-    width: 1337px;
-    height: 554px;
+    // max-width: 1440px;
+    // margin-left: 140px;
+    // margin-right: 140px;
+    // width: 100%;
+    // width: 1337px;
+    // height: 554px;
     top: 2px;
-    border: 1px solid green;
+    position: relative;
     left: -53px;
 }
 
+// .firstSectionAboutMeContainerOne {
+//     border: 1px solid green;
+// }
+
 .firstSectionAboutMeContainerTwo {
-    display: flex;
     // position: relative;
-    background-color: grey;
+    // background-color: grey;
+    // border: 1px solid red;
     width: 1284px;
     height: 556px;
     top: 94px;
     left: 105px;
-    border: 1px solid red;
     // left: -53px;
 }
 
 .contactMeContainerOne {
-    display: flex;
-    align-items: center;
-    position: relative;
+    position: absolute;
     width: 169px;
     height: 52px;
-    top: 286px;
-    left: 50px;
+    top: 175px;
+    left: -57px;
     gap: 10px;
     transform: rotate(90deg);
     transform-origin: center;
     border: 1px solid #02F4BF;
     display: flex;
     justify-content: center;
+    align-items: center;
     >.contactMeContainerTwo {
         width: 109px;
         height: 22px;
@@ -59,14 +54,14 @@
 }
 
 .infoFieldOne {
-    position: relative;
+    position: absolute;
     width: 808px;
     height: 142px;
     top: 412px;
     // left: 50px;
-    left: -60px;
+    // left: -172px;
     gap: 8px;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
 }
 
 .infoFieldTwo {
@@ -88,4 +83,24 @@
 
 p {
     margin: 0;
+}
+
+.arrowContainer {
+    position: absolute;
+    width: 22px;
+    height: 50px;
+    top: 306px;
+    left: 669px;
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #02F4BF;
+    }
+}
+
+.tjImg {
+    position: absolute;
+    width: 539px;
+    height: 554px;
+    left: 796px;
+    object-fit: contain;
 }

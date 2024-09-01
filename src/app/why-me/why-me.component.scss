@@ -1,0 +1,114 @@
+.whyMeContainerOne {
+    display: flex;
+    width: 1224px;
+    height: 452px;
+    top: 754px;
+    left: 105px;
+    gap: 2px;
+    border: 1px solid red;
+}
+
+.tjImgWhyMe {
+    width: 490px;
+    height: 452px;
+
+    object-fit: contain;
+}
+
+.whyMeContainerTwo {
+    border: 1px solid yellow;
+    width: 729px;
+    height: 452px;
+}
+
+.h2WhyMeContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 524px;
+    height: 53px;
+    left: 206px;
+    gap: 10px;
+    >.h2WhyMe {
+        font-size: 54px;
+        color:#E15544;
+        margin: 0;
+    } 
+}
+
+.infoWhyMeContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 685px;
+    height: 84px;
+    // top: 80px;
+    left: 42px;
+    >.infoText {
+        size: 16px;
+        color: #02F4BF; 
+        margin: 0;
+        display: flex;
+        text-align: right;
+     }
+}
+
+.iAmContainerTwo {
+    position: relative;
+    display: flex;
+    width: 568px;
+    height: 186px;
+    // top: 180px;
+    left: 159;
+    gap: 8px;
+    border: 1px solid green;
+}
+
+.locatedContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 568px;
+    height: 56px;
+    gap: 64px;
+}
+
+.iAmText {
+    width: 116px;
+    height: 49px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #E15544;
+    margin: 0;
+}
+
+.locatedText {
+    color: #02F4BF;
+    font-size: 18px;
+    margin: 0;
+    position: relative;
+    left: 15px;
+}
+
+.locatedImg {
+    width: 33.31px;
+    height: 41px;
+    top: 8px;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    width: 235px;
+    height: 57px;
+}
+
+.iAmContainerOne {
+    display: flex;
+    justify-content: end;
+}
+
+
+
