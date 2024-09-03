@@ -4,11 +4,17 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FirstSectionAboutMeComponent } from './first-section-about-me/first-section-about-me.component';
 import { WhyMeComponent } from './why-me/why-me.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FirstSectionAboutMeComponent, WhyMeComponent],
+  imports: [CommonModule, 
+    RouterOutlet, 
+    HeaderComponent, 
+    FirstSectionAboutMeComponent, 
+    WhyMeComponent, 
+    MySkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

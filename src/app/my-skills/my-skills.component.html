@@ -1,0 +1,23 @@
+<div class="mySkillsContainerOne">
+    <div class="h2MySkillsContainer">
+        <h2 class="h2MySkills">My Skills</h2>
+    </div>
+    <div class="mySkillsContainerTwo">
+        <div class="skillsImgsContainerOne">
+            <img *ngFor="let img of skillImagesOne" class="skillsImgs" [src]="img" alt="">
+        </div>
+        <div class="skillsImgsContainerTwo">
+            <img
+                *ngFor="let img of skillImagesTwo"
+                class="skillsImgs"
+                [src]="img"
+                alt=""
+                [ngClass]="{'challengeMeClass': img.includes('challengeMe.png')}"
+            />
+            <div class="challengeMeTextContainer">
+                <p class="challengeMeText">I am always happy to<br>learn new technologies,<br>just tell me what you need.</p>
+            </div>
+        </div>
+        
+    </div>
+</div>

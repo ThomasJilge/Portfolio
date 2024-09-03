@@ -1,0 +1,66 @@
+.mySkillsContainerOne {
+    // display: flex;
+    // justify-content: center;
+    border: 1px solid red;
+    width: 1439px;
+    height: 423px;
+    // top: 1310px;
+    left: 1px;
+    >.h2MySkillsContainer {
+        position: relative;
+        width: 292px;
+        height: 65px;
+        left: 111px;  
+        >.h2MySkills {
+            color: #E15544;
+            margin: 0;
+            font-size: 54px;
+        }
+    }
+    >.mySkillsContainerTwo {
+        display: flex;
+        position: relative;
+        border: 1px solid yellow;
+        width: 1219px;
+        height: 325px;
+        // gap: 100px;
+        left: 111.5px;
+        top: 1,0px;
+        flex-wrap: wrap;
+    }
+}
+
+.skillsImgsContainerOne {
+    width: 1122px;
+    height: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.skillsImgsContainerTwo {
+    width: 1219px;
+    height: 125px;
+    display: flex;
+    gap: 100px;
+}
+
+.skillsImgs {
+    width: 88px;
+    height: 100px;
+}
+
+.challengeMeTextContainer {
+    display: flex;
+    position: relative;
+    left: 20px;
+}
+
+
+// .challengeMeText {
+//     display: none;
+// }
+
+// .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
+//     display: block;
+//     color: #02F4BF;
+// }

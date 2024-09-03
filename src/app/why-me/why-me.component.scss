@@ -5,7 +5,7 @@
     top: 754px;
     left: 105px;
     gap: 2px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .tjImgWhyMe {
@@ -16,7 +16,7 @@
 }
 
 .whyMeContainerTwo {
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
     width: 729px;
     height: 452px;
 }
@@ -63,7 +63,7 @@
     // top: 180px;
     left: 159;
     gap: 8px;
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 
 .locatedContainer {
@@ -146,6 +146,76 @@
     color: #02F4BF;
     left: 25px;
     margin: 0;
+}
+
+.remoteContainerOne {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 568px;
+    height: 58px;
+    
+}
+
+.remoteContainerTwo {
+    display: flex;
+    // width: 241.85px;
+    height: 58px;
+    gap: 13px;
+    padding-left: 280px;
+}
+
+.remoteText {
+    // width: 125px;
+    height: 42px;
+    color: #02F4BF;
+    margin: 0;
+}
+
+.remoteImg {
+    width: 53.58px;
+    height: 46.99px;
+}
+
+.remoteArrowOneImg {
+    width: 23.85px;
+    height: 39.95px;
+}
+
+.remoteArrowOneImg {
+    width: 26.71px;
+    height: 56px;
+}
+
+.letsTalkContainerOne {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 20px;
+}
+
+.letsTalkContainerTwo {
+    display: flex;
+    justify-content: end;
+    width: 521px;
+    height: 52px;
+    gap: 10px;
+}
+
+.letsTalkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 169px;
+    height: 52px;
+    color: black;
+    background-color: #02F4BF;
+}
+
+.letsTalkButton:hover {
+    cursor: pointer;
+    color: #E15544;
 }
 
 
