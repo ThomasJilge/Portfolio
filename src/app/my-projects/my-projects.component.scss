@@ -1,0 +1,25 @@
+.myProjectsContainerOne {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1439px;
+    height: 65px;
+    >.h2MyProjectsTwo {
+        display: flex;
+        justify-content: center;
+        width: 357px;
+        height: 65px;
+        >.h2MyProjects {
+            color: #E15544;
+            font-size: 54px;
+            margin: 0;
+        }
+    }
+}
+
+.myProjectsContainerThree {
+    display: flex;
+    width: 1178px;
+    height: 1241px;
+    border: 1px solid red;
+}

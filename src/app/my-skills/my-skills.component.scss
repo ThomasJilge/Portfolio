@@ -1,7 +1,7 @@
 .mySkillsContainerOne {
     // display: flex;
     // justify-content: center;
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 1439px;
     height: 423px;
     // top: 1310px;
@@ -20,7 +20,7 @@
     >.mySkillsContainerTwo {
         display: flex;
         position: relative;
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         width: 1219px;
         height: 325px;
         // gap: 100px;
@@ -56,11 +56,16 @@
 }
 
 
-// .challengeMeText {
-//     display: none;
-// }
+.challengeMeText {
+    position: absolute;
+    display: none;
+    left: -80px;
+    color: #02F4BF;
+    margin: 0;
+    width: 200px;
+}
 
-// .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
-//     display: block;
-//     color: #02F4BF;
-// }
+.challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
+    display: block;
+    color: #02F4BF;
+}

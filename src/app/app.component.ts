@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FirstSectionAboutMeComponent } from './first-section-about-me/first-section-about-me.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { MyProjectsComponent } from './my-projects/my-projects.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     HeaderComponent, 
     FirstSectionAboutMeComponent, 
     WhyMeComponent, 
-    MySkillsComponent],
+    MySkillsComponent,
+    MyProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
