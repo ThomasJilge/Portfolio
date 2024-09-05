@@ -18,8 +18,169 @@
 }
 
 .myProjectsContainerThree {
+    position: relative;
+    top: 20px;
     display: flex;
+    flex-wrap: wrap;
     width: 1178px;
-    height: 1241px;
-    border: 1px solid red;
+    // height: 1241px;
+    // border: 1px solid red;
+}
+
+.projectOne {
+    display: flex;
+    width: 1134px;
+    height: 371px;
+}
+
+.projectTwo {
+    display: flex;
+    position: relative;
+    top: 50px;
+    width: 1134px;
+    height: 371px;
+}
+
+.projectImg {
+    width: 588px;
+    height: 371px;
+}
+
+.projectOneDescription {
+    position: relative;
+    left: 30px;
+    width: 498px;
+    height: 318px;
+    // border: 1px solid aqua;
+}
+
+.projectTwoDescription {
+    position: relative;
+    // top: -200px;
+    right: 30px;
+    width: 498px;
+    height: 318px;
+}
+
+.projectOneDescriptionHeader {
+    width: 498px;
+    // height: 103px;
+}
+
+.projectOneHeadline {
+    color: #02F4BF;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 475px;
+    height: 59px;
+}
+
+.projectTwoDescriptionHeader {
+    display: flex;
+    justify-content: end;
+}
+
+.projectTwoHeadline {
+    display: flex;
+    justify-content: end;
+    color: #02F4BF;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 475px;
+    height: 59px;
+}
+
+.projectOneLanguagesContainer {
+    width: 249px;
+    height: 25px;
+}
+
+.projectOneLanguages {
+    color: #02F4BF;
+    size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.projectTwoLanguages {
+    display: flex;
+    justify-content: end;
+    color: #02F4BF;
+    size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.projectOneInfo, .projectTwoInfo {
+    width: 499px;
+    height: 175px;
+}
+
+.projectOneInfoText {
+    position: relative;
+    top: 60px;
+    color: #02F4BF;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.projectTwoInfoText {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 60px;
+    color: #02F4BF;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.projectOneInfoButtons {
+    display: flex;
+    height: 52px;
+    gap: 24px;
+}
+
+.projectTwoInfoButtons {
+    display: flex;
+    justify-content: end;
+    height: 52px;
+    gap: 24px;
+}
+
+.githubButton {
+    color: #E15544;
+    width: 125px;
+    height: 52px;
+    border: 1px solid #02F4BF;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubButton:hover {
+    color: #02F4BF;
+    cursor: pointer;
+}
+
+.liveTestButton {
+    background-color: #02F4BF;
+    width: 158px;
+    height: 52px;
+    border: 1px solid #02F4BF;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liveTestButton:hover {
+    color: #E15544;
+    cursor: pointer;
 }
