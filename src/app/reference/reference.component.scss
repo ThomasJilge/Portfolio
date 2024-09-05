@@ -1,0 +1,74 @@
+.referenceContainerOne {
+    position: relative;
+    top: 865px;
+    width: 1440px;
+    height: 307px;
+    // border: 1px solid aqua;
+    >.referenceContainerHeader {
+        position: relative;
+        width: 808px;
+        height: 29px;
+        left: 129px;
+        >.referenceContainerText {
+            color: #E15544;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+}
+
+.referenceContainerTwo {
+    display: flex;
+    position: relative;
+    width: 1103px;
+    height: 246px;
+    gap: 32px;
+    left: 129px;
+    top: 30px;
+    >.arrowReference {
+        position: relative;
+        top: -20px;
+        width: 38.47px;
+        height: 97.08px;
+        transform: rotate(5deg);
+        object-fit: contain;
+    }
+}
+
+.referenceContainerThree {
+    width: 297px;
+    height: 246px;
+    >.referenceNameAndProject {
+        display: flex;
+        flex-direction: column;
+        width: 297px;
+        height: 53px;
+        gap: 8px;
+        >.referenceName {
+            color: #E15544;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+        >.referenceProject {
+            color: #02F4BF;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+
+.referenceInfo {
+    position: relative;
+    top: 25px;
+    width: 297px;
+    height: 161px;
+    >.referenceText {
+        color: #02F4BF;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
