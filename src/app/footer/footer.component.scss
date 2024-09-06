@@ -86,6 +86,7 @@
         gap: 16px;
         margin: 0;
         >.legalNotice, .imprint {
+            width: 121px;
             margin: 0;
             &:hover{
                 cursor: pointer;
@@ -93,4 +94,9 @@
             }
         }
     }
+}
+
+.legalNotice {
+    display: flex;
+    justify-content: end;
 }
