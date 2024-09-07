@@ -6,7 +6,7 @@
         width: 1015px;
         height: 162px;
         left: 132px;
-        border: 1px solid red;
+        // border: 1px solid red;
         >.contactMeContainerThree {
             width: 425.05px;
             height: 72.21px;
@@ -41,10 +41,6 @@
     }
 }
 
-// .test {
-//     display: flex;
-// }
-
 .test2 {
     position: relative;
     left: 150px;
@@ -74,5 +70,133 @@
     color: #02F4BF;
     margin: 0;
 }
+
+.arrowUp {
+    width: 22px;
+    height: 50px;
+    position: relative;
+    left: 1279px;
+    top: -30px;
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #02F4BF;
+    }
+}
+
+.container {
+    position: relative;
+    top: 850px;
+    width: 1184px;
+    height: 144px;
+    left: 131px;
+}
+
+#name, #mail {
+    width: 507px;
+    height: 46px;
+    border: 1px solid #02F4BF;
+    background-color: transparent;
+    padding: 10px;
+    color: #02F4BF;
+}
+
+#name {
+    margin-bottom: 30px;
+}
+
+#subject {
+    width: 637px;
+    height: 144px;
+    border: 1px solid #02F4BF;
+    background-color: transparent;
+    padding: 10px;
+    color: #02F4BF;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    gap: 40px;
+}
+
+input:hover, textarea:hover {
+    cursor: pointer;
+}
+
+input::placeholder, ::placeholder {
+    color: #0B8D8F;
+}
+
+.contactMeContainerFour {
+    display: flex;
+    position: relative;
+    width: 1185px;
+    height: 74px;
+    left: 130.5px;
+    // border: 1px solid green;
+    top: 900px;
+    >.contactMeContainerSix {
+        display: flex;
+        align-items: center;
+        width: 978px;
+        height: 27px;
+        gap: 8px;
+        >.contactMeContainerSixText {
+            color: #02F4BF;
+            font-size: 14px;
+            font-weight: 400px;
+            margin: 0;
+            >.pp {
+                color: #AE4247;
+                &:hover {
+                    color: #E15544;
+                }
+            }
+        }
+    }
+}
+
+.custom-checkbox {
+    border: 1px solid red;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  
+}
+.custom-checkbox:checked {
+    background-color: #02F4BF;
+    border: 1px solid red;
+}
+
+.custom-checkbox:checked::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 5px;
+    height: 9px;
+    border: solid red;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 52px;
+    border: 1px solid #685F75;
+    color: #685F75;
+    font-size: 18px;
+    position: relative;
+    left: 102px;
+    top: 21px;
+  }
 
 
