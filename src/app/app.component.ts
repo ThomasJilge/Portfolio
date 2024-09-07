@@ -8,19 +8,21 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactformComponent } from "./contactform/contactform.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, 
-    RouterOutlet, 
-    HeaderComponent, 
-    FirstSectionAboutMeComponent, 
-    WhyMeComponent, 
+  imports: [CommonModule,
+    RouterOutlet,
+    HeaderComponent,
+    FirstSectionAboutMeComponent,
+    WhyMeComponent,
     MySkillsComponent,
     MyProjectsComponent,
     ReferenceComponent,
-    FooterComponent],
+    FooterComponent,
+    ContactformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,78 @@
+.contactMeContainerOne {
+    width: 1440px;
+    >.contactMeContainerTwo {
+        position: relative;
+        top: 835px;
+        width: 1015px;
+        height: 162px;
+        left: 132px;
+        border: 1px solid red;
+        >.contactMeContainerThree {
+            width: 425.05px;
+            height: 72.21px;
+            display: flex;
+            >.h2ContactMe {
+                width: 330px;
+                height: 60px;
+                font-size: 54px;
+                color: #E15544;
+                margin: 0;
+            }
+            >.arrowContactMe {
+                width: 42.75px;
+                height: 60.6px;
+                transform: rotate(360deg);
+                object-fit: contain;
+            }
+         }
+    }
+}
+
+.contactMeTextContainer {
+    display: flex;
+    width: 504px;
+    height: 73px;
+    >.contactMeText {
+        font-size: 18px;
+        font-weight: 400;
+        color: #02F4BF;
+        margin: 0;
+        min-width: 320px;
+    }
+}
+
+// .test {
+//     display: flex;
+// }
+
+.test2 {
+    position: relative;
+    left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    gap: 16px;
+}
+
+.mailContactMeContainer, .phoneContactMeContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mailImg {
+    width: 28.4x;
+    height: 30px;
+}
+
+.phoneImg {
+    width: 26.25x;
+    height: 30.94px;
+}
+
+.mailContactMe, .phoneContactMe {
+    color: #02F4BF;
+    margin: 0;
+}
+
+
