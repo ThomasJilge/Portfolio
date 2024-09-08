@@ -121,14 +121,8 @@ input[type=text], [type=email] {
 
 .contactForm {
     display: flex;
-    // flex-direction: column;
     gap: 40px;
 }
-
-// form {
-//     display: flex;
-    
-// }
 
 input:hover, textarea:hover {
     cursor: pointer;
@@ -139,13 +133,10 @@ input::placeholder, ::placeholder {
 }
 
 .contactMeContainerFour {
-    // display: none;
     display: flex;
     position: relative;
     width: 1185px;
     height: 74px;
-    // left: 130.5px;
-    // border: 1px solid green;
     top: 20px;
     >.contactMeContainerSix {
         display: flex;
@@ -162,6 +153,7 @@ input::placeholder, ::placeholder {
                 color: #AE4247;
                 &:hover {
                     color: #E15544;
+                    cursor: pointer;
                 }
             }
         }
@@ -207,5 +199,11 @@ input::placeholder, ::placeholder {
     top: 21px;
     background-color: transparent;
   }
+
+  .warningMessage {
+    color: #E15544;
+  }
+
+  
 
 

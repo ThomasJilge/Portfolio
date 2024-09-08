@@ -26,22 +26,25 @@
 
 
     <div class="container">
-        <form (ngSubmit)="onSubmit()">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm = "ngForm">
         <div class="contactForm">
-            <div class="oktest">
+        <div class="oktest">
+
+        <div *ngIf="name.invalid && name.touched" class="warningMessage">Please enter a name</div>
         <label for="name"></label>
-          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name">
-      
-          <label for="email"></label>
-          <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email">
-        </div>
-          <label for="message"></label>
-        <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your Message"></textarea>
-
-        </div>
-          
+        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name" required>
         
-
+        <div *ngIf="email.invalid && email.touched" class="warningMessage">Please enter a valid email</div>
+          <label for="email"></label>
+          <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        </div>
+        <div class="oktest2">
+        <div *ngIf="message.invalid && message.touched" class="warningMessage">Please enter a message</div>
+        <label for="message"></label>
+        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your Message" required></textarea>
+    </div>
+     
+    </div>
           
           <div class="contactMeContainerFour">
             <div class="contactMeContainerSix">
@@ -57,18 +60,4 @@
         </form>
       </div>
 
-      
-      <!-- <div class="contactMeContainerFour">
-        <div class="contactMeContainerSix">
-            <label for="privacyPolicy">
-            <input class="custom-checkbox" type="checkbox" id="privacyPolicy" name="privacyPolicy">
-        </label>
-            <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
-        </div>
-        <div class="contactMeContainerSeven">
-            <button class="sendButton" type="submit">Send</button>
-        </div>
-      </div> -->
-    
-    
 </div>
