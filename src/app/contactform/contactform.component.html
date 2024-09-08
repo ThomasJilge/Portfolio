@@ -24,28 +24,41 @@
         <img class="arrowUp" src="../../assets/img/Arrow Up.png" alt="">
     </div>
 
+
     <div class="container">
-        <form>
+        <form (ngSubmit)="onSubmit()">
         <div class="contactForm">
-            <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Your Name">
+            <div class="oktest">
+        <label for="name"></label>
+          <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name">
       
-          <label for="mail"></label>
-          <input type="text" id="mail" name="mail" placeholder="Your Email">
+          <label for="email"></label>
+          <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your Email">
+        </div>
+          <label for="message"></label>
+        <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your Message"></textarea>
+
         </div>
           
-        <label for="subject"></label>
-          <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+        
 
           
-      
-          <!-- <input type="submit" value="Submit"> -->
-      
+          <div class="contactMeContainerFour">
+            <div class="contactMeContainerSix">
+                <label for="privacyPolicy">
+                <input class="custom-checkbox" type="checkbox" id="privacyPolicy" name="privacyPolicy">
+            </label>
+                <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
+            </div>
+            <div class="contactMeContainerSeven">
+                <button class="sendButton" type="submit">Send</button>
+            </div>
+          </div>
         </form>
       </div>
 
       
-      <div class="contactMeContainerFour">
+      <!-- <div class="contactMeContainerFour">
         <div class="contactMeContainerSix">
             <label for="privacyPolicy">
             <input class="custom-checkbox" type="checkbox" id="privacyPolicy" name="privacyPolicy">
@@ -53,9 +66,9 @@
             <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
         </div>
         <div class="contactMeContainerSeven">
-            <div class="sendButton">Send</div>
+            <button class="sendButton" type="submit">Send</button>
         </div>
-      </div>
+      </div> -->
     
     
 </div>

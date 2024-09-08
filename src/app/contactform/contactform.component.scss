@@ -91,7 +91,7 @@
     left: 131px;
 }
 
-#name, #mail {
+input[type=text], [type=email] {
     width: 507px;
     height: 46px;
     border: 1px solid #02F4BF;
@@ -104,7 +104,7 @@
     margin-bottom: 30px;
 }
 
-#subject {
+#message {
     width: 637px;
     height: 144px;
     border: 1px solid #02F4BF;
@@ -113,15 +113,22 @@
     color: #02F4BF;
 }
 
-.contactForm {
+.oktest {
     display: flex;
-    flex-direction: column;
+    width: 507px;
+    flex-wrap: wrap;
 }
 
-form {
+.contactForm {
     display: flex;
+    // flex-direction: column;
     gap: 40px;
 }
+
+// form {
+//     display: flex;
+    
+// }
 
 input:hover, textarea:hover {
     cursor: pointer;
@@ -132,13 +139,14 @@ input::placeholder, ::placeholder {
 }
 
 .contactMeContainerFour {
+    // display: none;
     display: flex;
     position: relative;
     width: 1185px;
     height: 74px;
-    left: 130.5px;
+    // left: 130.5px;
     // border: 1px solid green;
-    top: 900px;
+    top: 20px;
     >.contactMeContainerSix {
         display: flex;
         align-items: center;
@@ -197,6 +205,7 @@ input::placeholder, ::placeholder {
     position: relative;
     left: 102px;
     top: 21px;
+    background-color: transparent;
   }
 
 
