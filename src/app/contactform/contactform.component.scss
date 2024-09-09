@@ -83,6 +83,10 @@
     }
 }
 
+.arrowUpContainer .arrowUp:hover {
+    content: url('../../assets/img/arrowHoverUp.png');
+}
+
 .container {
     position: relative;
     top: 850px;
