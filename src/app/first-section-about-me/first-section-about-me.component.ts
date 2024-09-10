@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class FirstSectionAboutMeComponent {
 
+  arrowDownSrc: string = '../../assets/img/arrow.png';
+
+  onHover() {
+    this.arrowDownSrc = '../../assets/img/arrowHoverDown.png';
+  }
+
+  onLeave() {
+    this.arrowDownSrc = '../../assets/img/arrow.png';
+  }
+
 }

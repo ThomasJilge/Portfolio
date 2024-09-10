@@ -10,9 +10,12 @@
         
         <div class="imgFooterContainerOne">
             <div class="imgFooterContainerTwo">
-                <img class="imgFooter" src="../../assets/img/Github button.png" alt="">
-                <img class="imgFooter" src="../../assets/img/mail button.png" alt="">
-                <img class="imgFooter" src="../../assets/img/linkedin button.png" alt="">
+                <!-- <img class="imgFooter" src="../../assets/img/Github button.png" alt=""> -->
+                <img class="imgFooter" src="{{ githubSrc }}" (mouseover)="onHover('github')" (mouseout)="onLeave('github')" alt="Github">
+                <!-- <img class="imgFooter" src="../../assets/img/mail button.png" alt=""> -->
+                <img class="imgFooter" src="{{ mailSrc }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="Mail">
+                <!-- <img class="imgFooter" src="../../assets/img/linkedin button.png" alt=""> -->
+                <img class="imgFooter" src="{{ linkedinSrc }}" (mouseover)="onHover('linkedin')" (mouseout)="onLeave('linkedin')" alt="LinkedIn">
             </div>
         </div>
     </div>

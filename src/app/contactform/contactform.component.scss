@@ -59,11 +59,17 @@
 .mailImg {
     width: 28.4x;
     height: 30px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .phoneImg {
     width: 26.25x;
     height: 30.94px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .mailContactMe, .phoneContactMe {
@@ -79,12 +85,7 @@
     top: -30px;
     &:hover {
         cursor: pointer;
-        border: 1px solid #02F4BF;
     }
-}
-
-.arrowUpContainer .arrowUp:hover {
-    content: url('../../assets/img/arrowHoverUp.png');
 }
 
 .container {

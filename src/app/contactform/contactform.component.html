@@ -11,18 +11,18 @@
             </p>
             <div class="test2">
             <div class="mailContactMeContainer">
-                <img class="mailImg" src="../../assets/img/email.png" alt="">
+                <img class="mailImg" src="{{ mailContactMe }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="">
                 <p class="mailContactMe">E-mail: <a href="mailto:thomasjilge@gmx.de">thomasjilgeagmx.de</a></p>
             </div>
             <div class="phoneContactMeContainer">
-                <img class="phoneImg" src="../../assets/img/phone.png" alt="">
+                <img class="phoneImg" src="{{ phoneContactMe }}" (mouseover)="onHover('phone')" (mouseout)="onLeave('phone')" alt="">
                 <p class="phoneContactMe">Tel: 0170/7032983</p>
             </div>
         </div>
             
         </div>
         <div class="arrowUpContainer">
-            <img class="arrowUp" src="../../assets/img/Arrow Up.png" alt="">
+            <img class="arrowUp" id="arrowUp" src="{{ arrowUpSrc }}" (mouseover)="onHover('arrowUp')" (mouseout)="onLeave('arrowUp')" alt="">
         </div>
     </div>
 

@@ -34,6 +34,7 @@ post = {
   },
 };
 
+
 onSubmit(ngForm: NgForm) {
   if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
@@ -50,6 +51,39 @@ onSubmit(ngForm: NgForm) {
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
     ngForm.resetForm();
+  }
+}
+
+
+mailContactMe: string = '../../assets/img/email.png';
+phoneContactMe: string = '../../assets/img/phone.png';
+arrowUpSrc: string = '../../assets/img/Arrow Up.png';
+
+onHover(item: string) {
+  switch (item) {
+    case 'mail':
+      this.mailContactMe = '../../assets/img/mailHoverContactMe.png';
+      break;
+    case 'phone':
+      this.phoneContactMe = '../../assets/img/phoneHoverContactMe.png';
+      break;
+    case 'arrowUp':
+      this.arrowUpSrc = '../../assets/img/arrowHoverUp.png';
+      break;
+  }
+}
+
+onLeave(item: string) {
+  switch (item) {
+    case 'mail':
+      this.mailContactMe = '../../assets/img/email.png';
+      break;
+    case 'phone':
+      this.phoneContactMe = '../../assets/img/phone.png';
+      break;
+    case 'arrowUp':
+      this.arrowUpSrc = '../../assets/img/Arrow Up.png';
+      break;
   }
 }
 

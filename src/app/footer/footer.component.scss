@@ -68,6 +68,9 @@
         >.imgFooter {
             width: 30px;
             height: 29.26px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     } 
 }
