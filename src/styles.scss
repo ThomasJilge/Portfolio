@@ -1,6 +1,14 @@
 body {
     background-color: #0A032C;
     margin: 0;
+    // display: flex;
+    // justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+}
+
+html {
     display: flex;
     justify-content: center;
 }
