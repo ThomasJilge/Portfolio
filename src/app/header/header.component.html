@@ -11,8 +11,16 @@
         </div>
     </div>
     <div class="headerLanguages">
-        <p class="headerLanguagesDE">DE</p>
-        <p>|</p>
-        <p class="headerLanguagesEN">EN</p>
+        <!-- <p class="headerLanguagesDE">DE</p> -->
+        <p 
+        class="headerLanguagesDE" 
+        [ngClass]="{ 'active': selectedLanguage === 'DE' }"
+        (click)="setLanguage('DE')">DE</p>
+      <p>|</p>
+        <!-- <p class="headerLanguagesEN">EN</p> -->
+        <p 
+        class="headerLanguagesEN" 
+        [ngClass]="{ 'active': selectedLanguage === 'EN' }"
+        (click)="setLanguage('EN')">EN</p>
     </div>
 </div>
