@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="header">
     <div class="headerMenu">
         <div class="initialHeader">
             <p class="initial">&lt;TJ&gt;</p>
@@ -11,7 +11,6 @@
         </div>
     </div>
     <div class="headerLanguages">
-        <!-- <p class="headerLanguagesDE">DE</p> -->
         <p class="headerLanguagesDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
         <p>|</p>
         <p class="headerLanguagesEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>

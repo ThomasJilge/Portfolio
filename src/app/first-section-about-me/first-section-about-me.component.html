@@ -1,4 +1,4 @@
-<div class="firstSectionAboutMeContainerOne">
+<div class="firstSectionAboutMeContainerOne" id="aboutMe">
     <!-- <div class="firstSectionAboutMeContainerOne"> -->
         <div class="firstSectionAboutMeContainerTwo">
             <div class="contactMeContainerOne">
@@ -7,7 +7,9 @@
                 </div>
             </div>
             <div class="arrowDownContainer" id="arrowDownContainer">
-                <img class="arrowDown" id="arrowDown" src="{{ arrowDownSrc }}" (mouseover)="onHover()" (mouseout)="onLeave()" alt="">
+                <a href="#whyMe">
+                    <img class="arrowDown" id="arrowDown" src="{{ arrowDownSrc }}" (mouseover)="onHover()" (mouseout)="onLeave()" alt="">
+                </a>
             </div>
             <div class="tjImgContainer">
                 <img class="tjImg" src="../../assets/img/pp.png" alt="">
