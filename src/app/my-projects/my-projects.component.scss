@@ -3,7 +3,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 1439px;
-    height: 65px;
+    // height: 65px;
     >.h2MyProjectsTwo {
         display: flex;
         justify-content: center;
@@ -18,11 +18,13 @@
 }
 
 .myProjectsContainerThree {
-    position: relative;
-    top: 20px;
+    // position: relative;
+    // top: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     width: 1178px;
+    height: 850px;
     // height: 1241px;
     // border: 1px solid red;
 }
