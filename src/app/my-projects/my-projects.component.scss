@@ -9,6 +9,7 @@
         justify-content: center;
         width: 357px;
         height: 65px;
+        margin-bottom: 30px;
         >.h2MyProjects {
             color: #E15544;
             font-size: 54px;
@@ -18,12 +19,12 @@
 }
 
 .myProjectsContainerThree {
-    // position: relative;
+    position: relative;
     // top: 20px;
     display: flex;
     flex-direction: column;
     // flex-wrap: wrap;
-    width: 1178px;
+    width: 1439px;
     height: 850px;
     // height: 1241px;
     // border: 1px solid red;
@@ -38,9 +39,11 @@
 .projectTwo {
     display: flex;
     position: relative;
+    justify-content: end;
     top: 50px;
     width: 1134px;
     height: 371px;
+    left: 44px;
 }
 
 .projectImg {

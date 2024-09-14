@@ -1,5 +1,5 @@
 .referenceContainerOne {
-    // position: relative;
+    position: relative;
     // top: 865px;
     width: 1440px;
     height: 307px;
@@ -8,7 +8,7 @@
         position: relative;
         width: 808px;
         height: 29px;
-        left: 129px;
+        // left: 129px;
         >.referenceContainerText {
             color: #E15544;
             font-size: 24px;
@@ -20,11 +20,11 @@
 
 .referenceContainerTwo {
     display: flex;
-    // position: relative;
+    position: relative;
     width: 1103px;
     height: 246px;
     gap: 32px;
-    left: 129px;
+    // left: 129px;
     top: 30px;
     >.arrowReference {
         position: relative;

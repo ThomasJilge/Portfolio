@@ -1,5 +1,6 @@
 .contactMeContainerOne {
     width: 1440px;
+    height: 430px;
     >.contactMeContainerTwo {
         // position: relative;
         // top: 835px;
@@ -82,7 +83,7 @@
     height: 50px;
     position: relative;
     left: 1279px;
-    top: -30px;
+    top: -60px;
     &:hover {
         cursor: pointer;
     }
@@ -166,7 +167,7 @@ input::placeholder, ::placeholder {
 }
 
 .custom-checkbox {
-    border: 1px solid red;
+border: 1px solid red;
   background-color: transparent;
   width: 18px;
   height: 18px;

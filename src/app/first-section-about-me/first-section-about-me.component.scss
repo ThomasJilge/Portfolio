@@ -6,7 +6,9 @@
     width: 1337px;
     height: 554px;
     top: 2px;
-    // position: relative;
+    position: relative;
+    display: flex;
+    justify-content: end;
     left: -53px;
 }
 
@@ -15,13 +17,13 @@
 // }
 
 .firstSectionAboutMeContainerTwo {
-    // position: relative;
+    position: relative;
     // background-color: grey;
     // border: 1px solid red;
     width: 1284px;
     height: 556px;
-    top: 94px;
-    left: 105px;
+    // top: 94px;
+    // left: 105px;
     // left: -53px;
 }
 
@@ -29,7 +31,7 @@
     position: absolute;
     width: 169px;
     height: 52px;
-    top: 175px;
+    top: 215px;
     left: -57px;
     gap: 10px;
     transform: rotate(90deg);

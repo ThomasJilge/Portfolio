@@ -2,7 +2,7 @@
     // display: flex;
     // justify-content: center;
     // border: 1px solid red;
-    // position: relative;
+    position: relative;
     // top: 50px;
     width: 1439px;
     height: 423px;
@@ -12,7 +12,8 @@
         position: relative;
         width: 292px;
         height: 65px;
-        left: 111px;  
+        margin-bottom: 20px;
+        // left: 111px;  
         >.h2MySkills {
             color: #E15544;
             margin: 0;
@@ -26,8 +27,8 @@
         width: 1219px;
         height: 325px;
         // gap: 100px;
-        left: 111.5px;
-        top: 1,0px;
+        // left: 111.5px;
+        top: 1px;
         flex-wrap: wrap;
     }
 }
