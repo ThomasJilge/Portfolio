@@ -201,6 +201,9 @@
     width: 521px;
     height: 52px;
     gap: 10px;
+    > a {
+        text-decoration: none;
+    }
 }
 
 .letsTalkButton {

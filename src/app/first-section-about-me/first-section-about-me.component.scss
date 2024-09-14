@@ -4,8 +4,9 @@
     // margin-right: 140px;
     // width: 100%;
     width: 1337px;
-    height: 554px;
-    top: 2px;
+    // height: 554px;
+    height: 665px;
+    top: 94px;
     position: relative;
     display: flex;
     justify-content: end;
@@ -47,9 +48,12 @@
         align-items: center;
         size: 18px;
         transform: rotate(180deg);
-        color: #E15544;
+        >.contactMeContainerTwoAnchor {
+            text-decoration: none;
+            color: #E15544;
+        }
     }
-    &:hover .contactMeContainerTwo {
+    &:hover .contactMeContainerTwo > .contactMeContainerTwoAnchor{
         color: #02F4BF;
         cursor: pointer;
     }
