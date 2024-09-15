@@ -23,6 +23,8 @@ binding: any;
 
 mailTest = true;
 
+isPrivacyPolicyChecked = false;
+
 post = {
   endPoint: 'https://deineDomain.de/sendMail.php',
   body: (payload: any) => JSON.stringify(payload),

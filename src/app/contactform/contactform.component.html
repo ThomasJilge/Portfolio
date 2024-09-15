@@ -53,12 +53,12 @@
           <div class="contactMeContainerFour">
             <div class="contactMeContainerSix">
                 <label for="privacyPolicy">
-                <input class="custom-checkbox" type="checkbox" id="privacyPolicy" name="privacyPolicy">
+                    <input class="custom-checkbox" type="checkbox" id="privacyPolicy" name="privacyPolicy" [(ngModel)]="isPrivacyPolicyChecked">
             </label>
                 <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
             </div>
             <div class="contactMeContainerSeven">
-                <button class="sendButton" type="submit">Send</button>
+                <button class="sendButton" type="submit" [disabled]="!isPrivacyPolicyChecked" [ngClass]="{'activeButton': isPrivacyPolicyChecked}">Send</button>
             </div>
           </div>
         </form>

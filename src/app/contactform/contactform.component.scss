@@ -218,11 +218,17 @@ border: 1px solid red;
     left: 102px;
     top: 21px;
     background-color: transparent;
+    &.activeButton {
+        border: 1px solid #02F4BF;
+        color: #E15544;
+      }
   }
 
   .warningMessage {
     color: #E15544;
   }
+
+  
 
   
 
