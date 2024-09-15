@@ -152,6 +152,27 @@ input::placeholder, ::placeholder {
     color: #0B8D8F;
 }
 
+
+// input:invalid, textarea:invalid {
+//     border: 1px solid #E15544; 
+// }
+
+
+input:valid, textarea:valid {
+    border: 1px solid #02F4BF; 
+}
+
+input:hover, textarea:hover {
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #02F4BF; 
+    background-color: transparent;
+    color: #02F4BF;
+    outline: none; 
+}
+
 .contactMeContainerFour {
     display: flex;
     position: relative;
@@ -224,9 +245,69 @@ border: 1px solid red;
       }
   }
 
-  .warningMessage {
-    color: #E15544;
+/* Standard styling for inputs and textarea */
+input, textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
   }
+  
+.errorField::placeholder {
+    color: #E15544; 
+    font-size: 14px;
+    font-weight: 400;
+}
+  
+input::placeholder, textarea::placeholder {
+    color: #0B8D8F;
+    font-size: 18px;
+}
+  
+input:focus, textarea:focus {
+    border-color: #02F4BF;
+}
+
+input.errorField {
+    background-image: url('../../assets/img/warningSign.png');
+}
+
+textarea.errorField {
+    background-image: url('../../assets/img/warningSign.png');
+}
+
+textarea.errorField {
+    background-image: url('../../assets/img/warningSign.png');
+    background-position: right 10px top 5px; 
+    background-size: 25px 36.37px;
+    padding-right: 35px;
+}
+  
+.errorField {
+    background-image: url('../../assets/img/warningSign.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 25px 36.37px; 
+    padding-right: 35px; 
+}
+
+textarea.validField {
+    background-image: url('../../assets/img/greenCheckMark.png');
+    background-position: right 10px top 5px; 
+    background-size: 25px 36.37px;
+    padding-right: 35px;
+}
+
+.validField {
+    background-image: url('../../assets/img/greenCheckMark.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 25px 36.37px; 
+    padding-right: 35px; 
+}
+
+  
+  
+  
 
   
 
