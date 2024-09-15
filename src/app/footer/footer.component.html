@@ -10,12 +10,15 @@
         
         <div class="imgFooterContainerOne">
             <div class="imgFooterContainerTwo">
-                <!-- <img class="imgFooter" src="../../assets/img/Github button.png" alt=""> -->
-                <img class="imgFooter" src="{{ githubSrc }}" (mouseover)="onHover('github')" (mouseout)="onLeave('github')" alt="Github">
-                <!-- <img class="imgFooter" src="../../assets/img/mail button.png" alt=""> -->
-                <img class="imgFooter" src="{{ mailSrc }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="Mail">
-                <!-- <img class="imgFooter" src="../../assets/img/linkedin button.png" alt=""> -->
-                <img class="imgFooter" src="{{ linkedinSrc }}" (mouseover)="onHover('linkedin')" (mouseout)="onLeave('linkedin')" alt="LinkedIn">
+                <a href="https://github.com/ThomasJilge" target="_blank">
+                    <img class="imgFooter" src="{{ githubSrc }}" (mouseover)="onHover('github')" (mouseout)="onLeave('github')" alt="Github">
+                </a>
+                <a href="mailto:thomasjilge&#64;gmx.de" target="_blank">
+                    <img class="imgFooter" src="{{ mailSrc }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="Mail">
+                </a>
+                <a href="https://www.linkedin.com/in/thomas-jilge-510a091b5/" target="_blank">
+                    <img class="imgFooter" src="{{ linkedinSrc }}" (mouseover)="onHover('linkedin')" (mouseout)="onLeave('linkedin')" alt="LinkedIn">
+                </a>
             </div>
         </div>
     </div>

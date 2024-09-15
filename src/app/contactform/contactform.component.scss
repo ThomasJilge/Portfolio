@@ -57,6 +57,12 @@
     gap: 16px;
 }
 
+.mailAdress {
+    text-decoration: none;
+    color: #02F4BF;
+    font-size: 20px;
+}
+
 .mailImg {
     width: 28.4x;
     height: 30px;
@@ -76,6 +82,7 @@
 .mailContactMe, .phoneContactMe {
     color: #02F4BF;
     margin: 0;
+    font-size: 20px;
 }
 
 .arrowUp {
@@ -99,11 +106,17 @@
 
 input[type=text], [type=email] {
     width: 507px;
-    height: 46px;
+    height: 56px;
     border: 1px solid #02F4BF;
     background-color: transparent;
     padding: 10px;
+    box-sizing: border-box;
     color: #02F4BF;
+}
+
+textarea {
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #name {
@@ -115,13 +128,14 @@ input[type=text], [type=email] {
     height: 144px;
     border: 1px solid #02F4BF;
     background-color: transparent;
-    padding: 10px;
+    // padding: 10px;
     color: #02F4BF;
 }
 
 .oktest {
     display: flex;
     width: 507px;
+    height: 144px;
     flex-wrap: wrap;
 }
 
