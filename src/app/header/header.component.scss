@@ -39,6 +39,7 @@
 .headerLanguagesDE:hover, .headerLanguagesEN:hover {
     cursor: pointer;
     color: #02F4BF;
+    transition: color 100ms ease-in-out;
 }
 
 
@@ -75,6 +76,7 @@ p {
 .headerMenuLinksFields:hover {
     cursor: pointer;
     color: #02F4BF;
+    transition: color 100ms ease-in-out;
 }
 
 .headerLanguages .active {

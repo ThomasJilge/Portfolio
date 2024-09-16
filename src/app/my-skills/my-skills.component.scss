@@ -71,4 +71,5 @@
 .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
     display: block;
     color: #02F4BF;
+    transition: color 100ms ease-in-out;
 }

@@ -70,6 +70,7 @@
             height: 29.26px;
             &:hover {
                 cursor: pointer;
+                transition: 100ms ease-in-out;
             }
         }
     } 
@@ -94,6 +95,7 @@
             &:hover{
                 cursor: pointer;
                 color: #02F4BF;
+                transition: color 100ms ease-in-out;
             }
         }
     }

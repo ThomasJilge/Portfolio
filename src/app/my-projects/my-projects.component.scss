@@ -172,6 +172,7 @@
 .githubButton:hover {
     color: #02F4BF;
     cursor: pointer;
+    transition: color 100ms ease-in-out;
 }
 
 .liveTestButton {
@@ -188,4 +189,5 @@
 .liveTestButton:hover {
     color: #E15544;
     cursor: pointer;
+    transition: color 100ms ease-in-out;
 }
