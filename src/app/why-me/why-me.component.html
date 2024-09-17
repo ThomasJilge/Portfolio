@@ -16,23 +16,27 @@
         <div class="iAmContainerTwo">
             <div class="locatedContainer">
                 <p class="iAmText">I am</p>
-                <div class="test">
-                    <!-- <img class="locatedImg" src="../../assets/img/located.png" alt=""> -->
+                <!-- <div class="test">
                     <img class="locatedImg" src="{{ locatedSrc }}" (mouseover)="onHover('located')" (mouseout)="onLeave('located')" alt="located">
+                    <p class="locatedText">located<br> in Munich</p>
+                </div> -->
+                <div class="test" (mouseover)="onHover('located')" (mouseout)="onLeave('located')">
+                    <div class="test2">
+                        <img class="locatedImg" [src]="locatedSrc" alt="located">
+                        <img class="locatedImgTwo" [src]="locatedSrc2" alt="">
+                    </div>
                     <p class="locatedText">located<br> in Munich</p>
                 </div>
             </div>
             <div class="relocateContainer">
                 <img class="relocateArrowImg" src="../../assets/img/Arrow 5.png" alt="">
                 <div class="openToRelocate">
-                    <!-- <img class="relocateImg" src="../../assets/img/relocate.png" alt=""> -->
                     <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate">
                     <p class="relocateText">open to<br>relocate</p>
                 </div>
             </div>
             <div class="remoteContainerOne">
                 <div class="remoteContainerTwo">
-                    <!-- <img class="remoteImg" src="../../assets/img/laptop.png" alt=""> -->
                     <img class="remoteImg" src="{{ remoteSrc }}" alt="laptop" (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')">
                     <p class="remoteText">open to<br>work remote</p>
                     <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4.png" alt="">

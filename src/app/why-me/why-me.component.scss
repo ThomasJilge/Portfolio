@@ -222,5 +222,26 @@
     transition: color 100ms ease-in-out;
 }
 
+.locatedImgTwo {
+    display: none;
+    width: 18px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.test2 {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.test:hover .locatedImgTwo {
+    display: block;
+}
+
+
+
 
 
