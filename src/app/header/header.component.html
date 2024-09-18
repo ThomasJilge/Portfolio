@@ -4,10 +4,21 @@
             <p class="initial">&lt;TJ&gt;</p>
         </div>
         <div class="headerMenuLinks">
-             <a class="headerMenuLinksFields" href="#whyMe">Why me</a>
-             <a class="headerMenuLinksFields" href="#mySkills">Skills</a>
-             <a class="headerMenuLinksFields" href="#myProjects">Projects</a>
-            <a class="headerMenuLinksFields" href="#contactForm">Contact</a>
+            <a class="headerMenuLinksFields" href="#whyMe" 
+               [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
+               (click)="setActiveSection('whyMe')">Why me</a>
+        
+            <a class="headerMenuLinksFields" href="#mySkills" 
+               [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
+               (click)="setActiveSection('mySkills')">Skills</a>
+        
+            <a class="headerMenuLinksFields" href="#myProjects" 
+               [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
+               (click)="setActiveSection('myProjects')">Projects</a>
+        
+            <a class="headerMenuLinksFields" href="#contactForm" 
+               [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
+               (click)="setActiveSection('contactForm')">Contact</a>
         </div>
     </div>
     <div class="headerLanguages">

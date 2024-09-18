@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  selectedSection: string = '';
+
+  setActiveSection(section: string) {
+    this.selectedSection = section;
+  }
+
   selectedLanguage: string = 'EN';
 
   setLanguage(language: string) {
