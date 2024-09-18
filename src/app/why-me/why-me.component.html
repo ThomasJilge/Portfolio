@@ -16,10 +16,6 @@
         <div class="iAmContainerTwo">
             <div class="locatedContainer">
                 <p class="iAmText">I am</p>
-                <!-- <div class="test">
-                    <img class="locatedImg" src="{{ locatedSrc }}" (mouseover)="onHover('located')" (mouseout)="onLeave('located')" alt="located">
-                    <p class="locatedText">located<br> in Munich</p>
-                </div> -->
                 <div class="test" (mouseover)="onHover('located')" (mouseout)="onLeave('located')">
                     <div class="test2">
                         <img class="locatedImg" [src]="locatedSrc" alt="located">
@@ -36,11 +32,19 @@
                 </div>
             </div>
             <div class="remoteContainerOne">
-                <div class="remoteContainerTwo">
+                <!-- <div class="remoteContainerTwo">
                     <img class="remoteImg" src="{{ remoteSrc }}" alt="laptop" (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')">
                     <p class="remoteText">open to<br>work remote</p>
                     <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4.png" alt="">
-                </div>
+                </div> -->
+                <div class="remoteContainerTwo">
+                    <img class="remoteImg" [src]="remoteSrc" alt="laptop"
+                         (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')"
+                         [ngClass]="{'laptopHoverImg': isRemoteHovered}"> <!-- Neu: ngClass -->
+                    <p class="remoteText">open to<br>work remote</p>
+                    <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4.png" alt="">
+                  </div>
+                  
                 <div class="workRemote">
                     <img class="remoteArrowTwoImg" src="../../assets/img/Arrow 01.png" alt="">
                 </div>
