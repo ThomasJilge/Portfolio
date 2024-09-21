@@ -59,7 +59,8 @@ onSubmit(ngForm: NgForm) {
 
 mailContactMe: string = '../../assets/img/email.png';
 phoneContactMe: string = '../../assets/img/phone.png';
-arrowUpSrc: string = '../../assets/img/Arrow Up.png';
+arrowUpSrc: string = '../../assets/img/arrowUp.png';
+isHovered: boolean = false;
 
 onHover(item: string) {
   switch (item) {
@@ -71,6 +72,7 @@ onHover(item: string) {
       break;
     case 'arrowUp':
       this.arrowUpSrc = '../../assets/img/arrowHoverUp.png';
+      this.isHovered = true;
       break;
   }
 }
@@ -84,7 +86,8 @@ onLeave(item: string) {
       this.phoneContactMe = '../../assets/img/phone.png';
       break;
     case 'arrowUp':
-      this.arrowUpSrc = '../../assets/img/Arrow Up.png';
+      this.arrowUpSrc = '../../assets/img/arrowUp.png';
+      this.isHovered = false;
       break;
   }
 }

@@ -96,8 +96,10 @@
     position: relative;
     left: 1279px;
     top: -60px;
-    &:hover {
+    &:hover.hovered {
         cursor: pointer;
+        width: 38px;
+        height: 68px;
         transition: 100ms ease-in-out;
     }
 }

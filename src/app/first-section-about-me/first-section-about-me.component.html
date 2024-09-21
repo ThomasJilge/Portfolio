@@ -9,7 +9,7 @@
             </a>
             <div class="arrowDownContainer" id="arrowDownContainer">
                 <a href="#whyMe">
-                    <img class="arrowDown" id="arrowDown" src="{{ arrowDownSrc }}" (mouseover)="onHover()" (mouseout)="onLeave()" alt="">
+                    <img class="arrowDown" id="arrowDown" [ngClass]="{ 'hovered': isHovered }"[src]="arrowDownSrc" (mouseover)="onHover()" (mouseout)="onLeave()" alt="">
                 </a>
             </div>
             <div class="tjImgContainer">
