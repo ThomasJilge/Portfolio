@@ -28,11 +28,13 @@
     top: 30px;
     >.arrowReference {
         position: relative;
-        top: -20px;
-        width: 38.47px;
-        height: 97.08px;
-        transform: rotate(5deg);
-        object-fit: contain;
+        top: 8px;
+        // width: 38.47px;
+        // height: 97.08px;
+        height: 75px;
+        // transform: rotate(5deg);
+        // object-fit: contain;
+        object-fit: cover;
     }
 }
 

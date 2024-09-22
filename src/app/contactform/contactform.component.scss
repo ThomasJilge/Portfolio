@@ -16,17 +16,22 @@
             height: 72.21px;
             display: flex;
             >.h2ContactMe {
-                width: 330px;
+                // width: 330px;
                 height: 60px;
                 font-size: 54px;
                 color: #E15544;
                 margin: 0;
             }
-            >.arrowContactMe {
-                width: 42.75px;
-                height: 60.6px;
-                transform: rotate(360deg);
-                object-fit: contain;
+            img.arrowContactMe {
+                // width: 42.75px;
+                // width: 80px;
+                // height: 60.6px;
+                // transform: rotate(360deg);
+                // object-fit: contain;
+                object-fit: cover;
+                padding-left: 20px;
+                top: 20px;
+                position: relative;
             }
          }
     }
@@ -41,17 +46,24 @@
         font-weight: 400;
         color: #02F4BF;
         margin: 0;
-        min-width: 320px;
+        // min-width: 320px;
     }
 }
 
-.test2 {
+.contactMeContainerFive {
+    display: flex;
+    gap: 40px;
+}
+
+.contactMeContainerSix {
     position: relative;
-    left: 150px;
+    // left: 150px;
     display: flex;
     flex-wrap: wrap;
-    min-width: 300px;
+    // min-width: 300px;
+    width: 412px;
     gap: 16px;
+    // display: none;
 }
 
 .mailContactMeContainer, .phoneContactMeContainer {
