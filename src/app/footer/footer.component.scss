@@ -83,15 +83,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 258px;
+        width: 261px;
         height: 30px;
+        font-size: 14px;
         display: flex;
-        color: #E15544;
         gap: 16px;
         margin: 0;
-        >.legalNotice, .imprint {
+        >.legalNotice, .privacyPolice {
             width: 121px;
             margin: 0;
+            color: #E15544;
+            text-decoration: none;
+            gap: 3px;
             &:hover{
                 cursor: pointer;
                 color: #02F4BF;

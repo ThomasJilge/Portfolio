@@ -10,6 +10,7 @@ import { ReferenceComponent } from './reference/reference.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactformComponent } from "./contactform/contactform.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -29,3 +30,13 @@ import { ContactformComponent } from "./contactform/contactform.component";
 export class AppComponent {
   title = 'portfolio';
 }
+
+
+
+
+
+
+
+
+
+

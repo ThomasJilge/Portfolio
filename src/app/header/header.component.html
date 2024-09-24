@@ -19,6 +19,7 @@
             <a class="headerMenuLinksFields" href="#contactForm" 
                [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
                (click)="setActiveSection('contactForm')">Contact</a>
+
         </div>
     </div>
     <div class="headerLanguages">
@@ -27,3 +28,6 @@
         <p class="headerLanguagesEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>
     </div>
 </div>
+
+
+
