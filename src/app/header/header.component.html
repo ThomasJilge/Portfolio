@@ -22,6 +22,31 @@
 
         </div>
     </div>
+
+    <div class="burgerMenu" (click)="toggleMenu()">
+        <div class="burgerMenuLine"></div>
+        <div class="burgerMenuLine"></div>
+        <div class="burgerMenuLine"></div>
+    </div>
+
+    <div class="headerMenuLinksBurgerMenuContainer" [ngClass]="{ 'open': isMenuOpen }">
+        <a class="headerMenuLinksFieldsBurgerMenu" href="#whyMe" 
+               [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
+               (click)="setActiveSection('whyMe')">Why me</a>
+        
+            <a class="headerMenuLinksFields" href="#mySkills" 
+               [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
+               (click)="setActiveSection('mySkills')">Skills</a>
+        
+            <a class="headerMenuLinksFields" href="#myProjects" 
+               [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
+               (click)="setActiveSection('myProjects')">Projects</a>
+        
+            <a class="headerMenuLinksFields" href="#contactForm" 
+               [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
+               (click)="setActiveSection('contactForm')">Contact</a>
+    </div>
+
     <div class="headerLanguages">
         <p class="headerLanguagesDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
         <p>|</p>

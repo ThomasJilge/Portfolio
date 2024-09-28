@@ -11,15 +11,19 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
 
   selectedSection: string = '';
+  selectedLanguage: string = 'EN';
+  isMenuOpen: boolean = false;
 
   setActiveSection(section: string) {
     this.selectedSection = section;
   }
 
-  selectedLanguage: string = 'EN';
-
   setLanguage(language: string) {
     this.selectedLanguage = language;
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   @HostListener('window:scroll', [])
