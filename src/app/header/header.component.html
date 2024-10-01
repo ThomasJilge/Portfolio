@@ -30,21 +30,32 @@
     </div>
 
     <div class="headerMenuLinksBurgerMenuContainer" [ngClass]="{ 'open': isMenuOpen }">
+      <div class="test">
         <a class="headerMenuLinksFieldsBurgerMenu" href="#whyMe" 
                [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
                (click)="setActiveSection('whyMe')">Why me</a>
         
-            <a class="headerMenuLinksFields" href="#mySkills" 
+            <a class="headerMenuLinksFieldsBurgerMenu" href="#mySkills" 
                [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
                (click)="setActiveSection('mySkills')">Skills</a>
         
-            <a class="headerMenuLinksFields" href="#myProjects" 
+            <a class="headerMenuLinksFieldsBurgerMenu" href="#myProjects" 
                [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
                (click)="setActiveSection('myProjects')">Projects</a>
         
-            <a class="headerMenuLinksFields" href="#contactForm" 
+            <a class="headerMenuLinksFieldsBurgerMenu" href="#contactForm" 
                [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
                (click)="setActiveSection('contactForm')">Contact</a>
+
+            
+
+               <div class="headerLanguagesBurgerMenu">
+                  <p class="headerLanguagesBurgerMenuDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
+                  <p>|</p>
+                  <p class="headerLanguagesBurgerMenuEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>
+              </div>
+
+            </div>
     </div>
 
     <div class="headerLanguages">
