@@ -145,7 +145,8 @@ p {
             align-items: center;
             text-align: center;
             
-            width: 390px;
+            // width: 390px;
+            min-width: 390px;
             height: 437px;
             background-color: antiquewhite;
             position: relative;
@@ -167,7 +168,7 @@ p {
     width: 87px;
     top: 68px;
     position: relative;
-    gap: 47px;
+    gap: 27px;
     font-size: 18px;
 }
 
@@ -191,4 +192,15 @@ p {
 
 .headerLanguagesBurgerMenuEN {
     padding-left: 5px;
+}
+
+.burgerMenuClose {
+    width: 35px;
+    height: 32px;
+    position: relative;
+    top: 30px;
+    left: 175px;
+    &:hover {
+        cursor: pointer;
+    }
 }
