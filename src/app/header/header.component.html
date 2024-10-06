@@ -29,9 +29,10 @@
         <div class="burgerMenuLine"></div>
     </div>
 
-    <div class="headerMenuLinksBurgerMenuContainer" [ngClass]="{ 'open': isMenuOpen }">
-      <div class="test">
+    <div class="headerMenuLinksBurgerMenuContainerOne" [ngClass]="{ 'open': isMenuOpen }">
+      <div class="headerMenuLinksBurgerMenuContainerTwo">
          <img class="burgerMenuClose" src="../../assets/img/burgerMenuClose.png" alt="" (click)="toggleMenu()">
+        
         <a class="headerMenuLinksFieldsBurgerMenu" href="#whyMe" 
                [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
                (click)="setActiveSection('whyMe')">Why me</a>
@@ -47,18 +48,19 @@
             <a class="headerMenuLinksFieldsBurgerMenu" href="#contactForm" 
                [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
                (click)="setActiveSection('contactForm')">Contact</a>
-
-            
-
-               <div class="headerLanguagesBurgerMenu">
-                  <p class="headerLanguagesBurgerMenuDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
-                  <p>|</p>
-                  <p class="headerLanguagesBurgerMenuEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>
-              </div>
-
+    
+            <div class="headerLanguagesBurgerMenu">
+                <p class="headerLanguagesBurgerMenuDE" 
+                   [ngClass]="{ 'active': selectedLanguage === 'DE' }" 
+                   (click)="setLanguage('DE')">DE</p>
+                <p>|</p>
+                <p class="headerLanguagesBurgerMenuEN" 
+                   [ngClass]="{ 'active': selectedLanguage === 'EN' }" 
+                   (click)="setLanguage('EN')">EN</p>
             </div>
+        </div>
     </div>
-
+    
     <div class="headerLanguages">
         <p class="headerLanguagesDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
         <p>|</p>
