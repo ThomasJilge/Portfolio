@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="burgerMenu" (click)="toggleMenu()">
+    <div class="burgerMenu" [ngClass]="{ 'hide': isMenuOpen }" (click)="toggleMenu()">
         <div class="burgerMenuLine"></div>
         <div class="burgerMenuLine"></div>
         <div class="burgerMenuLine"></div>
@@ -31,7 +31,7 @@
 
     <div class="headerMenuLinksBurgerMenuContainer" [ngClass]="{ 'open': isMenuOpen }">
       <div class="test">
-         <img class="burgerMenuClose" src="../../assets/img/burgerMenuClose.png" alt="">
+         <img class="burgerMenuClose" src="../../assets/img/burgerMenuClose.png" alt="" (click)="toggleMenu()">
         <a class="headerMenuLinksFieldsBurgerMenu" href="#whyMe" 
                [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
                (click)="setActiveSection('whyMe')">Why me</a>
