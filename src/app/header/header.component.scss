@@ -105,12 +105,21 @@ p {
     &.open {
       display: block;
     }
-  }
+}
+
+@media (min-width: 769px) {
+
+    .headerMenuLinksBurgerMenuContainerTwo {
+        display: none;
+    }
+
+}
 
 @media  (max-width: 768px) {
 
-    .headerMenu {
+    .header .headerMenu {
         max-width: 102.14px;
+        left: 30px;
     }
 
     .headerMenuLinks {
@@ -136,7 +145,7 @@ p {
         height: 27.72px;
         gap: 14px;
         position: absolute;
-        right: 70px;
+        right: 30px;
         cursor: pointer;
         >.burgerMenuLine {
             width: 30px;
@@ -160,28 +169,48 @@ p {
           }
     }
 
-@media  (max-width: 576px) {
-
-    .initial {
-        display: none;
+    .headerMenuLinksBurgerMenuContainerTwo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 301px;
+        width: 87px;
+        top: 68px;
+        position: relative;
+        gap: 27px;
+        font-size: 18px;
     }
 
 }
 
-   
+// @media  (max-width: 576px) {
+
+//     .initial {
+//         display: none;
+//     }
+
+// }
+
+@media  (max-width: 410px) {
+
+    .headerMenuLinksBurgerMenuContainerOne {
+
+        &.open {
+            max-width: 390px;
+            width: 100%;
+        }
+    }
+
+    .headerMenuLinksBurgerMenuContainerOne .burgerMenuClose {
+        position: relative;
+        left: 140px;
+    }
+
 }
 
-.headerMenuLinksBurgerMenuContainerTwo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 301px;
-    width: 87px;
-    top: 68px;
-    position: relative;
-    gap: 27px;
-    font-size: 18px;
-}
+
+
+
 
 .headerMenuLinksFieldsBurgerMenu {
     color: #E15544;
