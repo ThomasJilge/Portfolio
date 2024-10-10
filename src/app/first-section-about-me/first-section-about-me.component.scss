@@ -116,3 +116,30 @@ p {
     left: 796px;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+
+    // .firstSectionAboutMeContainerOne {
+    //     flex-direction: column;
+    //     width: 100%;
+    // }
+
+    // .firstSectionAboutMeContainerOne {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100%;
+    // }
+
+    // .tjImg {
+    //     position: relative;
+    // }
+
+    .arrowDown {
+        display: none;
+    }
+
+    .contactMeContainerOne {
+        display: none;
+    }
+
+}
