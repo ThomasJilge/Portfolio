@@ -239,6 +239,19 @@
     height: 46.99px;
 }
 
+@media (max-width: 768px) {
+
+    .whyMeContainerOne {
+        position: relative;
+        top: 200px;
+    }
+
+    .tjImgWhyMeContainer {
+        display: none;
+    }
+
+}
+
 
 
 

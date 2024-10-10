@@ -119,20 +119,15 @@ p {
 
 @media (max-width: 768px) {
 
-    // .firstSectionAboutMeContainerOne {
-    //     flex-direction: column;
-    //     width: 100%;
-    // }
+    .tjImg {
+        left: 0;
+        // width: 388px;
+        // height: 370px;
+    }
 
-    // .firstSectionAboutMeContainerOne {
-    //     display: flex;
-    //     flex-direction: column;
-    //     width: 100%;
-    // }
-
-    // .tjImg {
-    //     position: relative;
-    // }
+    .infoFieldOne {
+        top: 560px;
+    }
 
     .arrowDown {
         display: none;
@@ -140,6 +135,40 @@ p {
 
     .contactMeContainerOne {
         display: none;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .firstSectionAboutMeContainerOne {
+        height: 370px;
+    }
+
+    .firstSectionAboutMeContainerTwo {
+        height: 370px;
+    }
+
+    .tjImg {
+        width: 388px;
+        height: 370px;
+    }
+
+    .infoFieldOne {
+        width: 389px;
+        height: 150px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        top: 385px;
+    }
+
+    .infoFieldDescripton {
+        font-size: 24px;
+    }
+
+    .infoFieldName {
+        font-size: 40px;
     }
 
 }
