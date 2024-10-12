@@ -252,6 +252,85 @@
 
 }
 
+@media (max-width: 390px) {
+
+    .whyMeContainerOne {
+        width: 389px;
+        gap: 8px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .whyMeContainerTwo {
+        justify-content: center;
+        align-items: center;
+        width: 389px;
+    }
+
+    .h2WhyMeContainer {
+        width: 389px;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        >.h2WhyMe {
+            font-size: 32px;
+        }
+    }
+
+
+    .infoWhyMeContainer {
+        width: 389px;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .iAmContainerOne {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .iAmContainerTwo {
+        // gap: 40px;
+        width: 261px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    .locatedText {
+        text-align: center;
+    }
+
+    .relocateContainer {
+        padding-left: 0;
+    }
+
+    .remoteContainerTwo {
+        padding-left: 0;
+    }
+
+    .relocateArrowImg {
+        display: none;
+    }
+
+    .remoteArrowOneImg {
+        display: none;
+    }
+
+    .remoteArrowTwoImg {
+        display: none;
+    }
+
+}
+
 
 
 
