@@ -7,14 +7,13 @@
             <h2 class="h2WhyMe">Why me</h2>
         </div>
         <div class="infoWhyMeContainer">
-            <!-- <p class="infoText">I am motivated to continuously learn new technologies and develop<br> myself.
-               My ability to solve complex problems and my passion for<br> programming make
-               me a valuable member of your team.
-            </p> -->
             <p class="infoText">I am motivated to continuously learn new technologies and develop myself.
                 My ability to solve complex problems and my passion for programming make
                 me a valuable member of your team.
              </p>
+        </div>
+        <div class="relocateArrowImgResponsiveContainerOne">
+            <img class="relocateArrowImgResponsiveOne" src="../../assets/img/Arrow 5.png" alt="">
         </div>
         <div class="iAmContainerOne">
         <div class="iAmContainerTwo">
@@ -25,14 +24,20 @@
                         <img class="locatedImg" [src]="locatedSrc" alt="located">
                         <img class="locatedImgTwo" [src]="locatedSrc2" alt="">
                     </div>
-                    <p class="locatedText">located in Munich</p>
+                    <div class="locatedOpenRemoteInfo">
+                        <p class="locatedText">located</p>
+                        <p class="locatedText">in Munich</p>
+                    </div>
                 </div>
             </div>
             <div class="relocateContainer">
                 <img class="relocateArrowImg" src="../../assets/img/Arrow 5.png" alt="">
                 <div class="openToRelocate">
                     <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate">
-                    <p class="relocateText">open to relocate</p>
+                    <div class="locatedOpenRemoteInfo">
+                        <p class="locatedText">open</p>
+                        <p class="locatedText">to relocate</p>
+                    </div>
                 </div>
             </div>
             <div class="remoteContainerOne">
@@ -40,7 +45,10 @@
                     <img class="remoteImg" [src]="remoteSrc" alt="laptop"
                          (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')"
                          [ngClass]="{'laptopHoverImg': isRemoteHovered}">
-                    <p class="remoteText">open to work remote</p>
+                    <div class="locatedOpenRemoteInfo">
+                        <p class="locatedText">open to</p>
+                        <p class="locatedText">work remote</p>
+                    </div>
                     <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4 (1).png" alt="">
                   </div>
                   
@@ -49,6 +57,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="relocateArrowImgResponsiveContainerTwo">
+        <img class="relocateArrowImgResponsiveTwo" src="../../assets/img/Arrow6.png" alt="">
     </div>
 
     <div class="letsTalkContainerOne">

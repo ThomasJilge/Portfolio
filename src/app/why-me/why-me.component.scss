@@ -239,6 +239,22 @@
     height: 46.99px;
 }
 
+.relocateArrowImgResponsiveContainerOne {
+    display: none;
+}
+
+.relocateArrowImgResponsiveOne {
+    display: none;
+}
+
+.relocateArrowImgResponsiveContainerTwo {
+    display: none;
+}
+
+.relocateArrowImgResponsiveTwo {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .whyMeContainerOne {
@@ -365,6 +381,7 @@
     .remoteImg {
         width: 49.12px;
         height: 43.96px;
+        padding-bottom: 10px;
     }
 
     .remoteText {
@@ -396,6 +413,44 @@
     .letsTalkButton {
         width: 137px;
         height: 43px;
+    }
+
+    .relocateArrowImgResponsiveContainerOne {
+        display: block;
+        width: 389px;
+        height: 56px;
+        
+    }
+
+    .relocateArrowImgResponsiveOne {
+        display: flex;
+        width: 22.95;
+        height: 56px;
+        left: 24px;
+        position: relative;
+    }
+
+    .relocateArrowImgResponsiveContainerTwo {
+        display: block;
+        width: 389px;
+        height: 41.3px;
+        top: 105px;
+        position: relative;
+    }
+
+    .relocateArrowImgResponsiveTwo {
+        display: flex;
+        width: 23.22px;
+        height: 41.3px;
+        left: 365px;
+        position: relative;
+    }
+
+    .locatedOpenRemoteInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
     }
 
 }
