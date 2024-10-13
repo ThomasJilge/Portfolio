@@ -73,3 +73,11 @@
     color: #02F4BF;
     transition: color 100ms ease-in-out;
 }
+
+@media (max-width: 390px) {
+
+    .mySkillsContainerOne {
+        top: 250px;
+    }
+
+}

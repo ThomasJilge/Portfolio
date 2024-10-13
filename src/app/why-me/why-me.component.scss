@@ -279,6 +279,13 @@
         }
     }
 
+    .iAmText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
 
     .infoWhyMeContainer {
         width: 389px;
@@ -291,30 +298,79 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        // flex-direction: column;
     }
 
     .iAmContainerTwo {
-        // gap: 40px;
+        gap: 40px;
         width: 261px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
+        // flex-direction: column;
+        top: 50px;
+    }
+
+    .locatedContainer {
         flex-direction: column;
+        gap: 0;
+        height: auto;
+        width: 221px;
     }
 
-
-
-    .locatedText {
-        text-align: center;
+    .locatedImg {
+        width: 26px;
+        height: 32px;
     }
+
+    // .locatedText {
+    //     text-align: center;
+    // }
 
     .relocateContainer {
         padding-left: 0;
+        width: 221px;
+    }
+
+    .test {
+        justify-content: center;
+    }
+
+    .openToRelocate {
+        justify-content: center;
+        width: 221px;
+    }
+
+    .relocateText {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .relocateImg {
+        width: 25.73px;
+        height: 42px;
+    }
+
+    .remoteContainerOne {
+        justify-content: center;
     }
 
     .remoteContainerTwo {
         padding-left: 0;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .remoteImg {
+        width: 49.12px;
+        height: 43.96px;
+    }
+
+    .remoteText {
+        width: auto;
+        display: flex;
+        align-items: center;
     }
 
     .relocateArrowImg {
@@ -327,6 +383,19 @@
 
     .remoteArrowTwoImg {
         display: none;
+    }
+
+    .letsTalkContainerOne {
+        top: 120px;
+    }
+
+    .letsTalkContainerTwo {
+        justify-content: center;
+    }
+
+    .letsTalkButton {
+        width: 137px;
+        height: 43px;
     }
 
 }
