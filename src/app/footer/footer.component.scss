@@ -110,3 +110,11 @@
     display: flex;
     justify-content: end;
 }
+
+@media (max-width: 390px) {
+
+    .footerContainerOne {
+        display: none;
+    }
+
+}

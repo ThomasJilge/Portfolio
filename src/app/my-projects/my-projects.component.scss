@@ -191,3 +191,11 @@
     cursor: pointer;
     transition: color 100ms ease-in-out;
 }
+
+@media (max-width: 390px) {
+
+    .myProjectsContainerOne {
+        display: none;
+    }
+
+}
