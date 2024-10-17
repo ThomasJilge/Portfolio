@@ -1,7 +1,4 @@
 .header {
-    // max-width: 1920px;
-    // margin-left: 140px;
-    // margin-right: 140px;
     max-width: 1440px;
     position: fixed;
     z-index: 1000;
@@ -11,10 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
     background-color: #120B35;
     padding: 24px, 140px, 24px, 140px;
-
     >.headerMenu {
         display: flex;
         justify-content: space-between;
@@ -43,11 +38,9 @@
     cursor: pointer;
     color: #02F4BF;
     transition: color 100ms ease-in-out;
-}
-
-
-p {
-    margin: 0;
+    >p {
+        margin: 0;
+    }
 }
 
 .initial {
@@ -61,31 +54,26 @@ p {
     width: 496px;
     height: 26px;
     gap: 32px;
-
-}
-
-.headerMenuLinksFields {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 26px;
-    font-size: 22px;
-    color: #E15544;
-    text-decoration: none;
-
-}
-
-.headerMenuLinksFields:hover {
-    cursor: pointer;
-    color: #02F4BF;
-    transition: color 100ms ease-in-out;
-}
-
-.headerMenuLinksFields.active {
-    color: #02F4BF; 
-    text-decoration: underline; 
-    text-decoration-thickness: 1.5px;
+    >.headerMenuLinksFields {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 26px;
+        font-size: 22px;
+        color: #E15544;
+        text-decoration: none;
+    }
+    >.headerMenuLinksFields:hover {
+        cursor: pointer;
+        color: #02F4BF;
+        transition: color 100ms ease-in-out;
+    }
+    >.headerMenuLinksFields.active {
+        color: #02F4BF; 
+        text-decoration: underline; 
+        text-decoration-thickness: 1.5px;
+    }
 }
 
 .headerLanguages .active,
@@ -180,16 +168,7 @@ p {
         gap: 27px;
         font-size: 18px;
     }
-
 }
-
-// @media  (max-width: 576px) {
-
-//     .initial {
-//         display: none;
-//     }
-
-// }
 
 @media  (max-width: 410px) {
 
@@ -207,10 +186,6 @@ p {
     }
 
 }
-
-
-
-
 
 .headerMenuLinksFieldsBurgerMenu {
     color: #E15544;
