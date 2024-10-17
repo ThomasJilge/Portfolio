@@ -1,31 +1,16 @@
 .firstSectionAboutMeContainerOne {
-    // max-width: 1440px;
-    // margin-left: 140px;
-    // margin-right: 140px;
-    // width: 100%;
     width: 1337px;
-    // height: 554px;
     height: 665px;
     top: 94px;
     position: relative;
     display: flex;
     justify-content: end;
     left: -53px;
-}
-
-// .firstSectionAboutMeContainerOne {
-//     border: 1px solid green;
-// }
-
-.firstSectionAboutMeContainerTwo {
-    position: relative;
-    // background-color: grey;
-    // border: 1px solid red;
-    width: 1284px;
-    height: 556px;
-    // top: 94px;
-    // left: 105px;
-    // left: -53px;
+    >.firstSectionAboutMeContainerTwo {
+        position: relative;
+        width: 1284px;
+        height: 556px;
+    }
 }
 
 .contactMeContainerOne {
@@ -68,19 +53,13 @@
     width: 808px;
     height: 142px;
     top: 412px;
-    // left: 50px;
-    // left: -172px;
     gap: 8px;
-    // border: 1px solid yellow;
-}
-
-.infoFieldTwo {
-    color: #02F4BF;
+    >.infoFieldTwo {
+        color: #02F4BF;
+    }
 }
 
 .infoFieldDescripton {
-    // width: 596px;
-    // height: 53px;
     font-size: 54px;
     font-weight: 500px;
 }
@@ -121,8 +100,6 @@ p {
 
     .tjImg {
         left: 0;
-        // width: 388px;
-        // height: 370px;
     }
 
     .infoFieldOne {
