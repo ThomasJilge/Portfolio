@@ -10,7 +10,6 @@
 .tjImgWhyMe {
     width: 490px;
     height: 452px;
-
     object-fit: contain;
 }
 
@@ -59,25 +58,23 @@
     height: 186px;
     left: 159;
     gap: 8px;
-}
-
-.locatedContainer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 568px;
-    height: 56px;
-    gap: 64px;
-}
-
-.iAmText {
-    width: 116px;
-    height: 49px;
-    font-size: 48px;
-    font-weight: 700;
-    color: #E15544;
-    margin: 0;
+    >.locatedContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 568px;
+        height: 56px;
+        gap: 64px;
+        >.iAmText {
+            width: 116px;
+            height: 49px;
+            font-size: 48px;
+            font-weight: 700;
+            color: #E15544;
+            margin: 0;
+        }
+    }
 }
 
 .locatedText {
@@ -122,13 +119,12 @@
     height: 56px;
     gap: 208px;
     padding-left: 152px;
-}
-
-.openToRelocate {
-    display: flex;
-    align-items: center;
-    width: 130px;
-    height: 48px;
+    >.openToRelocate {
+        display: flex;
+        align-items: center;
+        width: 130px;
+        height: 48px;
+    }
 }
 
 .relocateText {
@@ -148,17 +144,15 @@
     justify-content: space-between;
     align-items: center;
     height: 58px;
-    
-}
-
-.remoteContainerTwo {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 241.85px;
-    height: 58px;
-    gap: 13px;
-    padding-left: 168px;
+    >.remoteContainerTwo {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 241.85px;
+        height: 58px;
+        gap: 13px;
+        padding-left: 168px;
+    }
 }
 
 .remoteText {
@@ -186,16 +180,15 @@
     justify-content: end;
     position: relative;
     top: 20px;
-}
-
-.letsTalkContainerTwo {
-    display: flex;
-    justify-content: end;
-    width: 521px;
-    height: 52px;
-    gap: 10px;
-    > a {
-        text-decoration: none;
+    >.letsTalkContainerTwo {
+        display: flex;
+        justify-content: end;
+        width: 521px;
+        height: 52px;
+        gap: 10px;
+        > a {
+            text-decoration: none;
+        }
     }
 }
 
