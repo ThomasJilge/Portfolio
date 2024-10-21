@@ -58,7 +58,7 @@
     height: 186px;
     left: 159;
     gap: 8px;
-    >.locatedContainer {
+    >.locatedContainerOne {
         position: relative;
         display: flex;
         align-items: center;
@@ -91,7 +91,7 @@
     top: 8px;
 }
 
-.test {
+.locatedContainerTwo {
     display: flex;
     align-items: center;
     width: 235px;
@@ -215,7 +215,7 @@
     object-fit: contain;
 }
 
-.test2 {
+.locatedContainerTwo2 {
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -223,7 +223,7 @@
 }
 
 
-.test:hover .locatedImgTwo {
+.locatedContainerTwo:hover .locatedImgTwo {
     display: block;
 }
 
@@ -320,7 +320,7 @@
         top: 50px;
     }
 
-    .locatedContainer {
+    .locatedContainerOne {
         flex-direction: column;
         gap: 0;
         height: auto;
@@ -341,7 +341,7 @@
         width: 221px;
     }
 
-    .test {
+    .locatedContainerTwo {
         justify-content: center;
     }
 

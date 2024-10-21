@@ -21,21 +21,19 @@
         height: 325px;
         top: 1px;
         flex-wrap: wrap;
+        >.skillsImgsContainerOne {
+            width: 1122px;
+            height: 100px;
+            display: flex;
+            gap: 100px;
+        }
+        >.skillsImgsContainerTwo {
+            width: 1219px;
+            height: 125px;
+            display: flex;
+            gap: 100px;
+        }
     }
-}
-
-.skillsImgsContainerOne {
-    width: 1122px;
-    height: 100px;
-    display: flex;
-    gap: 100px;
-}
-
-.skillsImgsContainerTwo {
-    width: 1219px;
-    height: 125px;
-    display: flex;
-    gap: 100px;
 }
 
 .skillsImgs {
@@ -47,16 +45,14 @@
     display: flex;
     position: relative;
     left: 20px;
-}
-
-
-.challengeMeText {
-    position: absolute;
-    display: none;
-    left: -80px;
-    color: #02F4BF;
-    margin: 0;
-    width: 200px;
+    >.challengeMeText {
+        position: absolute;
+        display: none;
+        left: -80px;
+        color: #02F4BF;
+        margin: 0;
+        width: 200px;
+    }
 }
 
 .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
@@ -103,8 +99,6 @@
 
     .mySkillsContainerTwo {
         width: 390px;
-        // right: 29px;
-        // left: 29px;
     }
 
     .skillsImgsContainerOne,
