@@ -1,14 +1,11 @@
 .referenceContainerOne {
     position: relative;
-    // top: 865px;
     width: 1440px;
     height: 307px;
-    // border: 1px solid aqua;
     >.referenceContainerHeader {
         position: relative;
         width: 808px;
         height: 29px;
-        // left: 129px;
         >.referenceContainerText {
             color: #E15544;
             font-size: 24px;
@@ -24,16 +21,11 @@
     width: 1103px;
     height: 246px;
     gap: 32px;
-    // left: 129px;
     top: 30px;
     >.arrowReference {
         position: relative;
         top: 8px;
-        // width: 38.47px;
-        // height: 97.08px;
         height: 75px;
-        // transform: rotate(5deg);
-        // object-fit: contain;
         object-fit: cover;
     }
 }

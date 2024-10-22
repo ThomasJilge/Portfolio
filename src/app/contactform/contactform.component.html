@@ -30,7 +30,6 @@
         
         <div class="arrowUpContainer">
             <a href="#aboutMe">
-                <!-- <img class="arrowUp" id="arrowUp" src="{{ arrowUpSrc }}" (mouseover)="onHover('arrowUp')" (mouseout)="onLeave('arrowUp')" alt=""> -->
                 <img class="arrowUp" id="arrowUp" [ngClass]="{ 'hovered': isHovered }"[src]="arrowUpSrc" (mouseover)="onHover('arrowUp')" (mouseout)="onLeave('arrowUp')" alt="">
             </a>
         </div>

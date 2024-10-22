@@ -1,33 +1,21 @@
 .contactMeContainerOne {
     width: 1440px;
     height: 430px;
-    // &:hover {
-    //     cursor: pointer;
-    // }
     >.contactMeContainerTwo {
-        // position: relative;
-        // top: 835px;
         width: 1015px;
         height: 162px;
         left: 132px;
-        // border: 1px solid red;
         >.contactMeContainerThree {
             width: 425.05px;
             height: 72.21px;
             display: flex;
             >.h2ContactMe {
-                // width: 330px;
                 height: 60px;
                 font-size: 54px;
                 color: #E15544;
                 margin: 0;
             }
             img.arrowContactMe {
-                // width: 42.75px;
-                // width: 80px;
-                // height: 60.6px;
-                // transform: rotate(360deg);
-                // object-fit: contain;
                 object-fit: cover;
                 padding-left: 20px;
                 top: 20px;
@@ -46,7 +34,6 @@
         font-weight: 400;
         color: #02F4BF;
         margin: 0;
-        // min-width: 320px;
     }
 }
 
@@ -57,13 +44,10 @@
 
 .contactMeContainerSix {
     position: relative;
-    // left: 150px;
     display: flex;
     flex-wrap: wrap;
-    // min-width: 300px;
     width: 412px;
     gap: 16px;
-    // display: none;
 }
 
 .mailContactMeContainer, .phoneContactMeContainer {
@@ -117,8 +101,6 @@
 }
 
 .container {
-    // position: relative;
-    // top: 850px;
     width: 1184px;
     height: 144px;
     left: 131px;
@@ -148,7 +130,6 @@ textarea {
     height: 144px;
     border: 1px solid #02F4BF;
     background-color: transparent;
-    // padding: 10px;
     color: #02F4BF;
 }
 
@@ -164,27 +145,13 @@ textarea {
     gap: 40px;
 }
 
-// input:hover, textarea:hover {
-//     cursor: pointer;
-// }
-
 input::placeholder, ::placeholder {
     color: #0B8D8F;
 }
 
-
-// input:invalid, textarea:invalid {
-//     border: 1px solid #E15544; 
-// }
-
-
 input:valid, textarea:valid {
     border: 1px solid #02F4BF; 
 }
-
-// input:hover, textarea:hover {
-//     cursor: pointer;
-// }
 
 input:focus, textarea:focus {
     border: 1px solid #02F4BF; 
@@ -260,13 +227,15 @@ border: 1px solid red;
     left: 102px;
     top: 21px;
     background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
     &.activeButton {
         border: 1px solid #02F4BF;
         color: #E15544;
       }
   }
 
-/* Standard styling for inputs and textarea */
 input, textarea {
     border: 1px solid #ccc;
     padding: 10px;

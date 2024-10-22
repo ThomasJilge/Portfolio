@@ -3,7 +3,6 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 1439px;
-    // height: 65px;
     >.h2MyProjectsTwo {
         display: flex;
         justify-content: center;
@@ -20,30 +19,24 @@
 
 .myProjectsContainerThree {
     position: relative;
-    // top: 20px;
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
     width: 1439px;
     height: 850px;
-    // height: 1241px;
-    // border: 1px solid red;
-}
-
-.projectOne {
-    display: flex;
-    width: 1134px;
-    height: 371px;
-}
-
-.projectTwo {
-    display: flex;
-    position: relative;
-    justify-content: end;
-    top: 50px;
-    width: 1134px;
-    height: 371px;
-    left: 44px;
+    >.projectOne {
+        display: flex;
+        width: 1134px;
+        height: 371px;
+    }
+    >.projectTwo {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        top: 50px;
+        width: 1134px;
+        height: 371px;
+        left: 44px;
+    }
 }
 
 .projectImg {
@@ -56,20 +49,9 @@
     left: 30px;
     width: 498px;
     height: 318px;
-    // border: 1px solid aqua;
-}
-
-.projectTwoDescription {
-    position: relative;
-    // top: -200px;
-    right: 30px;
-    width: 498px;
-    height: 318px;
-}
-
-.projectOneDescriptionHeader {
-    width: 498px;
-    // height: 103px;
+    >.projectOneDescriptionHeader {
+        width: 498px;
+    }
 }
 
 .projectOneHeadline {
@@ -82,9 +64,15 @@
     height: 59px;
 }
 
-.projectTwoDescriptionHeader {
-    display: flex;
-    justify-content: end;
+.projectTwoDescription {
+    position: relative;
+    right: 30px;
+    width: 498px;
+    height: 318px;
+    >.projectTwoDescriptionHeader {
+        display: flex;
+        justify-content: end;
+    }
 }
 
 .projectTwoHeadline {
@@ -102,14 +90,15 @@
 .projectOneLanguagesContainer {
     width: 249px;
     height: 25px;
+    >.projectOneLanguages {
+        color: #02F4BF;
+        size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
 }
 
-.projectOneLanguages {
-    color: #02F4BF;
-    size: 18px;
-    font-weight: 400;
-    margin: 0;
-}
+
 
 .projectTwoLanguages {
     display: flex;
@@ -167,6 +156,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .githubButton:hover {
