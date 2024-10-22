@@ -146,7 +146,7 @@
     height: 58px;
     >.remoteContainerTwo {
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: end;
         width: 241.85px;
         height: 58px;
@@ -248,6 +248,11 @@
     display: none;
 }
 
+.remoteContainerTwo > .locatedOpenRemoteInfo {
+    position: relative;
+    right: 35px;
+}
+
 @media (max-width: 768px) {
 
     .whyMeContainerOne {
@@ -307,7 +312,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // flex-direction: column;
     }
 
     .iAmContainerTwo {
@@ -315,8 +319,6 @@
         width: 261px;
         display: flex;
         justify-content: center;
-        // align-items: center;
-        // flex-direction: column;
         top: 50px;
     }
 
@@ -331,10 +333,6 @@
         width: 26px;
         height: 32px;
     }
-
-    // .locatedText {
-    //     text-align: center;
-    // }
 
     .relocateContainer {
         padding-left: 0;
