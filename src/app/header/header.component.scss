@@ -30,9 +30,15 @@
         align-items: center;
         width: 62px;
         height: 25px;
-        // padding-right: 70px;
+        >.headerLanguagesLine {
+            width: 1.5px;
+            height: 17px;
+            background-color: #E15544;
+        }
     }
 }
+
+
 
 .headerLanguagesDE:hover, .headerLanguagesEN:hover {
     cursor: pointer;
