@@ -30,15 +30,14 @@
         align-items: center;
         width: 62px;
         height: 25px;
-        >.headerLanguagesLine {
-            width: 1.5px;
-            height: 17px;
-            background-color: #E15544;
-        }
     }
 }
 
-
+.headerLanguagesLine {
+    width: 1.5px;
+    height: 17px;
+    background-color: #E15544;
+}
 
 .headerLanguagesDE:hover, .headerLanguagesEN:hover {
     cursor: pointer;
@@ -116,19 +115,10 @@
         left: 30px;
     }
 
-    .headerMenuLinks {
-        display: none;
-    }
-
-    .headerLanguagesDE {
-        display: none;
-    }
-
-    .headerLanguagesEN {
-        display: none;
-    }
-
-    .headerLanguages > p {
+    .headerMenuLinks,
+    .headerLanguagesDE,
+    .headerLanguagesEN,
+    .headerLanguagesLine {
         display: none;
     }
 
@@ -160,6 +150,17 @@
             width: 390px;
             height: 437px;
             background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%);
+          }
+
+          .headerLanguagesLine {
+                display: block;
+                top: 2px;
+                position: relative;
+          }
+
+        .headerLanguagesBurgerMenuDE,
+        .headerLanguagesBurgerMenuEN {
+            margin: 0;
           }
     }
 
