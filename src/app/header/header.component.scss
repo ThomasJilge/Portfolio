@@ -175,6 +175,12 @@
         gap: 27px;
         font-size: 18px;
     }
+
+    .headerMenuLinksFieldsBurgerMenu.active {
+        color: #02F4BF; 
+        text-decoration: underline; 
+        text-decoration-thickness: 1.5px;
+    }
 }
 
 @media  (max-width: 410px) {
