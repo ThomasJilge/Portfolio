@@ -184,10 +184,79 @@
     transition: color 100ms ease-in-out;
 }
 
+.myProjectsContainerOneResponsive {
+    display: none;
+}
+
 @media (max-width: 390px) {
 
     .myProjectsContainerOne {
         display: none;
     }
+
+    .myProjectsContainerOneResponsive {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 380px;
+    }
+
+    .h2MyProjectsResponsive {
+        color: #E15544;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .projectOneDescriptionHeaderResponsive, 
+    .projectOneLanguagesContainerResponsive, 
+    .projectOneInfoResponsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projectOneHeadlineResponsive {
+        color: #02F4BF;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .projectOneLanguagesResponsive {
+        color: #02F4BF;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .projectOneInfoTextResponsive {
+        color: #02F4BF;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .projectImgResponsive {
+        width: 337px;
+        height: 214px;
+    }
+
+    .projectOneInfoButtonsResponsive {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        position: relative;
+        top: 20px;
+    }
+
+    .githubButton {
+        width: 98px;
+        height: 43px;
+    }
+
+    .liveTestButton {
+        width: 127px;
+        height: 43px;
+    }
+
 
 }
