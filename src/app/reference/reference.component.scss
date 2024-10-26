@@ -68,10 +68,71 @@
     }
 }
 
+.referenceContainerOneResponsive {
+    display: none;
+}
+
 @media (max-width: 390px) {
 
     .referenceContainerOne {
         display: none;
+    }
+
+    .referenceContainerOneResponsive {
+        display: block;
+        position: relative;
+        top: 500px;
+    }
+
+    .referenceContainerHeaderResponsive {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .referenceContainerHeaderResponsive > .referenceContainerTextHeaderResponsive {
+        font-size: 24px;
+        font-weight: 700px;
+        color: #E15544;
+        margin: 0;
+    }
+
+    .referenceContainerTextResponsive {
+        color: #E15544;
+        margin: 0;
+    }
+
+    .referenceNameResponsive {
+        color: #E15544;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .referenceProjectResponsive, .referenceTextResponsive {
+        color: #02F4BF;
+        margin-top: 0;
+    }
+
+    .referenceTextResponsive {
+        margin-bottom: 0;
+    }
+
+    .referenceContainerTwoResponsive{
+        display: flex;
+        gap: 16px;
+    }
+
+    .referenceContainerThreeResponsive {
+        position: relative;
+        top: 15px;
+        border: 1px solid #02F4BF;
+        min-width: 239px;
+        min-height: 233px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
