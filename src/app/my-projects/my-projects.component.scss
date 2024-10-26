@@ -211,25 +211,31 @@
 
     .projectOneDescriptionHeaderResponsive, 
     .projectOneLanguagesContainerResponsive, 
-    .projectOneInfoResponsive {
+    .projectOneInfoResponsive,
+    .projectTwoDescriptionHeaderResponsive, 
+    .projectTwoLanguagesContainerResponsive, 
+    .projectTwoInfoResponsive {
         display: flex;
         justify-content: center;
     }
 
-    .projectOneHeadlineResponsive {
+    .projectOneHeadlineResponsive,
+    .projectTwoHeadlineResponsive {
         color: #02F4BF;
         font-size: 24px;
         font-weight: 700;
     }
 
-    .projectOneLanguagesResponsive {
+    .projectOneLanguagesResponsive,
+    .projectTwoLanguagesResponsive{
         color: #02F4BF;
         font-size: 18px;
         font-weight: 400;
         margin: 0;
     }
 
-    .projectOneInfoTextResponsive {
+    .projectOneInfoTextResponsive,
+    .projectTwoInfoTextResponsive {
         color: #02F4BF;
         font-size: 16px;
         font-weight: 400;
@@ -240,12 +246,18 @@
         height: 214px;
     }
 
-    .projectOneInfoButtonsResponsive {
+    .projectOneInfoButtonsResponsive,
+    .projectTwoInfoButtonsResponsive {
         display: flex;
         justify-content: center;
         gap: 24px;
         position: relative;
         top: 20px;
+    }
+
+    .projectTwoDescriptionResponsive {
+        position: relative;
+        top: 30px;
     }
 
     .githubButton {
