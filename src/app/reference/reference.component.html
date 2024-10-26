@@ -42,7 +42,11 @@
         <p class="referenceContainerTextHeaderResponsive">Need a teamplayer?</p>
         <p class="referenceContainerTextResponsive">Here what my colleagues said about me</p>
     </div>  
-    <div class="referenceContainerTwoResponsive">
+    <div class="referenceContainerTwoResponsive"
+            (mousedown)="onMouseDown($event)"
+            (mousemove)="onMouseMove($event)"
+            (mouseup)="onMouseUp($event)"
+            (mouseleave)="onMouseUp($event)">
         <div class="referenceContainerThreeResponsive">
             <div class="referenceNameAndProjectResponsive">
                 <p class="referenceNameResponsive">Evelyn Marx</p>
