@@ -380,19 +380,22 @@ textarea.validField {
         }
     }
 
+    .contactMeContainerSevenResponsive {
+        position: relative;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
     .sendButton {
         width: 79px;
         height: 43px;
-        position: relative;
-        top: 30px;
+        left: 0;
     }
 
     .testtestResponsive {
         position: relative;
-        top: 100px;
-    }
-
-    .contactMeContainerEightResponsive{
+        top: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -409,12 +412,13 @@ textarea.validField {
 
     .arrowUpContainerResponsive {
         position: relative;
-        top: 100px;
+        top: 50px;
         // width: 388px;
     }
 
     .arrowUp {
-        left: 300px;
+        left: 295px;
+        top: 0;
     }
 
 }
