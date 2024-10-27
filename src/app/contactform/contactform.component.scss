@@ -300,11 +300,121 @@ textarea.validField {
     padding-right: 35px; 
 }
 
+.contactMeContainerOneResponsive {
+    display: none;
+}
+
 
 @media (max-width: 390px) {
 
     .contactMeContainerOne {
         display: none;
+    }
+
+    .contactMeContainerOneResponsive {
+        display: block;
+        position: relative;
+        top: 550px;
+    }
+
+    .contactMeContainerThreeResponsive {
+        display: flex;
+        justify-content: center;
+        color: #E15544;
+        font-size: 32px;
+        font-weight: 700;
+        >.h2ContactMeResponsive {
+            margin: 0;
+        }
+    }
+
+    .contactMeTextContainerResponsive {
+        display: flex;
+        text-align: center;
+        color: #02F4BF;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .contactMeContainerTwoResponsive {
+        width: 337px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #name {
+        margin-bottom: 10px;
+    }
+
+    #name,
+    #email,
+    #message {
+        width: 337px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactFormResponsive {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 337px;
+    }
+
+    .contactMeContainerSixResponsive {
+        display: flex;
+        justify-content: center;
+        color: #02F4BF;
+        top: 10px;
+        position: relative;
+        gap: 5px;
+        width: 337px;
+        >.contactMeContainerSixText {
+            margin: 0;
+        }
+    }
+
+    .sendButton {
+        width: 79px;
+        height: 43px;
+        position: relative;
+        top: 30px;
+    }
+
+    .testtestResponsive {
+        position: relative;
+        top: 100px;
+    }
+
+    .contactMeContainerEightResponsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .mailContactMeContainerResponsive, .phoneContactMeContainerResponsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrowUpContainerResponsive {
+        position: relative;
+        top: 100px;
+        // width: 388px;
+    }
+
+    .arrowUp {
+        left: 300px;
     }
 
 }

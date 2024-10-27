@@ -92,7 +92,119 @@
             </div>
         </form>
     </div>
-    
-
-
 </div>
+
+
+<div class="contactMeContainerOneResponsive" id="contactForm">
+    <div class="contactMeContainerTwoResponsive">
+        <div class="contactMeContainerThreeResponsive">
+            <h2 class="h2ContactMeResponsive">Contact Me</h2>
+            <!-- <div class="arrowContactMeContainerResponsive">
+                <img class="arrowContactMe" src="../../assets/img/arrowContactMe.png" alt="">
+            </div> -->
+        </div>
+
+        <div class="contactMeContainerFiveResponsive">
+        <div class="contactMeTextContainerResponsive">
+            <p class="contactMeTextResponsive">Still not sure if I am the right person for
+                your project? Contact me so I can reassure
+                you. Let us work together
+            </p>
+        </div>
+            <!-- <div class="testtestResponsive">
+                <div class="contactMeContainerSixResponsive">
+                <div class="mailContactMeContainerResponsive">
+                    <img class="mailImg" src="{{ mailContactMe }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="">
+                    <p class="mailContactMe">E-mail: <a class="mailAdress" href="mailto:thomasjilge@gmx.de">thomasjilge&#64;gmx.de</a></p>
+                </div>
+                <div class="phoneContactMeContainerResponsive">
+                    <img class="phoneImg" src="{{ phoneContactMe }}" (mouseover)="onHover('phone')" (mouseout)="onLeave('phone')" alt="">
+                    <p class="phoneContactMe">Tel: 0170/7032983</p>
+                </div>
+                </div>
+        </div> -->
+    </div>
+        
+        <!-- <div class="arrowUpContainerResponsive">
+            <a href="#aboutMe">
+                <img class="arrowUp" id="arrowUp" [ngClass]="{ 'hovered': isHovered }"[src]="arrowUpSrc" (mouseover)="onHover('arrowUp')" (mouseout)="onLeave('arrowUp')" alt="">
+            </a>
+        </div> -->
+    </div>
+
+    <div class="containerResponsive">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="contactFormResponsive">
+                <div class="oktestResponsive">
+                    <label for="name"></label>
+                    <input #name="ngModel" 
+                           [(ngModel)]="contactData.name" 
+                           type="text" id="name" name="name" 
+                           [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'" 
+                           required autocomplete="off"
+                           [ngClass]="{
+                               'errorField': name.invalid && name.touched, 
+                               'validField': name.valid && name.touched
+                           }">
+    
+                    <label for="email"></label>
+                    <input #email="ngModel" 
+                           [(ngModel)]="contactData.email" 
+                           type="email" id="email" name="email" 
+                           [placeholder]="email.invalid && email.touched ? 'Your email is required' : 'Your Email'" 
+                           required autocomplete="off"
+                           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                           [ngClass]="{
+                               'errorField': email.invalid && email.touched, 
+                               'validField': email.valid && email.touched
+                           }">
+                </div>
+    
+                <div class="oktest2Responsive">
+                    <label for="message"></label>
+                    <textarea #message="ngModel" 
+                              minlength="4" 
+                              [(ngModel)]="contactData.message" 
+                              id="message" name="message" 
+                              [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'" 
+                              required
+                              [ngClass]="{
+                                  'errorField': message.invalid && message.touched, 
+                                  'validField': message.valid && message.touched
+                              }"></textarea>
+                </div>
+            </div>
+    
+            <div class="contactMeContainerFourResponsive">
+                <div class="contactMeContainerSixResponsive">
+                    <label for="privacyPolicyResponsive">
+                        <input class="customCheckbox" type="checkbox" id="privacyPolicy" name="privacyPolicy" [(ngModel)]="isPrivacyPolicyChecked">
+                    </label>
+                    <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
+                </div>
+    
+                <div class="contactMeContainerSevenResponsive">
+                    <button class="sendButton" type="submit" [disabled]="!isPrivacyPolicyChecked" [ngClass]="{'activeButton': isPrivacyPolicyChecked}">Send</button>
+                </div>
+                <div class="arrowUpContainerResponsive">
+                    <a href="#aboutMe">
+                        <img class="arrowUp" id="arrowUp" [ngClass]="{ 'hovered': isHovered }"[src]="arrowUpSrc" (mouseover)="onHover('arrowUp')" (mouseout)="onLeave('arrowUp')" alt="">
+                    </a>
+                </div>
+                <div class="testtestResponsive">
+                    <div class="contactMeContainerEightResponsive">
+                    <div class="mailContactMeContainerResponsive">
+                        <img class="mailImg" src="{{ mailContactMe }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="">
+                        <p class="mailContactMe">E-mail: <a class="mailAdress" href="mailto:thomasjilge@gmx.de">thomasjilge&#64;gmx.de</a></p>
+                    </div>
+                    </div>
+            </div>
+            <div class="phoneContactMeContainerResponsive">
+                <img class="phoneImg" src="{{ phoneContactMe }}" (mouseover)="onHover('phone')" (mouseout)="onLeave('phone')" alt="">
+                <p class="phoneContactMe">Tel: 0170/7032983</p>
+            </div>
+            </div>
+        </form>
+    </div>
+</div>
+
