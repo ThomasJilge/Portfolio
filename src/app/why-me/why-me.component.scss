@@ -290,38 +290,33 @@
         top: 200px;
     }
 
-    .h2WhyMe {
-        margin-bottom: 0;
-    }
-
     .whyMeContainerTwoResponsive {
         width: 389px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        >.h2WhyMeContainerResponsive {
+            color: #E15544;
+            font-size: 32px;
+            font-weight: 700;
+            >.h2WhyMe {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .infoWhyMeContainerResponsive {
         width: 338px;
         display: flex;
         text-align: center;
-    }
-
-    .h2WhyMeContainerResponsive {
-        color: #E15544;
-        font-size: 32px;
-        font-weight: 700;
-    }
-
-    .infoWhyMeContainerResponsive {
         color: #02F4BF;
         font-size: 16px;
         font-weight: 400;
     }
 
-    .relocateContainer {
-        padding: 0;
-    }
+    // .relocateContainer {
+    //     padding: 0;
+    // }
 
     .relocateArrowImgResponsiveContainerOne {
         display: flex;
@@ -352,14 +347,12 @@
 
     .iAmContainerOneResponsive {
         width: 261px;
-    }
-
-    .iAmContainerTwoResponsive {
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        align-items: center;
-        gap: 16px;
+        >.iAmContainerTwoResponsive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
     }
 
     .iAmText {
@@ -385,194 +378,13 @@
 
     .letsTalkContainerTwoResponsive > a {
         text-decoration: none;
-    }
-
-    .letsTalkButton {
-        width: 137px;
-        height: 43px;
+        >.letsTalkButton {
+            width: 137px;
+            height: 43px;
+        }
     }
 
 }
-
-// @media (max-width: 390px) {
-
-//     .whyMeContainerOne {
-//         width: 389px;
-//         gap: 8px;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         left: 0;
-//     }
-
-//     .whyMeContainerTwo {
-//         justify-content: center;
-//         align-items: center;
-//         width: 389px;
-//     }
-
-//     .h2WhyMeContainer {
-//         width: 389px;
-//         justify-content: center;
-//         align-items: center;
-//         left: 0;
-//         >.h2WhyMe {
-//             font-size: 32px;
-//         }
-//     }
-
-//     .iAmText {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         font-size: 18px;
-//     }
-
-
-//     .infoWhyMeContainer {
-//         width: 389px;
-//         justify-content: center;
-//         align-items: center;
-//         left: 0;
-//     }
-
-//     .iAmContainerOne {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-
-//     .iAmContainerTwo {
-//         gap: 40px;
-//         width: 261px;
-//         display: flex;
-//         justify-content: center;
-//         top: 50px;
-//     }
-
-//     .locatedContainerOne {
-//         flex-direction: column;
-//         gap: 0;
-//         height: auto;
-//         width: 221px;
-//     }
-
-//     .locatedImg {
-//         width: 26px;
-//         height: 32px;
-//     }
-
-//     .relocateContainer {
-//         padding-left: 0;
-//         width: 221px;
-//     }
-
-//     .locatedContainerTwo {
-//         justify-content: center;
-//     }
-
-//     .openToRelocate {
-//         justify-content: center;
-//         width: 221px;
-//     }
-
-//     .relocateText {
-//         width: auto;
-//         display: flex;
-//         align-items: center;
-//     }
-
-//     .relocateImg {
-//         width: 25.73px;
-//         height: 42px;
-//     }
-
-//     .remoteContainerOne {
-//         justify-content: center;
-//     }
-
-//     .remoteContainerTwo {
-//         padding-left: 0;
-//         justify-content: start;
-//         align-items: center;
-//     }
-
-//     .remoteImg {
-//         width: 49.12px;
-//         height: 43.96px;
-//         padding-bottom: 10px;
-//     }
-
-//     .remoteText {
-//         width: auto;
-//         display: flex;
-//         align-items: center;
-//     }
-
-//     .relocateArrowImg {
-//         display: none;
-//     }
-
-//     .remoteArrowOneImg {
-//         display: none;
-//     }
-
-//     .remoteArrowTwoImg {
-//         display: none;
-//     }
-
-//     .letsTalkContainerOne {
-//         top: 120px;
-//     }
-
-//     .letsTalkContainerTwo {
-//         justify-content: center;
-//     }
-
-//     .letsTalkButton {
-//         width: 137px;
-//         height: 43px;
-//     }
-
-//     .relocateArrowImgResponsiveContainerOne {
-//         display: block;
-//         width: 389px;
-//         height: 56px;
-        
-//     }
-
-//     .relocateArrowImgResponsiveOne {
-//         display: flex;
-//         width: 22.95;
-//         height: 56px;
-//         left: 24px;
-//         position: relative;
-//     }
-
-//     .relocateArrowImgResponsiveContainerTwo {
-//         display: block;
-//         width: 389px;
-//         height: 41.3px;
-//         top: 105px;
-//         position: relative;
-//     }
-
-//     .relocateArrowImgResponsiveTwo {
-//         display: flex;
-//         width: 23.22px;
-//         height: 41.3px;
-//         left: 365px;
-//         position: relative;
-//     }
-
-//     .locatedOpenRemoteInfo {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: center;
-//         gap: 5px;
-//     }
-
-// }
 
 
 
