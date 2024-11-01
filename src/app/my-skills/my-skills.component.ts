@@ -27,4 +27,22 @@ export class MySkillsComponent {
     '../../assets/img/skills/challengeMe.png'
   ];
 
+  skillImagesOneMobile: string[] = [
+    '../../assets/img/skillsMobile/angularMobile.png',
+    '../../assets/img/skillsMobile/tsMobile.png',
+    '../../assets/img/skillsMobile/jsMobile.png',
+    '../../assets/img/skillsMobile/htmlMobile.png',
+    '../../assets/img/skillsMobile/cssMobile.png',
+    '../../assets/img/skillsMobile/apiMobile.png',
+    '../../assets/img/skillsMobile/firebaseMobile.png',
+    '../../assets/img/skillsMobile/gitMobile.png',
+    '../../assets/img/skillsMobile/scrumMobile.png',
+  ];
+
+  skillImagesTwoMobile: string[] = [
+
+    '../../assets/img/skillsMobile/materialDesignMobile.png',
+    '../../assets/img/skillsMobile/challengeMeMobile.png'
+  ];
+
 }
