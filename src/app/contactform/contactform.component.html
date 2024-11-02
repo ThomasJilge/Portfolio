@@ -14,7 +14,7 @@
                 you. Let us work together
             </p>
         </div>
-            <div class="testtest">
+            <div class="containerMailAndPhone">
                 <div class="contactMeContainerSix">
                 <div class="mailContactMeContainer">
                     <img class="mailImg" src="{{ mailContactMe }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="">
@@ -38,7 +38,7 @@
     <div class="container">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="contactForm">
-                <div class="oktest">
+                <div class="contactContainerOne">
                     <label for="name"></label>
                     <input #name="ngModel" 
                            [(ngModel)]="contactData.name" 
@@ -63,7 +63,7 @@
                            }">
                 </div>
     
-                <div class="oktest2">
+                <div class="contactContainerTwo">
                     <label for="message"></label>
                     <textarea #message="ngModel" 
                               minlength="4" 
@@ -99,9 +99,6 @@
     <div class="contactMeContainerTwoResponsive">
         <div class="contactMeContainerThreeResponsive">
             <h2 class="h2ContactMeResponsive">Contact Me</h2>
-            <!-- <div class="arrowContactMeContainerResponsive">
-                <img class="arrowContactMe" src="../../assets/img/arrowContactMe.png" alt="">
-            </div> -->
         </div>
 
         <div class="contactMeContainerFiveResponsive">
@@ -111,31 +108,13 @@
                 you. Let us work together
             </p>
         </div>
-            <!-- <div class="testtestResponsive">
-                <div class="contactMeContainerSixResponsive">
-                <div class="mailContactMeContainerResponsive">
-                    <img class="mailImg" src="{{ mailContactMe }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="">
-                    <p class="mailContactMe">E-mail: <a class="mailAdress" href="mailto:thomasjilge@gmx.de">thomasjilge&#64;gmx.de</a></p>
-                </div>
-                <div class="phoneContactMeContainerResponsive">
-                    <img class="phoneImg" src="{{ phoneContactMe }}" (mouseover)="onHover('phone')" (mouseout)="onLeave('phone')" alt="">
-                    <p class="phoneContactMe">Tel: 0170/7032983</p>
-                </div>
-                </div>
-        </div> -->
     </div>
-        
-        <!-- <div class="arrowUpContainerResponsive">
-            <a href="#aboutMe">
-                <img class="arrowUp" id="arrowUp" [ngClass]="{ 'hovered': isHovered }"[src]="arrowUpSrc" (mouseover)="onHover('arrowUp')" (mouseout)="onLeave('arrowUp')" alt="">
-            </a>
-        </div> -->
     </div>
 
     <div class="containerResponsive">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="contactFormResponsive">
-                <div class="oktestResponsive">
+                <div class="contactContainerOneResponsive">
                     <label for="name"></label>
                     <input #name="ngModel" 
                            [(ngModel)]="contactData.name" 
@@ -160,7 +139,7 @@
                            }">
                 </div>
     
-                <div class="oktest2Responsive">
+                <div class="contactContainerTwoResponsive">
                     <label for="message"></label>
                     <textarea #message="ngModel" 
                               minlength="4" 
@@ -200,7 +179,7 @@
         </a>
     </div>
 
-<div class="testtestResponsive">
+<div class="containerMailAndPhoneResponsive">
 <div class="contactMeContainerEightResponsive">
 <div class="mailContactMeContainerResponsive">
     <img class="mailImg" src="{{ mailContactMe }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="">

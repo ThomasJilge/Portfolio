@@ -27,21 +27,20 @@
     }
 }
 
-.contactMeTextContainer {
-    display: flex;
-    width: 504px;
-    height: 73px;
-    >.contactMeText {
-        font-size: 18px;
-        font-weight: 400;
-        color: #02F4BF;
-        margin: 0;
-    }
-}
-
 .contactMeContainerFive {
     display: flex;
     gap: 40px;
+    >.contactMeTextContainer {
+        display: flex;
+        width: 504px;
+        height: 73px;
+        >.contactMeText {
+            font-size: 18px;
+            font-weight: 400;
+            color: #02F4BF;
+            margin: 0;
+        }
+    }
 }
 
 .contactMeContainerSix {
@@ -50,41 +49,37 @@
     flex-wrap: wrap;
     width: 412px;
     gap: 16px;
-}
-
-.mailContactMeContainer, .phoneContactMeContainer {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    >.mailContactMeContainer, .phoneContactMeContainer {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        >.mailImg {
+            width: 28.4x;
+            height: 30px;
+            &:hover {
+                cursor: pointer;
+                transition: 100ms ease-in-out;
+            }
+        }
+        >.phoneImg {
+            width: 26.25x;
+            height: 30.94px;
+            &:hover {
+                cursor: pointer;
+                transition: 100ms ease-in-out;
+            }
+        }
+        >.mailContactMe, .phoneContactMe {
+            color: #02F4BF;
+            margin: 0;
+            font-size: 20px;
+        }
+    }
 }
 
 .mailAdress {
     text-decoration: none;
     color: #02F4BF;
-    font-size: 20px;
-}
-
-.mailImg {
-    width: 28.4x;
-    height: 30px;
-    &:hover {
-        cursor: pointer;
-        transition: 100ms ease-in-out;
-    }
-}
-
-.phoneImg {
-    width: 26.25x;
-    height: 30.94px;
-    &:hover {
-        cursor: pointer;
-        transition: 100ms ease-in-out;
-    }
-}
-
-.mailContactMe, .phoneContactMe {
-    color: #02F4BF;
-    margin: 0;
     font-size: 20px;
 }
 
@@ -135,7 +130,7 @@ textarea {
     color: #02F4BF;
 }
 
-.oktest {
+.contactContainerOne {
     display: flex;
     width: 507px;
     height: 144px;
@@ -385,15 +380,14 @@ textarea.validField {
         top: 30px;
         display: flex;
         justify-content: center;
+        >.sendButton {
+            width: 79px;
+            height: 43px;
+            left: 0;
+        }
     }
 
-    .sendButton {
-        width: 79px;
-        height: 43px;
-        left: 0;
-    }
-
-    .testtestResponsive {
+    .containerMailAndPhoneResponsive {
         position: relative;
         top: 70px;
         display: flex;
@@ -410,10 +404,14 @@ textarea.validField {
         align-items: center;
     }
 
+    .phoneContactMe {
+        color: #02F4BF;
+        font-size: 20px;
+    }
+
     .arrowUpContainerResponsive {
         position: relative;
         top: 50px;
-        // width: 388px;
     }
 
     .arrowUp {

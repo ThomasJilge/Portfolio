@@ -159,11 +159,9 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
+        >.legalNotice, .privacyPolice {
+            color: #E15544;
+            text-decoration: none;
+        }
     }
-
-    .legalNotice, .privacyPolice {
-        color: #E15544;
-        text-decoration: none;
-    }
-
 }

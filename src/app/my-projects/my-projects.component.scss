@@ -29,6 +29,19 @@
         display: flex;
         width: 1134px;
         height: 371px;
+        >.projectImg {
+            width: 588px;
+            height: 371px;
+        }
+        >.projectOneDescription {
+            position: relative;
+            left: 30px;
+            width: 498px;
+            height: 318px;
+            >.projectOneDescriptionHeader {
+                width: 498px;
+            }
+        }
     }
     >.projectTwo {
         display: flex;
@@ -38,23 +51,14 @@
         width: 1134px;
         height: 371px;
         left: 44px;
+        >.projectImg {
+            width: 588px;
+            height: 371px;
+        }
     }
 }
 
-.projectImg {
-    width: 588px;
-    height: 371px;
-}
 
-.projectOneDescription {
-    position: relative;
-    left: 30px;
-    width: 498px;
-    height: 318px;
-    >.projectOneDescriptionHeader {
-        width: 498px;
-    }
-}
 
 .projectOneHeadline {
     color: #02F4BF;
@@ -99,8 +103,6 @@
         margin: 0;
     }
 }
-
-
 
 .projectTwoLanguages {
     display: flex;
