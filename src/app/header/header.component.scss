@@ -2,7 +2,7 @@
     max-width: 1440px;
     position: fixed;
     z-index: 1000;
-    width: 100%;
+    width: calc(100% - 50px);
     height: 92px;
     color: #E15544;
     display: flex;
@@ -10,6 +10,7 @@
     align-items: center;
     background-color: #120B35;
     // padding: 24px, 140px, 24px, 140px;
+    // margin: 0 auto;
     >.headerMenu {
         display: flex;
         justify-content: space-between;
