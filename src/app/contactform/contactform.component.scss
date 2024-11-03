@@ -300,14 +300,16 @@ textarea.validField {
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 576px) {
 
     .contactMeContainerOne {
         display: none;
     }
 
     .contactMeContainerOneResponsive {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
         top: 600px;
     }
@@ -415,7 +417,7 @@ textarea.validField {
     }
 
     .arrowUp {
-        left: 295px;
+        left: 150px;
         top: 0;
     }
 

@@ -95,6 +95,7 @@ p {
     object-fit: contain;
 }
 
+
 @media (max-width: 768px) {
 
     .tjImg {
@@ -115,7 +116,7 @@ p {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 576px) {
 
     .firstSectionAboutMeContainerOne {
         height: 370px;
@@ -147,3 +148,4 @@ p {
     }
 
 }
+
