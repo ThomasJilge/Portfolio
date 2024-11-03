@@ -314,6 +314,10 @@ textarea.validField {
         top: 600px;
     }
 
+    .containerResponsive {
+        width: 90%;
+    }
+
     .contactMeContainerThreeResponsive {
         display: flex;
         justify-content: center;
@@ -331,10 +335,15 @@ textarea.validField {
         color: #02F4BF;
         font-size: 16px;
         font-weight: 400;
+        width: 90%;
+    }
+
+    .contactContainerOneResponsive, .contactContainerTwoResponsive {
+        width: 100%;
     }
 
     .contactMeContainerTwoResponsive {
-        width: 337px;
+        // width: 337px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -347,7 +356,7 @@ textarea.validField {
     #name,
     #email,
     #message {
-        width: 337px;
+        width: 100%;
     }
 
     form {
@@ -360,8 +369,19 @@ textarea.validField {
     .contactFormResponsive {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
         gap: 10px;
-        width: 337px;
+        // width: 337px;
+    }
+
+    .contactMeContainerFiveResponsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactMeTextResponsive {
+        width: 100%;
     }
 
     .contactMeContainerSixResponsive {
@@ -371,7 +391,7 @@ textarea.validField {
         top: 10px;
         position: relative;
         gap: 5px;
-        width: 337px;
+        // width: 337px;
         >.contactMeContainerSixText {
             margin: 0;
         }
