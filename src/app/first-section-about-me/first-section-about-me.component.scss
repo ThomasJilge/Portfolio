@@ -116,7 +116,7 @@ p {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     .firstSectionAboutMeContainerOne {
         max-width: 1337px;
@@ -136,6 +136,7 @@ p {
     }
 
     .tjImg {
+        position: relative;
         width: 388px;
         height: 370px;
     }
