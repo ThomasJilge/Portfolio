@@ -119,9 +119,19 @@ p {
 @media (max-width: 576px) {
 
     .firstSectionAboutMeContainerOne {
+        max-width: 1337px;
+        width: 100%;
         height: 370px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         >.firstSectionAboutMeContainerTwo {
+            max-width: 1284px;
+            width: 100%;
             height: 370px;
+            display: flex;
+            justify-content: center;
         }
     }
 
