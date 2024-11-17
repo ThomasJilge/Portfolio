@@ -98,6 +98,13 @@
     }
 }
 
+.mySkillsContainerTwoResponsive {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .mySkillsTextContainerTwoResponsive {
     color: #02F4BF;
     display: flex;
@@ -155,7 +162,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: 190px;
 }
 
 .letsTalkContainerTwoResponsive > a {
@@ -176,5 +182,21 @@
         transition: color 100ms ease-in-out;
     }
 }
+
+}
+
+@media (max-width: 370px) {
+
+    .skillsImgsContainerOneResponsive {
+        gap: 65px;
+    }
+
+    .skillsImgsContainerTwoResponsive {
+        gap: 60px;
+    }
+
+    .skillsImgsContainerTwoResponsive > .challengeMe2Text {
+        right: 50px;
+    }
 
 }
