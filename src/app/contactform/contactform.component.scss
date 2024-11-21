@@ -185,7 +185,7 @@ input:focus, textarea:focus {
     position: relative;
     // width: 1185px;
     max-width: 1185px;
-    width: 100%;
+    width: 90%;
     height: 74px;
     top: 20px;
     >.contactMeContainerSix {
@@ -338,7 +338,7 @@ textarea.validField {
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 600px;
+        top: 70px;
     }
 
     .containerResponsive {
@@ -466,6 +466,14 @@ textarea.validField {
     .arrowUp {
         left: 150px;
         top: 0;
+    }
+
+}
+
+@media (max-width: 577px) {
+
+    .contactMeContainerOneResponsive {
+        top: 620px;
     }
 
 }
