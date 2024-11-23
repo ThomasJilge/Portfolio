@@ -87,6 +87,10 @@
     }
 }
 
+.mailContactMe {
+    white-space: nowrap;
+}
+
 .contactContainerTwo {
     max-width: 637px;
     width: 100%;
@@ -335,8 +339,20 @@ textarea.validField {
     display: none;
 }
 
+@media (max-width: 974px) {
+
+    .arrowUpContainer {
+        display: none;
+    }
+
+}
+
 
 @media (max-width: 768px) {
+
+    .arrowUpContainer {
+        display: block;
+    }
 
     .contactMeContainerOne {
         display: none;
@@ -470,10 +486,12 @@ textarea.validField {
     .arrowUpContainerResponsive {
         position: relative;
         top: 50px;
+        display: flex;
+        justify-content: right;
+        width: 90%;
     }
 
     .arrowUp {
-        left: 150px;
         top: 0;
     }
 
