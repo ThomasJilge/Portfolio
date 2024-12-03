@@ -88,110 +88,237 @@
     display: none;
 }
 
+@media (max-width: 1124px) {
+
+    .skillsImgsContainerOne, .skillsImgsContainerTwo  {
+        gap: 8vw !important;
+    }
+
+}
+
+@media (max-width: 930px) {
+
+    .skillsImgsContainerOne, .skillsImgsContainerTwo  {
+        gap: 6vw !important;
+    }
+    
+}
+
+@media (max-width: 790px) {
+
+    .skillsImgsContainerOne, .skillsImgsContainerTwo  {
+        gap: 4vw !important;
+    }
+
+    .mySkillsContainerOne {
+        display: none;
+    }
+    
+    .mySkillsContainerOneResponsive {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 230px;
+        >.h2MySkillsContainerResponsive {
+            color: #E15544;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+    
+    .mySkillsContainerTwoResponsive {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mySkillsTextContainerTwoResponsive {
+        color: #02F4BF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .skillsImgsContainerOneResponsive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 388px;
+        height: 215px;
+        gap: 80px;
+        position: relative;
+    }
+    
+    .skillsImgsContainerTwoResponsive {
+        color: #02F4BF;
+        display: flex;
+        justify-content: center;
+        gap: 74px;
+        width: 388px;
+        position: relative;
+        top: 140px;
+        >.challengeMe2Text {
+            position: relative;
+            right: 65px;
+        }
+    }
+    
+    .skillsImgsMobile {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .mySkillsArrowResponsiveContainerResponsive {
+        position: relative;
+        top: 170px;
+        width: 388px;
+        display: flex;
+        justify-content: center;
+        >.mySkillsArrowResponsive {
+            display: block;
+        }
+    }
+    
+    .mySkillsTextContainerOneResponsive {
+        position: relative;
+        top: 190px;
+    }
+    
+    .letsTalkContainerOneResponsive {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .letsTalkContainerTwoResponsive > a {
+        text-decoration: none;
+    }
+    
+    .letsTalkButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 137px;
+        height: 43px;
+        color: black;
+        background-color: #02F4BF;
+        &:hover {
+            cursor: pointer;
+            color: #E15544;
+            transition: color 100ms ease-in-out;
+        }
+    }
+    
+}
+
 @media (max-width: 576px) {
 
-.mySkillsContainerOne {
-    display: none;
-}
+// .mySkillsContainerOne {
+//     display: none;
+// }
 
-.mySkillsContainerOneResponsive {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 230px;
-    >.h2MySkillsContainerResponsive {
-        color: #E15544;
-        font-size: 32px;
-        font-weight: 700;
-    }
-}
+// .mySkillsContainerOneResponsive {
+//     display: flex;
+//     position: relative;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     top: 230px;
+//     >.h2MySkillsContainerResponsive {
+//         color: #E15544;
+//         font-size: 32px;
+//         font-weight: 700;
+//     }
+// }
 
-.mySkillsContainerTwoResponsive {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+// .mySkillsContainerTwoResponsive {
+//     width: 90%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
 
-.mySkillsTextContainerTwoResponsive {
-    color: #02F4BF;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+// .mySkillsTextContainerTwoResponsive {
+//     color: #02F4BF;
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
 
-}
+// }
 
-.skillsImgsContainerOneResponsive {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 388px;
-    height: 215px;
-    gap: 80px;
-    position: relative;
-}
+// .skillsImgsContainerOneResponsive {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     width: 388px;
+//     height: 215px;
+//     gap: 80px;
+//     position: relative;
+// }
 
-.skillsImgsContainerTwoResponsive {
-    color: #02F4BF;
-    display: flex;
-    justify-content: center;
-    gap: 74px;
-    width: 388px;
-    position: relative;
-    top: 140px;
-    >.challengeMe2Text {
-        position: relative;
-        right: 65px;
-    }
-}
+// .skillsImgsContainerTwoResponsive {
+//     color: #02F4BF;
+//     display: flex;
+//     justify-content: center;
+//     gap: 74px;
+//     width: 388px;
+//     position: relative;
+//     top: 140px;
+//     >.challengeMe2Text {
+//         position: relative;
+//         right: 65px;
+//     }
+// }
 
-.skillsImgsMobile {
-    height: 45px;
-    width: 45px;
-}
+// .skillsImgsMobile {
+//     height: 45px;
+//     width: 45px;
+// }
 
-.mySkillsArrowResponsiveContainerResponsive {
-    position: relative;
-    top: 170px;
-    width: 388px;
-    display: flex;
-    justify-content: center;
-    >.mySkillsArrowResponsive {
-        display: block;
-    }
-}
+// .mySkillsArrowResponsiveContainerResponsive {
+//     position: relative;
+//     top: 170px;
+//     width: 388px;
+//     display: flex;
+//     justify-content: center;
+//     >.mySkillsArrowResponsive {
+//         display: block;
+//     }
+// }
 
-.mySkillsTextContainerOneResponsive {
-    position: relative;
-    top: 190px;
-}
+// .mySkillsTextContainerOneResponsive {
+//     position: relative;
+//     top: 190px;
+// }
 
-.letsTalkContainerOneResponsive {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
+// .letsTalkContainerOneResponsive {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+// }
 
-.letsTalkContainerTwoResponsive > a {
-    text-decoration: none;
-}
+// .letsTalkContainerTwoResponsive > a {
+//     text-decoration: none;
+// }
 
-.letsTalkButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 137px;
-    height: 43px;
-    color: black;
-    background-color: #02F4BF;
-    &:hover {
-        cursor: pointer;
-        color: #E15544;
-        transition: color 100ms ease-in-out;
-    }
-}
+// .letsTalkButton {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 137px;
+//     height: 43px;
+//     color: black;
+//     background-color: #02F4BF;
+//     &:hover {
+//         cursor: pointer;
+//         color: #E15544;
+//         transition: color 100ms ease-in-out;
+//     }
+// }
 
 }
 
