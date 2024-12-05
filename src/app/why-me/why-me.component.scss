@@ -1,6 +1,7 @@
 .whyMeContainerOne {
     display: flex;
-    width: 1224px;
+    max-width: 1224px;
+    width: 100%;
     height: 452px;
     position: relative;
     top: 25px;
@@ -8,38 +9,52 @@
     gap: 2px;
 }
 
-.tjImgWhyMe {
-    width: 490px;
-    height: 452px;
-    object-fit: contain;
+.tjImgWhyMeContainer {
+    max-width: 490px;
+    width: 100%;
+    >.tjImgWhyMe {
+        max-width: 490px;
+        width: 100%;
+        height: 452px;
+        object-fit: contain;
+    }
 }
 
 .whyMeContainerTwo {
-    width: 729px;
+    max-width: 729px;
+    width: 100%;
     height: 452px;
 }
 
-.h2WhyMeContainer {
+.h2WhyMeContainerOne {
     position: relative;
     display: flex;
-    justify-content: flex-end;
-    width: 524px;
+    // justify-content: flex-end;
+    max-width: 524px;
+    width: 100%;
     height: 53px;
     left: 206px;
     gap: 10px;
-    >.h2WhyMe {
-        font-size: 54px;
-        color:#E15544;
-        margin: 0;
-    } 
 }
+
+.h2WhyMeContainerTwo {
+    display: flex;
+    justify-content: end;
+}
+
+.h2WhyMe {
+    font-size: 54px;
+    color:#E15544;
+    margin: 0;
+} 
 
 .infoWhyMeContainer {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 685px;
+    max-width: 685px;
+    width: 100%;
     height: 84px;
     left: 42px;
     >.infoText {
@@ -55,7 +70,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 568px;
+    max-width: 568px;
+    width: 100%;
     height: 186px;
     left: 159;
     gap: 8px;
@@ -64,11 +80,13 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        width: 568px;
+        max-width: 568px;
+        width: 100%;
         height: 56px;
         gap: 64px;
         >.iAmText {
-            width: 116px;
+            max-width: 116px;
+            width: 100%;
             height: 49px;
             font-size: 48px;
             font-weight: 700;
@@ -271,7 +289,7 @@
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     .whyMeContainerOne,
     .remoteArrowOneImg,
