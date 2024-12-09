@@ -1,14 +1,16 @@
 .firstSectionAboutMeContainerOne {
-    width: 1337px;
+    max-width: 1337px;
+    width: 100%;
     height: 665px;
     top: 94px;
     position: relative;
     display: flex;
     justify-content: end;
-    left: -53px;
+    // left: -53px;
     >.firstSectionAboutMeContainerTwo {
         position: relative;
-        width: 1284px;
+        max-width: 1284px;
+        width: 100%;
         height: 556px;
     }
 }
@@ -50,7 +52,8 @@
 
 .infoFieldOne {
     position: absolute;
-    width: 808px;
+    max-width: 808px;
+    width: 100%;
     height: 142px;
     top: 412px;
     gap: 8px;
@@ -87,11 +90,19 @@ p {
     }
 }
 
+.tjImgContainer {
+    max-width: 1337px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .tjImg {
     position: absolute;
-    width: 539px;
+    max-width: 539px;
+    width: 100%;
     height: 554px;
-    left: 796px;
+    // left: 796px;
     object-fit: contain;
 }
 
