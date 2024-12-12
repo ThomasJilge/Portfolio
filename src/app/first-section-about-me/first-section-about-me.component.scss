@@ -8,7 +8,7 @@
     justify-content: end;
     // left: -53px;
     >.firstSectionAboutMeContainerTwo {
-        position: relative;
+        // position: relative;
         max-width: 1284px;
         width: 100%;
         height: 556px;
@@ -108,6 +108,10 @@ p {
 
 
 @media (max-width: 768px) {
+
+    .tjImgContainer {
+        justify-content: center;
+    }
 
     .tjImg {
         left: 0;
