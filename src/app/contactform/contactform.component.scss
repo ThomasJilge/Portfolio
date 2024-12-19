@@ -105,7 +105,6 @@
 .arrowUpContainer {
     max-width: 1440px;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: right;
 
@@ -339,7 +338,7 @@ textarea.validField {
     display: none;
 }
 
-@media (max-width: 974px) {
+@media (max-width: 1080px) {
 
     .arrowUpContainer {
         display: none;
