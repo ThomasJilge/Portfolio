@@ -8,7 +8,7 @@
     justify-content: end;
     // left: -53px;
     >.firstSectionAboutMeContainerTwo {
-        // position: relative;
+        position: relative;
         max-width: 1284px;
         width: 100%;
         height: 556px;
@@ -20,8 +20,8 @@
 }
 
 .contactMeContainerOne {
-    // position: absolute;
-    position: relative;
+    position: absolute;
+    // position: relative;
     width: 169px;
     height: 52px;
     top: 215px;
@@ -56,13 +56,13 @@
 }
 
 .infoFieldOne {
-    // position: absolute;
-    position: relative;
+    position: absolute;
+    // position: relative;
     max-width: 808px;
     width: 100%;
     height: 142px;
-    // top: 412px;
-    top: -180px;
+    top: 412px;
+    // top: -180px;
     gap: 8px;
     >.infoFieldTwo {
         color: #02F4BF;
