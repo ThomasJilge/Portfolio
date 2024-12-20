@@ -103,21 +103,18 @@
 }
 
 .arrowUpContainer {
-    max-width: 1440px;
+    max-width: 1184px;
     width: 100%;
     display: flex;
     justify-content: right;
-    position: relative;
-    left: 15px;
-
+    position: absolute;
+    top: 90px;
 }
 
 .arrowUp {
     width: 22px;
     height: 50px;
     position: relative;
-    // left: 1279px;
-    top: -60px;
     &:hover.hovered {
         cursor: pointer;
         width: 38px;
