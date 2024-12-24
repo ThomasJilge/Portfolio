@@ -345,8 +345,7 @@ textarea.validField {
 
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 790px) {
 
     .arrowUpContainer {
         display: block;
@@ -361,7 +360,7 @@ textarea.validField {
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 70px;
+        top: 540px;
     }
 
     .containerResponsive {
