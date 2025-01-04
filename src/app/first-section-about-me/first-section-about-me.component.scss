@@ -12,6 +12,8 @@
         max-width: 1284px;
         width: 100%;
         height: 556px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -89,7 +91,8 @@ p {
     width: 22px;
     height: 50px;
     top: 306px;
-    left: 669px;
+    // left: 669px;
+    left: 270px;
     &:hover.hovered {
         cursor: pointer;
         width: 38px;
