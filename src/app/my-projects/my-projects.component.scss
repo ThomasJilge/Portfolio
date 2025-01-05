@@ -27,6 +27,7 @@
     height: 850px;
     >.projectOne {
         display: flex;
+        justify-content: space-between;
         width: 1134px;
         height: 371px;
         >.projectImg {
@@ -46,7 +47,7 @@
     >.projectTwo {
         display: flex;
         position: relative;
-        justify-content: end;
+        justify-content: space-between;
         top: 50px;
         width: 1134px;
         height: 371px;
@@ -96,12 +97,17 @@
 .projectOneLanguagesContainer {
     width: 249px;
     height: 25px;
+    letter-spacing: 0.2em;
     >.projectOneLanguages {
         color: #02F4BF;
         size: 18px;
         font-weight: 400;
         margin: 0;
     }
+}
+
+.projectTwoLanguagesContainer {
+    letter-spacing: 0.2em;
 }
 
 .projectTwoLanguages {
