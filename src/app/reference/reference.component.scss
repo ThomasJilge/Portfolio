@@ -72,10 +72,19 @@
     display: none;
 }
 
+@media (max-width: 1224px) {
+
+    .referenceContainerOne {
+        top: 100px;
+    }
+
+}
+
 @media (max-width: 790px) {
 
     .referenceContainerOne {
-        top: 540px;
+        // top: 540px;
+        top: 390px;
     }
 
 }
