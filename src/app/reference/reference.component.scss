@@ -1,11 +1,15 @@
 .referenceContainerOne {
     position: relative;
-    width: 1440px;
+    // width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 307px;
     top: 50px;
     >.referenceContainerHeader {
         position: relative;
-        width: 808px;
+        // width: 808px;
+        max-width: 808px;
+        width: 100%;
         height: 29px;
         >.referenceContainerText {
             color: #E15544;
@@ -19,7 +23,9 @@
 .referenceContainerTwo {
     display: flex;
     position: relative;
-    width: 1103px;
+    // width: 1103px;
+    max-width: 1103px;
+    width: 100%;
     height: 246px;
     gap: 32px;
     top: 30px;
@@ -32,12 +38,16 @@
 }
 
 .referenceContainerThree {
-    width: 297px;
+    // width: 297px;
+    max-width: 297px;
+    width: 100%;
     height: 246px;
     >.referenceNameAndProject {
         display: flex;
         flex-direction: column;
-        width: 297px;
+        // width: 297px;
+        max-width: 297px;
+        width: 100%;
         height: 53px;
         gap: 8px;
         >.referenceName {
@@ -58,7 +68,9 @@
 .referenceInfo {
     position: relative;
     top: 25px;
-    width: 297px;
+    // width: 297px;
+    max-width: 297px;
+    width: 100%;
     height: 161px;
     >.referenceText {
         color: #02F4BF;
@@ -89,7 +101,7 @@
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     
     .referenceContainerOne {
         display: none;
@@ -98,7 +110,8 @@
     .referenceContainerOneResponsive {
         display: block;
         position: relative;
-        top: 550px;
+        // top: 550px;
+        top: 350px;
     }
 
     .referenceContainerHeaderResponsive {
@@ -152,4 +165,12 @@
             align-items: center;
         }
     }
+}
+
+@media (max-width: 575px) {
+
+    .referenceContainerOneResponsive {
+        top: 540px;
+    }
+
 }
