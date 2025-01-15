@@ -52,6 +52,13 @@
 
 .initial {
     font-size: 48px;
+    &:hover {
+        cursor: pointer;
+    }
+    >a {
+        text-decoration: none;
+        color: #E15544;
+    }
 }
 
 .headerMenuLinks {
