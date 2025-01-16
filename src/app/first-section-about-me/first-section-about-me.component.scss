@@ -4,8 +4,8 @@
     height: 665px;
     top: 94px;
     position: relative;
-    display: flex;
-    justify-content: end;
+    // display: flex;
+    // justify-content: end;
     // left: -53px;
     >.firstSectionAboutMeContainerTwo {
         position: relative;
@@ -22,8 +22,8 @@
 }
 
 .contactMeContainerOne {
-    position: absolute;
-    // position: relative;
+    // position: absolute;
+    position: relative;
     width: 169px;
     height: 52px;
     top: 215px;
@@ -58,8 +58,8 @@
 }
 
 .infoFieldOne {
-    position: absolute;
-    // position: relative;
+    // position: absolute;
+    position: relative;
     max-width: 808px;
     width: 100%;
     height: 142px;
