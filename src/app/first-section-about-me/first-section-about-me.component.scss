@@ -82,6 +82,14 @@
     white-space: nowrap;
 }
 
+// .test {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     max-width: 1224px;
+//     width: 100%;
+// }
+
 .infoFieldName {
     font-size: 82px;
     font-weight: 700;
@@ -133,38 +141,13 @@ p {
     object-fit: contain;
 }
 
-
-@media (max-width: 768px) {
-
-    .tjImgContainer {
-        justify-content: center;
-    }
-
-    .tjImg {
-        left: 0;
-    }
-
-    .infoFieldOne {
-        top: 560px;
-    }
-
-    .arrowDown {
-        display: none;
-    }
-
-    .contactMeContainerOne {
-        display: none;
-    }
-
-}
-
 @media (max-width: 768px) {
 
     .firstSectionAboutMeContainerOne {
         max-width: 1337px;
         width: 100%;
         height: 370px;
-        left: 0;
+        // left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -177,11 +160,16 @@ p {
         }
     }
 
-    .tjImg {
-        position: relative;
-        max-width: 388px;
-        width: 100%;
-        height: 370px;
+    .tjImgContainer {
+        justify-content: center;
+        position: absolute;
+        >.tjImg {
+            position: relative;
+            max-width: 388px;
+            width: 100%;
+            height: 370px;
+            left: 0;
+        }
     }
 
     .infoFieldOne {
@@ -199,6 +187,14 @@ p {
 
     .infoFieldName {
         font-size: 40px;
+    }
+
+    .arrowDown {
+        display: none;
+    }
+
+    .contactMeContainerOne {
+        display: none;
     }
 
 }
