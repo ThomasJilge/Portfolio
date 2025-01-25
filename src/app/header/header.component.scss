@@ -109,7 +109,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
 
     .headerMenuLinksBurgerMenuContainerTwo {
         display: none;
@@ -117,7 +117,7 @@
 
 }
 
-@media  (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .header .headerMenu {
         max-width: 102.14px;
@@ -192,7 +192,7 @@
     }
 }
 
-@media  (max-width: 410px) {
+@media only screen and (max-width: 410px) {
 
     .headerMenuLinksBurgerMenuContainerOne {
 

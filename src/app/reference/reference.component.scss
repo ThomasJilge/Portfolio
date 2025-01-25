@@ -84,7 +84,7 @@
     display: none;
 }
 
-@media (max-width: 1224px) {
+@media only screen and (max-width: 1224px) {
 
     .referenceContainerOne {
         top: 100px;
@@ -92,7 +92,7 @@
 
 }
 
-@media (max-width: 790px) {
+@media only screen and (max-width: 790px) {
 
     .referenceContainerOne {
         // top: 540px;
@@ -101,7 +101,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     
     .referenceContainerOne {
         display: none;
@@ -167,7 +167,7 @@
     }
 }
 
-@media (max-width: 790px) {
+@media only screen and (max-width: 790px) {
 
     .referenceContainerOneResponsive {
         top: 540px;
@@ -183,7 +183,7 @@
 
 // }
 
-@media (max-width: 575px) {
+@media only screen and (max-width: 575px) {
 
     .referenceContainerOneResponsive {
         top: 540px;

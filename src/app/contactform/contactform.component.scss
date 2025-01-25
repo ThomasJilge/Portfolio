@@ -338,7 +338,7 @@ textarea.validField {
     display: none;
 }
 
-@media (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 
     .arrowUpContainer {
         display: none;
@@ -346,7 +346,7 @@ textarea.validField {
 
 }
 
-@media (max-width: 790px) {
+@media only screen and (max-width: 790px) {
 
     .arrowUpContainer {
         display: block;
@@ -504,7 +504,7 @@ textarea.validField {
 
 // }
 
-@media (max-width: 577px) {
+@media only screen and (max-width: 577px) {
 
     .contactMeContainerOneResponsive {
         top: 620px;

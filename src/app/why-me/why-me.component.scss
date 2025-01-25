@@ -276,7 +276,7 @@
     display: none;
 }
 
-@media (max-width: 1372px) {
+@media only screen and (max-width: 1372px) {
 
     .infoWhyMeContainer {
         left: 0;
@@ -284,7 +284,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .whyMeContainerOne {
         position: relative;
@@ -297,7 +297,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .whyMeContainerOne,
     .remoteArrowOneImg,

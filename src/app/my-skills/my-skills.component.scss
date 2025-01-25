@@ -90,7 +90,7 @@
     display: none;
 }
 
-@media (max-width: 1124px) {
+@media only screen and (max-width: 1124px) {
 
     .skillsImgsContainerOne, .skillsImgsContainerTwo  {
         gap: 8vw !important;
@@ -98,7 +98,7 @@
 
 }
 
-@media (max-width: 930px) {
+@media only screen and (max-width: 930px) {
 
     .skillsImgsContainerOne, .skillsImgsContainerTwo  {
         gap: 6vw !important;
@@ -106,7 +106,7 @@
     
 }
 
-@media (max-width: 790px) {
+@media only screen and (max-width: 790px) {
 
     .skillsImgsContainerOne, .skillsImgsContainerTwo  {
         gap: 4vw !important;
@@ -218,7 +218,7 @@
     
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .mySkillsContainerOneResponsive {
         top: 220px;
@@ -234,7 +234,7 @@
 
 // }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 
 // .mySkillsContainerOne {
 //     display: none;
@@ -341,7 +341,7 @@
 
 }
 
-@media (max-width: 370px) {
+@media only screen and (max-width: 370px) {
 
     .skillsImgsContainerOneResponsive {
         gap: 65px;

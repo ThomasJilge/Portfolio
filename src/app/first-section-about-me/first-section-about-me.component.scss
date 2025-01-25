@@ -122,7 +122,7 @@ p {
     object-fit: contain;
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 960px) {
 
     .arrowDownContainer {
         display: none;
@@ -131,7 +131,7 @@ p {
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .firstSectionAboutMeContainerOne {
         max-width: 1337px;
@@ -196,7 +196,7 @@ p {
 
 // }
 
-@media (max-width: 396px) {
+@media only screen and (max-width: 396px) {
 
     .infoFieldOne {
         max-width: 389px;
