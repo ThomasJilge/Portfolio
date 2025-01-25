@@ -4,17 +4,15 @@
     height: 665px;
     top: 94px;
     position: relative;
-    // display: flex;
-    // justify-content: end;
-    // left: -53px;
-    >.firstSectionAboutMeContainerTwo {
-        position: relative;
-        max-width: 1284px;
-        width: 100%;
-        height: 556px;
-        display: flex;
-        justify-content: space-between;
-    }
+}
+
+.firstSectionAboutMeContainerTwo {
+    position: relative;
+    max-width: 1284px;
+    width: 100%;
+    height: 556px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contactForm {
@@ -23,7 +21,6 @@
 }
 
 .contactMeContainerOne {
-    // position: absolute;
     position: relative;
     width: 169px;
     height: 52px;
@@ -59,13 +56,11 @@
 }
 
 .infoFieldOne {
-    // position: absolute;
     position: relative;
     max-width: 808px;
     width: 100%;
     height: 142px;
     top: 412px;
-    // top: -180px;
     gap: 8px;
     >.infoFieldTwo {
         color: #02F4BF;
@@ -75,23 +70,15 @@
 }
 
 .infoFieldDescripton {
-    font-size: 54px;
+    font-size: clamp(40px, 5vw, 54px);
     font-weight: 500px;
     max-width: 808px;
     width: 100%;
     white-space: nowrap;
 }
 
-// .test {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     max-width: 1224px;
-//     width: 100%;
-// }
-
 .infoFieldName {
-    font-size: 82px;
+    font-size: clamp(60px, 8vw, 82px);
     font-weight: 700;
     max-width: 808px;
     width: 100%;
@@ -107,13 +94,10 @@ p {
 }
 
 .arrowDown {
-    // position: absolute;
     position: relative;
     width: 22px;
     height: 50px;
     top: 306px;
-    // left: 669px;
-    // left: 270px;
     left: 600px;
     &:hover.hovered {
         cursor: pointer;
@@ -131,15 +115,15 @@ p {
 }
 
 .tjImg {
-    // position: absolute;
     position: relative;
     max-width: 539px;
     min-width: 390px;
     width: 100%;
     height: 554px;
-    // left: 796px;
     object-fit: contain;
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -147,7 +131,6 @@ p {
         max-width: 1337px;
         width: 100%;
         height: 370px;
-        // left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -197,7 +180,15 @@ p {
         display: none;
     }
 
-}
+} 
+
+// @media (orientation: portrait) and (max-width: 667px) {
+
+//     .firstSectionAboutMeContainerOne {
+//         width: 667px;
+//     }
+
+// }
 
 @media (max-width: 396px) {
 
