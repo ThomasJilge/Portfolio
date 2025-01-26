@@ -6,19 +6,19 @@
         <div class="headerMenuLinks">
             <a class="headerMenuLinksFields" href="#whyMe" 
                [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
-               (click)="setActiveSection('whyMe')">Why me</a>
-        
+               (click)="setActiveSection('whyMe')">{{ 'HEADER.WHY_ME' | translate }}</a>
+
             <a class="headerMenuLinksFields" href="#mySkills" 
                [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
-               (click)="setActiveSection('mySkills')">Skills</a>
+               (click)="setActiveSection('mySkills')">{{ 'HEADER.SKILLS' | translate }}</a>
         
             <a class="headerMenuLinksFields" href="#myProjects" 
                [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
-               (click)="setActiveSection('myProjects')">Projects</a>
+               (click)="setActiveSection('myProjects')">{{ 'HEADER.PROJECTS' | translate }}</a>
         
             <a class="headerMenuLinksFields" href="#contactForm" 
                [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
-               (click)="setActiveSection('contactForm')">Contact</a>
+               (click)="setActiveSection('contactForm')">{{ 'HEADER.CONTACT' | translate }}</a>
 
         </div>
     </div>
@@ -67,6 +67,8 @@
         <p class="headerLanguagesEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>
     </div>
 </div>
+
+
 
 
 

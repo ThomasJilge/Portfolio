@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core'; // Importiere TranslateModule
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule], // Füge TranslateModule hier hinzu
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
 
@@ -14,12 +16,19 @@ export class HeaderComponent {
   selectedLanguage: string = 'EN';
   isMenuOpen: boolean = false;
 
+  constructor(private translate: TranslateService) {
+    // Setze die Standardsprache
+    translate.setDefaultLang('en');
+    translate.use('en');  // Standardmäßig auf Englisch setzen
+  }
+
   setActiveSection(section: string) {
     this.selectedSection = section;
   }
 
   setLanguage(language: string) {
     this.selectedLanguage = language;
+    this.translate.use(language);  // Sprache wechseln
   }
 
   toggleMenu() {
@@ -44,14 +53,3 @@ export class HeaderComponent {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
