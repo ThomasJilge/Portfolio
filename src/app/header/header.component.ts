@@ -17,9 +17,8 @@ export class HeaderComponent {
   isMenuOpen: boolean = false;
 
   constructor(private translate: TranslateService) {
-    // Setze die Standardsprache
     translate.setDefaultLang('en');
-    translate.use('en');  // Standardmäßig auf Englisch setzen
+    translate.use('en');
   }
 
   setActiveSection(section: string) {
@@ -28,8 +27,10 @@ export class HeaderComponent {
 
   setLanguage(language: string) {
     this.selectedLanguage = language;
-    this.translate.use(language);  // Sprache wechseln
+    this.translate.use(language.toLowerCase());
   }
+  
+  
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
