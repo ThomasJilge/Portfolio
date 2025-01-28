@@ -6,8 +6,30 @@
     "CONTACT": "Contact",
     "LANGUAGE_DE": "DE",
     "LANGUAGE_EN": "EN"
+  },
+
+  "FIRST_SECTION": {
+    "CONTACT_ME": "CONTACT ME",
+    "FRONTEND_DEVELOPER": "FRONTEND DEVELOPER"
+  },
+  "WHY_ME": {
+    "WHY_ME": "Why me",
+    "DESCRIPTION": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
+    "I_AM": "I am",
+    "LOCATED_ONE": "located",
+    "LOCATED_TWO": "n Munich",
+    "RELOCATE_ONE": "open",
+    "RELOCATE_TWO": "to relocate",
+    "REMOTE_ONE": "open to",
+    "REMOTE_TWO": "work remote",
+    "LETS_TALK": "Let's talk"
+  },
+  "MY_SKILLS": {
+    "SKILLS": "My Skills",
+    "CHALLENGE": "Challenge me",
+    "CHALLENGE_TEXT": "I am always happy to learn new technologies, just tell me what you need.",
+    "LETS_TALK": "Let's talk"
   }
 }
-
 
   

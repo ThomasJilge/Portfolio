@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-why-me',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule ,TranslateModule],
   templateUrl: './why-me.component.html',
   styleUrl: './why-me.component.scss'
 })
@@ -16,6 +17,11 @@ export class WhyMeComponent {
   remoteSrc: string = '../../assets/img/laptop.png';
 
   isRemoteHovered: boolean = false;
+
+    constructor(private translate: TranslateService) { 
+      translate.setDefaultLang('en');
+      translate.use('en');
+    }
 
   onHover(item: string) {
     switch (item) {
