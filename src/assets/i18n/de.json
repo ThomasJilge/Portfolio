@@ -28,7 +28,19 @@
     "CHALLENGE": "Fordern Sie mich heraus",
     "CHALLENGE_TEXT": "Ich bin immer bereit, neue Technologien zu erlernen, teilen Sie mir einfach mit, was Sie benötigen.",
     "LETS_TALK": "Kontakt"
-
+  },
+  "MY_PROJECTS": {
+    "PROJECTS": "Meine Projekte",
+    "PROJECT_ONE": "Sprung-, Dreh- und Wurfspiel auf der Grundlage eines objektorientierten Ansatzes. Hilf Pepe dabei, Münzen und Tabascoflaschen zu finden, um gegen die verrückten Hühner zu kämpfen.",
+    "PROJECT_TWO": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop Funktionen, Benutzer und Kategorien zuweisen."
+  },
+  "REFERNCE": {
+    "REFERENCE_HEADER": "Brauchen Sie einen Teamplayer? Das sagen meine Kollegen über mich",
+    "REFERENCE_EPL": "Projekt El Pollo Loco",
+    "REFERENCE_JOIN": "Projekt Join",
+    "REFERENCE_ONE": "'' Er ist ein vertrauenswürdiger Teamplayer und kann mit Terminstress, strukturiertem Arbeiten und klarem Code umgehen. ''",
+    "REFERENCE_TWO": "''Thomas musste in Zusammenarbeit mit den Teammitgliedern Inhalte entwickeln, formatieren und liefern. Er ist ein zuverlässiger und freundlicher Mensch. ''",
+    "REFERENCE_THREE": "'' Sie sind eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt einen klaren Code. Ich empfehle ihn als Kollegen. ''"
   }
 }
 

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reference',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './reference.component.html',
   styleUrls: ['./reference.component.scss'],
 })
@@ -12,6 +13,11 @@ export class ReferenceComponent {
   startX = 0;
   initialPosition = 0;
   currentTransform = 0;
+
+  constructor(private translate: TranslateService) { 
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
   onMouseDown(event: MouseEvent) {
     this.isDragging = true;

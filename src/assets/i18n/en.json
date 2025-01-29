@@ -29,6 +29,19 @@
     "CHALLENGE": "Challenge me",
     "CHALLENGE_TEXT": "I am always happy to learn new technologies, just tell me what you need.",
     "LETS_TALK": "Let's talk"
+  },
+  "MY_PROJECTS": {
+    "PROJECTS": "My Projects",
+    "PROJECT_ONE": "Jump, rund and throw game based on object-oriented approach. Help Pepe to find coinsand tabasco salsa to fight against the crazyhen.",
+    "PROJECT_TWO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+  },
+  "REFERNCE": {
+    "REFERENCE_HEADER": "Need a teamplayer? Here what my colleagues said about me",
+    "REFERENCE_EPL": "Projekt EL Pollo Loco",
+    "REFERENCE_JOIN": "Projekt Join",
+    "REFERENCE_ONE": "'' He is a trustworhty teamplayer and can cope with the stress of deadline, Structured work and clear code. ''",
+    "REFERENCE_TWO": "'' Thomas had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person. ''",
+    "REFERENCE_THREE": "'' The is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague. ''"
   }
 }
 
