@@ -41,6 +41,21 @@
     "REFERENCE_ONE": "'' Er ist ein vertrauenswürdiger Teamplayer und kann mit Terminstress, strukturiertem Arbeiten und klarem Code umgehen. ''",
     "REFERENCE_TWO": "''Thomas musste in Zusammenarbeit mit den Teammitgliedern Inhalte entwickeln, formatieren und liefern. Er ist ein zuverlässiger und freundlicher Mensch. ''",
     "REFERENCE_THREE": "'' Sie sind eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt einen klaren Code. Ich empfehle ihn als Kollegen. ''"
+  },
+  "CONTACT": {
+    "CONTACT": "Kontakt",
+    "CONTACT_TEXT": "Sie sind sich noch nicht sicher, ob ich die richtige Person für Ihr Projekt bin? Kontaktieren Sie mich, damit ich Sie beruhigen kann. Lassen Sie uns zusammenarbeiten",
+    "CONTACT_NAME": "Ihr Name",
+    "CONTACT_NAME_REQUIRED": "Ihr Name ist erforderlich",
+    "CONTACT_MAIL": "Ihre Email",
+    "CONTACT_MAIL_REQUIRED": "Ihre Email ist erforderlich",
+    "CONTACT_MESSAGE": "Ihre Nachricht",
+    "CONTACT_MESSAGE_REQUIRED": "Ihre Nachricht ist erforderlich",
+    "CONTACT_PRIVACY_ONE": "Ich habe die",
+    "CONTACT_PRIVACY_TWO": "Datenschutzbestimmungen",
+    "CONTACT_PRIVACY_THREE": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "CONTACT_SEND": "Senden"
+
   }
 }
 

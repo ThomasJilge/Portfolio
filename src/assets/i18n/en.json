@@ -42,6 +42,20 @@
     "REFERENCE_ONE": "'' He is a trustworhty teamplayer and can cope with the stress of deadline, Structured work and clear code. ''",
     "REFERENCE_TWO": "'' Thomas had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person. ''",
     "REFERENCE_THREE": "'' The is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague. ''"
+  },
+  "CONTACT": {
+    "CONTACT": "Contact Me",
+    "CONTACT_TEXT": "Still not sure if I am the right person for your project? Contact me so I can reassure you. Let us work together",
+    "CONTACT_NAME": "Your Name",
+    "CONTACT_NAME_REQUIRED": "Your name is required",
+    "CONTACT_MAIL": "Your Email",
+    "CONTACT_MAIL_REQUIRED": "Your mail is required",
+    "CONTACT_MESSAGE": "Your Message",
+    "CONTACT_MESSAGE_REQUIRED": "Your message is required",
+    "CONTACT_PRIVACY_ONE": "I've read the",
+    "CONTACT_PRIVACY_TWO": " <span class=\"pp\">privacy policy</span> ",
+    "CONTACT_PRIVACY_THREE": "and agree to the processing of my data as outlined.",
+    "CONTACT_SEND": "Send"
   }
 }
 

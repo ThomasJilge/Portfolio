@@ -1,7 +1,7 @@
 <div class="contactMeContainerOne" id="contactForm">
     <div class="contactMeContainerTwo">
         <div class="contactMeContainerThree">
-            <h2 class="h2ContactMe">Contact Me</h2>
+            <h2 class="h2ContactMe">{{ 'CONTACT.CONTACT' | translate }}</h2>
             <div class="arrowContactMeContainer">
                 <img class="arrowContactMe" src="../../assets/img/arrowContactMe.png" alt="">
             </div>
@@ -9,10 +9,7 @@
 
         <div class="contactMeContainerFive">
         <div class="contactMeTextContainer">
-            <p class="contactMeText">Still not sure if I am the right person for
-                your project? Contact me so I can reassure
-                you. Let us work together
-            </p>
+            <p class="contactMeText">{{ 'CONTACT.CONTACT_TEXT' | translate }}</p>
         </div>
             <div class="containerMailAndPhone">
                 <div class="contactMeContainerSix">
@@ -40,21 +37,23 @@
             <div class="contactForm">
                 <div class="contactContainerOne">
                     <label for="name"></label>
+
+
                     <input #name="ngModel" 
-                           [(ngModel)]="contactData.name" 
-                           type="text" id="name" name="name" 
-                           [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'" 
-                           required autocomplete="off"
-                           [ngClass]="{
-                               'errorField': name.invalid && name.touched, 
-                               'validField': name.valid && name.touched
-                           }">
+                        [(ngModel)]="contactData.name" 
+                        type="text" id="name" name="name" 
+                        [placeholder]="name.invalid && name.touched ? ('CONTACT.CONTACT_NAME_REQUIRED' | translate) : ('CONTACT.CONTACT_NAME' | translate)" 
+                        required autocomplete="off"
+                        [ngClass]="{
+                            'errorField': name.invalid && name.touched, 
+                            'validField': name.valid && name.touched
+                        }">
     
                     <label for="email"></label>
                     <input #email="ngModel" 
                            [(ngModel)]="contactData.email" 
                            type="email" id="email" name="email" 
-                           [placeholder]="email.invalid && email.touched ? 'Your email is required' : 'Your Email'" 
+                           [placeholder]="email.invalid && email.touched ? ('CONTACT.CONTACT_MAIL_REQUIRED' | translate) : ('CONTACT.CONTACT_MAIL' | translate)" 
                            required autocomplete="off"
                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                            [ngClass]="{
@@ -69,7 +68,7 @@
                               minlength="4" 
                               [(ngModel)]="contactData.message" 
                               id="message" name="message" 
-                              [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'" 
+                              [placeholder]="message.invalid && message.touched ? ('CONTACT.CONTACT_MESSAGE_REQUIRED' | translate) : ('CONTACT.CONTACT_MESSAGE' | translate)" 
                               required
                               [ngClass]="{
                                   'errorField': message.invalid && message.touched, 
@@ -83,11 +82,15 @@
                     <label for="privacyPolicy">
                         <input class="customCheckbox" type="checkbox" id="privacyPolicy" name="privacyPolicy" [(ngModel)]="isPrivacyPolicyChecked">
                     </label>
-                    <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
+                        <p class="contactMeContainerSixText">
+                            <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"></span>
+                            <span class="pp">&nbsp;<span [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate"></span>&nbsp;</span>
+                            <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"></span>
+                          </p>
                 </div>
     
                 <div class="contactMeContainerSeven">
-                    <button class="sendButton" type="submit" [disabled]="!isPrivacyPolicyChecked" [ngClass]="{'activeButton': isPrivacyPolicyChecked}">Send</button>
+                    <button class="sendButton" type="submit" [disabled]="!isPrivacyPolicyChecked" [ngClass]="{'activeButton': isPrivacyPolicyChecked}">{{ 'CONTACT.CONTACT_SEND' | translate }}</button>
                 </div>
             </div>
         </form>
@@ -98,15 +101,12 @@
 <div class="contactMeContainerOneResponsive" id="contactForm">
     <div class="contactMeContainerTwoResponsive">
         <div class="contactMeContainerThreeResponsive">
-            <h2 class="h2ContactMeResponsive">Contact Me</h2>
+            <h2 class="h2ContactMeResponsive">{{ 'CONTACT.CONTACT' | translate }}</h2>
         </div>
 
         <div class="contactMeContainerFiveResponsive">
         <div class="contactMeTextContainerResponsive">
-            <p class="contactMeTextResponsive">Still not sure if I am the right person for
-                your project? Contact me so I can reassure
-                you. Let us work together
-            </p>
+            <p class="contactMeTextResponsive">{{ 'CONTACT.CONTACT_TEXT' | translate }}</p>
         </div>
     </div>
     </div>
@@ -119,7 +119,7 @@
                     <input #name="ngModel" 
                            [(ngModel)]="contactData.name" 
                            type="text" id="name" name="name" 
-                           [placeholder]="name.invalid && name.touched ? 'Your name is required' : 'Your Name'" 
+                           [placeholder]="name.invalid && name.touched ? ('CONTACT.CONTACT_NAME_REQUIRED' | translate) : ('CONTACT.CONTACT_NAME' | translate)" 
                            required autocomplete="off"
                            [ngClass]="{
                                'errorField': name.invalid && name.touched, 
@@ -130,7 +130,7 @@
                     <input #email="ngModel" 
                            [(ngModel)]="contactData.email" 
                            type="email" id="email" name="email" 
-                           [placeholder]="email.invalid && email.touched ? 'Your email is required' : 'Your Email'" 
+                           [placeholder]="email.invalid && email.touched ? ('CONTACT.CONTACT_MAIL_REQUIRED' | translate) : ('CONTACT.CONTACT_MESSAGE' | translate)" 
                            required autocomplete="off"
                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                            [ngClass]="{
@@ -145,7 +145,7 @@
                               minlength="4" 
                               [(ngModel)]="contactData.message" 
                               id="message" name="message" 
-                              [placeholder]="message.invalid && message.touched ? 'Your message is required' : 'Your Message'" 
+                              [placeholder]="message.invalid && message.touched ? ('CONTACT.CONTACT_MESSAGE_REQUIRED' | translate) : ('CONTACT.CONTACT_MESSAGE' | translate)" 
                               required
                               [ngClass]="{
                                   'errorField': message.invalid && message.touched, 
@@ -159,7 +159,11 @@
                     <label for="privacyPolicyResponsive">
                         <input class="customCheckbox" type="checkbox" id="privacyPolicy" name="privacyPolicy" [(ngModel)]="isPrivacyPolicyChecked">
                     </label>
-                    <p class="contactMeContainerSixText">I've read the <span class="pp">privacy policy</span> and agree to the processing of my data as outlined.</p>
+                    <p>
+                        <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"></span>
+                        <span class="pp">&nbsp;<span [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate"></span>&nbsp;</span>
+                        <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"></span>
+                    </p>
                 </div>
     
                 <div class="contactMeContainerSevenResponsive">
