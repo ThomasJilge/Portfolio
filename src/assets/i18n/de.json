@@ -55,8 +55,11 @@
     "CONTACT_PRIVACY_TWO": "Datenschutzbestimmungen",
     "CONTACT_PRIVACY_THREE": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "CONTACT_SEND": "Senden"
-
-  }
+  },
+  "FOOTER": {
+    "FOOTER_IMPRINT": "Impressum",
+    "FOOTER_PRIVACY_POLICY": "Datenschutzbestimmungen"
+}
 }
 
 

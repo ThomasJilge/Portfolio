@@ -1,19 +1,15 @@
 .contactMeContainerOne {
     position: relative;
     top: 70px;
-    // width: 1440px;
     max-width: 1440px;
-    // width: 90%;
     width: 100%;
     height: 430px;
     >.contactMeContainerTwo {
-        // width: 1015px;
         max-width: 1015px;
         width: 100%;
         height: 162px;
         left: 132px;
         >.contactMeContainerThree {
-            // width: 425.05px;
             max-width: 425.05px;
             width: 100%;
             height: 72.21px;
@@ -39,7 +35,6 @@
     gap: 40px;
     >.contactMeTextContainer {
         display: flex;
-        // width: 504px;
         max-width: 504px;
         width: 100%;
         height: 73px;
@@ -56,7 +51,6 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    // width: 412px;
     max-width: 412px;
     width: 100%;
     gap: 16px;
@@ -125,7 +119,6 @@
 }
 
 .container {
-    // width: 1184px;
     max-width: 1184px;
     width: 100%;
     height: 144px;
@@ -133,7 +126,6 @@
 }
 
 input[type=text], [type=email] {
-    // width: 507px;
     max-width: 637px;
     width: 100%;
     height: 56px;
@@ -154,7 +146,6 @@ textarea {
 }
 
 #message {
-    // width: 637px;
     max-width: 637px;
     width: 100%;
     height: 144px;
@@ -165,7 +156,6 @@ textarea {
 
 .contactContainerOne {
     display: flex;
-    // width: 507px;
     max-width: 507px;
     width: 100%;
     height: 144px;
@@ -195,7 +185,6 @@ input:focus, textarea:focus {
 .contactMeContainerFour {
     display: flex;
     position: relative;
-    // width: 1185px;
     max-width: 1185px;
     width: 90%;
     height: 74px;
@@ -203,7 +192,6 @@ input:focus, textarea:focus {
     >.contactMeContainerSix {
         display: flex;
         align-items: center;
-        // width: 978px;
         max-width: 978px;
         width: 100%;
         height: 27px;
@@ -224,7 +212,6 @@ input:focus, textarea:focus {
         }
     }
 }
-
 
 .customCheckbox {
     border: 1px solid red;
@@ -298,22 +285,22 @@ input:focus, textarea:focus {
 }
 
 input.errorField {
-    background-image: url('../../assets/img/warningSign.png');
+    background-image: url('../../../assets/img/warningSign.png');
 }
 
 textarea.errorField {
-    background-image: url('../../assets/img/warningSign.png');
+    background-image: url('../../../assets/img/warningSign.png');
 }
 
 textarea.errorField {
-    background-image: url('../../assets/img/warningSign.png');
+    background-image: url('../../../assets/img/warningSign.png');
     background-position: right 10px top 5px; 
     background-size: 25px 36.37px;
     padding-right: 35px;
 }
   
 .errorField {
-    background-image: url('../../assets/img/warningSign.png');
+    background-image: url('../../../assets/img/warningSign.png');
     background-repeat: no-repeat;
     background-position: right 10px center; 
     background-size: 25px 36.37px; 
@@ -321,14 +308,14 @@ textarea.errorField {
 }
 
 textarea.validField {
-    background-image: url('../../assets/img/greenCheckMark.png');
+    background-image: url('/portfolio/src/assets/img/greenCheckMark.png');
     background-position: right 10px top 5px; 
     background-size: 25px 36.37px;
     padding-right: 35px;
 }
 
 .validField {
-    background-image: url('../../assets/img/greenCheckMark.png');
+    background-image: url('/portfolio/src/assets/img/greenCheckMark.png');
     background-repeat: no-repeat;
     background-position: right 10px center; 
     background-size: 25px 36.37px; 
@@ -362,7 +349,6 @@ textarea.validField {
         flex-direction: column;
         align-items: center;
         position: relative;
-        // top: 540px;
         top: 600px;
     }
 
@@ -395,7 +381,6 @@ textarea.validField {
     }
 
     .contactMeContainerTwoResponsive {
-        // width: 337px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -424,7 +409,6 @@ textarea.validField {
         align-items: center;
         width: 100%;
         gap: 10px;
-        // width: 337px;
     }
 
     .contactMeContainerFiveResponsive {
@@ -443,7 +427,6 @@ textarea.validField {
         top: 10px;
         position: relative;
         gap: 5px;
-        // width: 337px;
         >.contactMeContainerSixText {
             margin: 0;
         }
@@ -496,14 +479,6 @@ textarea.validField {
     }
 
 }
-
-// @media (orientation: portrait) and (max-width: 667px) {
-
-//     .contactMeContainerOneResponsive {
-//         width: 667px;
-//     }
-
-// }
 
 @media only screen and (max-width: 577px) {
 

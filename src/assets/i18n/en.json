@@ -56,7 +56,11 @@
     "CONTACT_PRIVACY_TWO": " <span class=\"pp\">privacy policy</span> ",
     "CONTACT_PRIVACY_THREE": "and agree to the processing of my data as outlined.",
     "CONTACT_SEND": "Send"
-  }
+  },
+  "FOOTER": {
+    "FOOTER_IMPRINT": "Legal notice",
+    "FOOTER_PRIVACY_POLICY": "privacy policy"
+}
 }
 
   

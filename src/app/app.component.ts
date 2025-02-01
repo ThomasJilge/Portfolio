@@ -1,14 +1,15 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { FirstSectionAboutMeComponent } from './first-section-about-me/first-section-about-me.component';
-import { WhyMeComponent } from './why-me/why-me.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
-import { MyProjectsComponent } from './my-projects/my-projects.component';
-import { ReferenceComponent } from './reference/reference.component';
-import { FooterComponent } from './footer/footer.component';
-import { ContactformComponent } from "./contactform/contactform.component";
+import { HeaderComponent } from './main-content/header/header.component';
+import { FirstSectionAboutMeComponent } from './main-content/first-section-about-me/first-section-about-me.component';
+import { WhyMeComponent } from './main-content/why-me/why-me.component';
+import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
+import { MyProjectsComponent } from './main-content/my-projects/my-projects.component';
+import { ReferenceComponent } from './main-content/reference/reference.component';
+import { FooterComponent } from './main-content/footer/footer.component';
+import { ContactformComponent } from "./main-content/contactform/contactform.component";
+import { MainContentComponent } from "./main-content/main-content.component";
 
 @Component({
     selector: 'app-root',
@@ -24,7 +25,8 @@ import { ContactformComponent } from "./contactform/contactform.component";
     MyProjectsComponent,
     ReferenceComponent,
     FooterComponent,
-    ContactformComponent],
+    ContactformComponent, 
+    MainContentComponent],
 })
 
 export class AppComponent {

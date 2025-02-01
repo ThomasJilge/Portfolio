@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule, RouterLink, RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+
+  constructor(private translate: TranslateService) { 
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
   githubSrc: string = '../../assets/img/Github button.png';
   mailSrc: string = '../../assets/img/mail button.png';
