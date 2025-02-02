@@ -59,6 +59,11 @@
   "FOOTER": {
     "FOOTER_IMPRINT": "Impressum",
     "FOOTER_PRIVACY_POLICY": "Datenschutzbestimmungen"
+},
+"IMPRINT": {
+    "IMPRINT": "Impressum",
+    "IMPRINT_CONTACT": "Kontakt",
+    "IMPRINT_PHONE": "Telefon:"
 }
 }
 

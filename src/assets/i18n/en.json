@@ -60,6 +60,11 @@
   "FOOTER": {
     "FOOTER_IMPRINT": "Legal notice",
     "FOOTER_PRIVACY_POLICY": "privacy policy"
+},
+"IMPRINT": {
+    "IMPRINT": "Imprint",
+    "IMPRINT_CONTACT": "Contact",
+    "IMPRINT_PHONE": "Phone:"
 }
 }
 
