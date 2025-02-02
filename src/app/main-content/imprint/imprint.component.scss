@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+
+.content {
+    color: #02F4BF;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    >span {
+        font-size: 24px;
+    }
+    >h2 {
+        margin-bottom: 0;
+    }
+}
