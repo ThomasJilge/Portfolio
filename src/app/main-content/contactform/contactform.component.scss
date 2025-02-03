@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .contactMeContainerOne {
     position: relative;
     top: 70px;
@@ -17,7 +19,7 @@
             >.h2ContactMe {
                 height: 60px;
                 font-size: 54px;
-                color: #E15544;
+                color: $primaryColorOne;
                 margin: 0;
             }
             img.arrowContactMe {
@@ -41,7 +43,7 @@
         >.contactMeText {
             font-size: 18px;
             font-weight: 400;
-            color: #02F4BF;
+            color: $primaryColorTwo;
             margin: 0;
         }
     }
@@ -75,7 +77,7 @@
             }
         }
         >.mailContactMe, .phoneContactMe {
-            color: #02F4BF;
+            color: $primaryColorTwo;
             margin: 0;
             font-size: 20px;
         }
@@ -93,7 +95,7 @@
 
 .mailAdress {
     text-decoration: none;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     font-size: 20px;
 }
 
@@ -129,11 +131,11 @@ input[type=text], [type=email] {
     max-width: 637px;
     width: 100%;
     height: 56px;
-    border: 1px solid #02F4BF;
+    border: 1px solid $primaryColorTwo;
     background-color: transparent;
     padding: 10px;
     box-sizing: border-box;
-    color: #02F4BF;
+    color: $primaryColorTwo;
 }
 
 textarea {
@@ -149,9 +151,9 @@ textarea {
     max-width: 637px;
     width: 100%;
     height: 144px;
-    border: 1px solid #02F4BF;
+    border: 1px solid $primaryColorTwo;
     background-color: transparent;
-    color: #02F4BF;
+    color: $primaryColorTwo;
 }
 
 .contactContainerOne {
@@ -172,13 +174,13 @@ input::placeholder, ::placeholder {
 }
 
 input:valid, textarea:valid {
-    border: 1px solid #02F4BF; 
+    border: 1px solid $primaryColorTwo; 
 }
 
 input:focus, textarea:focus {
-    border: 1px solid #02F4BF; 
+    border: 1px solid $primaryColorTwo; 
     background-color: transparent;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     outline: none; 
 }
 
@@ -197,14 +199,14 @@ input:focus, textarea:focus {
         height: 27px;
         gap: 8px;
         >.contactMeContainerSixText {
-            color: #02F4BF;
+            color: $primaryColorTwo;
             font-size: 14px;
             font-weight: 400px;
             margin: 0;
             >.pp {
                 color: #AE4247;
                 &:hover {
-                    color: #E15544;
+                    color: $primaryColorOne;
                     cursor: pointer;
                     transition: color 100ms ease-in-out;
                 }
@@ -225,7 +227,7 @@ input:focus, textarea:focus {
   
 }
 .customCheckbox:checked {
-    background-color: #02F4BF;
+    background-color: $primaryColorTwo;
     border: 1px solid red;
 }
 
@@ -258,8 +260,8 @@ input:focus, textarea:focus {
         cursor: pointer;
     }
     &.activeButton {
-        border: 1px solid #02F4BF;
-        color: #E15544;
+        border: 1px solid $primaryColorTwo;
+        color: $primaryColorOne;
       }
   }
 
@@ -270,7 +272,7 @@ input, textarea {
   }
   
 .errorField::placeholder {
-    color: #E15544; 
+    color: $primaryColorOne; 
     font-size: 14px;
     font-weight: 400;
 }
@@ -281,7 +283,7 @@ input::placeholder, textarea::placeholder {
 }
   
 input:focus, textarea:focus {
-    border-color: #02F4BF;
+    border-color: $primaryColorTwo;
 }
 
 input.errorField {
@@ -359,7 +361,7 @@ textarea.validField {
     .contactMeContainerThreeResponsive {
         display: flex;
         justify-content: center;
-        color: #E15544;
+        color: $primaryColorOne;
         font-size: 32px;
         font-weight: 700;
         >.h2ContactMeResponsive {
@@ -370,7 +372,7 @@ textarea.validField {
     .contactMeTextContainerResponsive {
         display: flex;
         text-align: center;
-        color: #02F4BF;
+        color: $primaryColorTwo;
         font-size: 16px;
         font-weight: 400;
         width: 90%;
@@ -423,7 +425,7 @@ textarea.validField {
     .contactMeContainerSixResponsive {
         display: flex;
         justify-content: center;
-        color: #02F4BF;
+        color: $primaryColorTwo;
         top: 10px;
         position: relative;
         gap: 5px;
@@ -462,7 +464,7 @@ textarea.validField {
     }
 
     .phoneContactMe {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         font-size: 20px;
     }
 

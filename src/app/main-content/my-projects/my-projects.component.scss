@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .myProjectsContainerOne {
     display: flex;
     justify-content: center;
@@ -12,7 +14,7 @@
         height: 65px;
         margin-bottom: 30px;
         >.h2MyProjects {
-            color: #E15544;
+            color: $primaryColorOne;
             font-size: 54px;
             margin: 0;
         }
@@ -62,7 +64,7 @@
 
 
 .projectOneHeadline {
-    color: #02F4BF;
+    color: $primaryColorTwo;
     font-size: 48px;
     font-weight: 700;
     margin-top: 0;
@@ -85,7 +87,7 @@
 .projectTwoHeadline {
     display: flex;
     justify-content: end;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     font-size: 48px;
     font-weight: 700;
     margin-top: 0;
@@ -99,7 +101,7 @@
     height: 25px;
     letter-spacing: 0.2em;
     >.projectOneLanguages {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         size: 18px;
         font-weight: 400;
         margin: 0;
@@ -113,7 +115,7 @@
 .projectTwoLanguages {
     display: flex;
     justify-content: end;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     size: 18px;
     font-weight: 400;
     margin: 0;
@@ -127,7 +129,7 @@
 .projectOneInfoText {
     position: relative;
     top: 60px;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     margin: 0;
     font-size: 18px;
     font-weight: 400;
@@ -138,7 +140,7 @@
     justify-content: end;
     position: relative;
     top: 60px;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     margin: 0;
     font-size: 18px;
     font-weight: 400;
@@ -158,10 +160,10 @@
 }
 
 .githubButton {
-    color: #E15544;
+    color: $primaryColorOne;
     width: 125px;
     height: 52px;
-    border: 1px solid #02F4BF;
+    border: 1px solid $primaryColorTwo;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -170,16 +172,16 @@
 }
 
 .githubButton:hover {
-    color: #02F4BF;
+    color: $primaryColorTwo;
     cursor: pointer;
     transition: color 100ms ease-in-out;
 }
 
 .liveTestButton {
-    background-color: #02F4BF;
+    background-color: $primaryColorTwo;
     width: 158px;
     height: 52px;
-    border: 1px solid #02F4BF;
+    border: 1px solid $primaryColorTwo;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -187,7 +189,7 @@
 }
 
 .liveTestButton:hover {
-    color: #E15544;
+    color: $primaryColorOne;
     cursor: pointer;
     transition: color 100ms ease-in-out;
 }
@@ -212,7 +214,7 @@
     }
 
     .h2MyProjectsResponsive {
-        color: #E15544;
+        color: $primaryColorOne;
         font-size: 32px;
         font-weight: 700;
     }
@@ -229,14 +231,14 @@
 
     .projectOneHeadlineResponsive,
     .projectTwoHeadlineResponsive {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         font-size: 24px;
         font-weight: 700;
     }
 
     .projectOneLanguagesResponsive,
     .projectTwoLanguagesResponsive{
-        color: #02F4BF;
+        color: $primaryColorTwo;
         font-size: 18px;
         font-weight: 400;
         margin: 0;
@@ -244,7 +246,7 @@
 
     .projectOneInfoTextResponsive,
     .projectTwoInfoTextResponsive {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         font-size: 16px;
         font-weight: 400;
     }

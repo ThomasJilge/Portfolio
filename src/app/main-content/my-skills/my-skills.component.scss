@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .mySkillsContainerOne {
     position: relative;
     // width: 1439px;
@@ -13,7 +15,7 @@
         margin-bottom: 20px;
         white-space: nowrap;
         >.h2MySkills {
-            color: #E15544;
+            color: $primaryColorOne;
             margin: 0;
             font-size: 54px;
         }
@@ -63,7 +65,7 @@
         position: absolute;
         display: none;
         left: -80px;
-        color: #02F4BF;
+        color: $primaryColorTwo;
         margin: 0;
         width: 200px;
     }
@@ -71,7 +73,7 @@
 
 .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
     display: block;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     transition: color 100ms ease-in-out;
 }
 
@@ -126,7 +128,7 @@
         // top: 230px;
         top: 20px;
         >.h2MySkillsContainerResponsive {
-            color: #E15544;
+            color: $primaryColorOne;
             font-size: 32px;
             font-weight: 700;
         }
@@ -140,7 +142,7 @@
     }
     
     .mySkillsTextContainerTwoResponsive {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -158,7 +160,7 @@
     }
     
     .skillsImgsContainerTwoResponsive {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         display: flex;
         justify-content: center;
         gap: 74px;
@@ -209,10 +211,10 @@
         width: 137px;
         height: 43px;
         color: black;
-        background-color: #02F4BF;
+        background-color: $primaryColorTwo;
         &:hover {
             cursor: pointer;
-            color: #E15544;
+            color: $primaryColorOne;
             transition: color 100ms ease-in-out;
         }
     }
@@ -249,7 +251,7 @@
 //     align-items: center;
 //     top: 230px;
 //     >.h2MySkillsContainerResponsive {
-//         color: #E15544;
+//         color: $primaryColorOne;
 //         font-size: 32px;
 //         font-weight: 700;
 //     }
@@ -263,7 +265,7 @@
 // }
 
 // .mySkillsTextContainerTwoResponsive {
-//     color: #02F4BF;
+//     color: $primaryColorTwo;
 //     display: flex;
 //     justify-content: center;
 //     text-align: center;
@@ -281,7 +283,7 @@
 // }
 
 // .skillsImgsContainerTwoResponsive {
-//     color: #02F4BF;
+//     color: $primaryColorTwo;
 //     display: flex;
 //     justify-content: center;
 //     gap: 74px;
@@ -332,10 +334,10 @@
 //     width: 137px;
 //     height: 43px;
 //     color: black;
-//     background-color: #02F4BF;
+//     background-color: $primaryColorTwo;
 //     &:hover {
 //         cursor: pointer;
-//         color: #E15544;
+//         color: $primaryColorOne;
 //         transition: color 100ms ease-in-out;
 //     }
 // }

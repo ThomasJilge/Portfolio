@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .whyMeContainerOne {
     display: flex;
     max-width: 1224px;
@@ -44,7 +46,7 @@
 
 .h2WhyMe {
     font-size: 54px;
-    color:#E15544;
+    color:$primaryColorOne;
     margin: 0;
 } 
 
@@ -59,7 +61,7 @@
     left: 42px;
     >.infoText {
         size: 16px;
-        color: #02F4BF; 
+        color: $primaryColorTwo; 
         margin: 0;
         display: flex;
         text-align: right;
@@ -90,7 +92,7 @@
             height: 49px;
             font-size: 48px;
             font-weight: 700;
-            color: #E15544;
+            color: $primaryColorOne;
             margin: 0;
             white-space: nowrap;
         }
@@ -98,7 +100,7 @@
 }
 
 .locatedText {
-    color: #02F4BF;
+    color: $primaryColorTwo;
     font-size: 18px;
     margin: 0;
     position: relative;
@@ -153,7 +155,7 @@
     width: 96px;
     height: 40px;
     top: 1px;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     left: 25px;
     margin: 0;
 }
@@ -177,7 +179,7 @@
 
 .remoteText {
     width: 125px;
-    color: #02F4BF;
+    color: $primaryColorTwo;
     font-size: 18px;
     margin: 0;
     display: flex;
@@ -219,12 +221,12 @@
     width: 169px;
     height: 52px;
     color: black;
-    background-color: #02F4BF;
+    background-color: $primaryColorTwo;
 }
 
 .letsTalkButton:hover {
     cursor: pointer;
-    color: #E15544;
+    color: $primaryColorOne;
     transition: color 100ms ease-in-out;
 }
 
@@ -324,7 +326,7 @@
         flex-direction: column;
         align-items: center;
         >.h2WhyMeContainerResponsive {
-            color: #E15544;
+            color: $primaryColorOne;
             font-size: 32px;
             font-weight: 700;
             >.h2WhyMe {
@@ -338,7 +340,7 @@
         width: 90%;
         display: flex;
         text-align: center;
-        color: #02F4BF;
+        color: $primaryColorTwo;
         font-size: 16px;
         font-weight: 400;
     }
@@ -384,7 +386,7 @@
     }
 
     .iAmText {
-        color: #E15544;
+        color: $primaryColorOne;
         font-size: 18px;
         font-weight: 700;
     }

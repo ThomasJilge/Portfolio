@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .firstSectionAboutMeContainerOne {
     max-width: 1337px;
     width: 100%;
@@ -29,7 +31,7 @@
     gap: 10px;
     transform: rotate(90deg);
     transform-origin: center;
-    border: 1px solid #02F4BF;
+    border: 1px solid $primaryColorTwo;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,11 +48,11 @@
         transform: rotate(180deg);
         >.contactMeContainerTwoAnchor {
             text-decoration: none;
-            color: #E15544;
+            color: $primaryColorOne;
         }
     }
     &:hover .contactMeContainerTwo > .contactMeContainerTwoAnchor{
-        color: #02F4BF;
+        color: $primaryColorTwo;
         cursor: pointer;
         transition: color 100ms ease-in-out;
     }
@@ -64,7 +66,7 @@
     top: 412px;
     gap: 8px;
     >.infoFieldTwo {
-        color: #02F4BF;
+        color: $primaryColorTwo;
         max-width: 808px;
         width: 100%;
     }
