@@ -53,13 +53,19 @@
 }
 
 .initial {
-    font-size: 48px;
+    width: 92px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
         cursor: pointer;
     }
     >a {
         text-decoration: none;
         color: $primaryColorOne;
+        font-family: 'Handjet';
+        font-size: 48px;
     }
 }
 
