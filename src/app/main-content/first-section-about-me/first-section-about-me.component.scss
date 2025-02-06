@@ -97,7 +97,8 @@ p {
 }
 
 .arrowDown {
-    position: relative;
+    // position: relative;
+    position: absolute;
     width: 22px;
     height: 50px;
     top: 306px;
@@ -125,7 +126,7 @@ p {
     object-fit: contain;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1080px) {
 
     .arrowDownContainer {
         display: none;
