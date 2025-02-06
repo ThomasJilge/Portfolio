@@ -65,7 +65,7 @@
             height: 30px;
             &:hover {
                 cursor: pointer;
-                transition: 100ms ease-in-out;
+                transition: 125ms ease-in-out;
             }
         }
         >.phoneImg {
@@ -73,7 +73,7 @@
             height: 30.94px;
             &:hover {
                 cursor: pointer;
-                transition: 100ms ease-in-out;
+                transition: 125ms ease-in-out;
             }
         }
         >.mailContactMe, .phoneContactMe {
@@ -116,7 +116,7 @@
         cursor: pointer;
         width: 38px;
         height: 68px;
-        transition: 100ms ease-in-out;
+        transition: 125ms ease-in-out;
     }
 }
 
@@ -174,7 +174,7 @@ input::placeholder, ::placeholder {
 }
 
 input:valid, textarea:valid {
-    border: 1px solid $primaryColorTwo; 
+    border: 1px solid $primaryColorOne; 
 }
 
 input:focus, textarea:focus {
@@ -208,7 +208,7 @@ input:focus, textarea:focus {
                 &:hover {
                     color: $primaryColorOne;
                     cursor: pointer;
-                    transition: color 100ms ease-in-out;
+                    transition: color 125ms ease-in-out;
                 }
             }
         }
@@ -223,6 +223,7 @@ input:focus, textarea:focus {
     appearance: none;
     &:hover {
         cursor: pointer;
+        background-color: $primaryColorTwo;
     }
   
 }
