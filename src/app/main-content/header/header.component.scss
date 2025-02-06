@@ -76,6 +76,7 @@
     width: 496px;
     height: 26px;
     gap: 32px;
+    white-space: nowrap;
     >.headerMenuLinksFields {
         display: flex;
         justify-content: center;
@@ -220,6 +221,7 @@
 .headerMenuLinksFieldsBurgerMenu {
     color: $primaryColorOne;
     text-decoration: none;
+    white-space: nowrap;
     &:hover {
         color: #02F4BF;
         transition: color 100ms ease-in-out;

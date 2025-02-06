@@ -6,13 +6,14 @@
     max-width: 1440px;
     width: 100%;
     height: 307px;
-    top: 50px;
+    top: 150px;
     >.referenceContainerHeader {
         position: relative;
         // width: 808px;
         max-width: 808px;
         width: 100%;
         height: 29px;
+        white-space: nowrap;
         >.referenceContainerText {
             color: $primaryColorOne;
             font-size: 24px;
@@ -139,12 +140,15 @@
         color: $primaryColorOne;
         font-size: 24px;
         font-weight: 700;
-        margin: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: center;
     }
 
     .referenceProjectResponsive, .referenceTextResponsive {
         color: $primaryColorTwo;
-        margin-top: 0;
+        margin: 0;
+        padding: 0 15px 15px 15px;
     }
 
     .referenceTextResponsive {
@@ -163,7 +167,7 @@
             min-height: 233px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
         }
     }

@@ -17,9 +17,9 @@
     "DESCRIPTION": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
     "I_AM": "I am",
     "LOCATED_ONE": "located",
-    "LOCATED_TWO": "n Munich",
-    "RELOCATE_ONE": "open",
-    "RELOCATE_TWO": "to relocate",
+    "LOCATED_TWO": "in Munich",
+    "RELOCATE_ONE": "open to",
+    "RELOCATE_TWO": "relocate",
     "REMOTE_ONE": "open to",
     "REMOTE_TWO": "work remote",
     "LETS_TALK": "Let's talk"
@@ -37,8 +37,8 @@
   },
   "REFERNCE": {
     "REFERENCE_HEADER": "Need a teamplayer? Here what my colleagues said about me",
-    "REFERENCE_EPL": "Projekt EL Pollo Loco",
-    "REFERENCE_JOIN": "Projekt Join",
+    "REFERENCE_EPL": "Project EL Pollo Loco",
+    "REFERENCE_JOIN": "Project Join",
     "REFERENCE_ONE": "'' He is a trustworhty teamplayer and can cope with the stress of deadline, Structured work and clear code. ''",
     "REFERENCE_TWO": "'' Thomas had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person. ''",
     "REFERENCE_THREE": "'' He is a reliable and friendly person. Work in a structured way and write a clear code. I recommend him as a colleague. ''"

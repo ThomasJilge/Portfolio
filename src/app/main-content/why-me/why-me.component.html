@@ -72,13 +72,10 @@
     </div>
     <div class="whyMeContainerTwoResponsive">
         <div class="h2WhyMeContainerResponsive">
-            <h2 class="h2WhyMe">Why me</h2>
+            <h2 class="h2WhyMe">{{ 'WHY_ME.WHY_ME' | translate }}</h2>
         </div>
         <div class="infoWhyMeContainerResponsive">
-            <p class="infoText">I am motivated to continuously learn new technologies and develop myself.
-                My ability to solve complex problems and my passion for programming make
-                me a valuable member of your team.
-             </p>
+            <p class="infoText">{{ 'WHY_ME.DESCRIPTION' | translate }}</p>
         </div>
         <div class="relocateArrowImgResponsiveContainerOne">
             <img class="relocateArrowImgResponsiveOne" src="../../assets/img/Arrow 5.png" alt="">
@@ -86,14 +83,14 @@
         <div class="iAmContainerOneResponsive">
         <div class="iAmContainerTwoResponsive">
             <div class="locatedContainerOneResponsive">
-                <p class="iAmText">I am</p>
+                <p class="iAmText">{{ 'WHY_ME.I_AM' | translate }}</p>
                 <div class="locatedContainerTwoResponsive" (mouseover)="onHover('located')" (mouseout)="onLeave('located')">
                     <div class="locatedContainerThreeResponsive">
                         <img class="locatedImg" [src]="locatedSrc" alt="located">
                         <img class="locatedImgTwo" [src]="locatedSrc2" alt="">
                     </div>
                     <div class="locatedOpenRemoteInfoResponsive">
-                        <p class="locatedText">located in Munich</p>
+                        <p class="locatedText">{{ 'WHY_ME.LOCATED_ONE' | translate }} {{ 'WHY_ME.LOCATED_TWO' | translate }}</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +98,7 @@
                 <div class="openToRelocate">
                     <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate">
                     <div class="locatedOpenRemoteInfoResponsive">
-                        <p class="locatedText">open to relocate</p>
+                        <p class="locatedText">{{ 'WHY_ME.RELOCATE_ONE' | translate }} {{ 'WHY_ME.RELOCATE_TWO' | translate }}</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +108,7 @@
                          (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')"
                          [ngClass]="{'laptopHoverImg': isRemoteHovered}">
                     <div class="locatedOpenRemoteInfoResponsive">
-                        <p class="locatedText">open to work remote</p>
+                        <p class="locatedText">{{ 'WHY_ME.REMOTE_ONE' | translate }} {{ 'WHY_ME.REMOTE_TWO' | translate }}</p>
                     </div>
                     <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4 (1).png" alt="">
                   </div>
@@ -130,7 +127,7 @@
     <div class="letsTalkContainerOneResponsive">
         <div class="letsTalkContainerTwoResponsive">
             <a href="#contactForm">
-                <div class="letsTalkButton">Let's talk</div>
+                <div class="letsTalkButton">{{ 'WHY_ME.LETS_TALK' | translate }}</div>
             </a>
         </div>
     </div>

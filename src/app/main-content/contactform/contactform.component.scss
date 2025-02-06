@@ -2,7 +2,7 @@
 
 .contactMeContainerOne {
     position: relative;
-    top: 70px;
+    top: 200px;
     max-width: 1440px;
     width: 100%;
     height: 430px;
@@ -167,6 +167,7 @@ textarea {
 .contactForm {
     display: flex;
     gap: 40px;
+    margin-top: 20px;
 }
 
 input::placeholder, ::placeholder {
@@ -254,7 +255,7 @@ input:focus, textarea:focus {
     color: #685F75;
     font-size: 18px;
     position: relative;
-    left: 102px;
+    left: 118px;
     top: 21px;
     background-color: transparent;
     &:hover {
@@ -333,6 +334,10 @@ textarea.validField {
 
     .arrowUpContainer {
         display: none;
+    }
+
+    .contactForm {
+        margin-top: 40px;
     }
 
 }
@@ -479,6 +484,10 @@ textarea.validField {
 
     .arrowUp {
         top: 0;
+    }
+
+    .customCheckbox {
+        margin-top: 15px;
     }
 
 }

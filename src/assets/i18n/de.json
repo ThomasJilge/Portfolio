@@ -1,7 +1,7 @@
 {
   "HEADER": {
     "WHY_ME": "Warum ich",
-    "SKILLS": "Fähigkeiten",
+    "SKILLS": "Skills",
     "PROJECTS": "Projekte",
     "CONTACT": "Kontakt",
     "LANGUAGE_DE": "DE",
@@ -24,7 +24,7 @@
     "LETS_TALK": "Kontakt"
   },
   "MY_SKILLS": {
-    "SKILLS": "Meine Fähigkeiten",
+    "SKILLS": "Meine Skills",
     "CHALLENGE": "Fordern Sie mich heraus",
     "CHALLENGE_TEXT": "Ich bin immer bereit, neue Technologien zu erlernen, teilen Sie mir einfach mit, was Sie benötigen.",
     "LETS_TALK": "Kontakt"
