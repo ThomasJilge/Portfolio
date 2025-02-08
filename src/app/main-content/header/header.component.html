@@ -1,72 +1,74 @@
-<div class="header" id="header">
-    <div class="headerMenu">
-        <div class="initialHeader">
-            <p class="initial"><a href="#aboutMe">&lt;TJ&gt;</a></p>
-        </div>
-        <div class="headerMenuLinks">
-            <a class="headerMenuLinksFields" href="#whyMe" 
-               [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
-               (click)="setActiveSection('whyMe')">{{ 'HEADER.WHY_ME' | translate }}</a>
+<section class="sectionHeader">
+   <div class="header" id="header">
+      <div class="headerMenu">
+         <div class="initialHeader">
+               <p class="initial"><a href="#aboutMe">&lt;TJ&gt;</a></p>
+         </div>
+         <div class="headerMenuLinks">
+               <a class="headerMenuLinksFields" href="#whyMe" 
+                  [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
+                  (click)="setActiveSection('whyMe')">{{ 'HEADER.WHY_ME' | translate }}</a>
 
-            <a class="headerMenuLinksFields" href="#mySkills" 
-               [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
-               (click)="setActiveSection('mySkills')">{{ 'HEADER.SKILLS' | translate }}</a>
-        
-            <a class="headerMenuLinksFields" href="#myProjects" 
-               [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
-               (click)="setActiveSection('myProjects')">{{ 'HEADER.PROJECTS' | translate }}</a>
-        
-            <a class="headerMenuLinksFields" href="#contactForm" 
-               [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
-               (click)="setActiveSection('contactForm')">{{ 'HEADER.CONTACT' | translate }}</a>
+               <a class="headerMenuLinksFields" href="#mySkills" 
+                  [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
+                  (click)="setActiveSection('mySkills')">{{ 'HEADER.SKILLS' | translate }}</a>
+         
+               <a class="headerMenuLinksFields" href="#myProjects" 
+                  [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
+                  (click)="setActiveSection('myProjects')">{{ 'HEADER.PROJECTS' | translate }}</a>
+         
+               <a class="headerMenuLinksFields" href="#contactForm" 
+                  [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
+                  (click)="setActiveSection('contactForm')">{{ 'HEADER.CONTACT' | translate }}</a>
 
-        </div>
-    </div>
+         </div>
+      </div>
 
-    <div class="burgerMenu" [ngClass]="{ 'hide': isMenuOpen }" (click)="toggleMenu()">
-        <div class="burgerMenuLine"></div>
-        <div class="burgerMenuLine"></div>
-        <div class="burgerMenuLine"></div>
-    </div>
+      <div class="burgerMenu" [ngClass]="{ 'hide': isMenuOpen }" (click)="toggleMenu()">
+         <div class="burgerMenuLine"></div>
+         <div class="burgerMenuLine"></div>
+         <div class="burgerMenuLine"></div>
+      </div>
 
-    <div class="headerMenuLinksBurgerMenuContainerOne" [ngClass]="{ 'open': isMenuOpen }">
-      <div class="headerMenuLinksBurgerMenuContainerTwo">
-         <img class="burgerMenuClose" src="../../assets/img/burgerMenuClose.png" alt="" (click)="toggleMenu()">
-        
-        <a class="headerMenuLinksFieldsBurgerMenu" href="#whyMe" 
-               [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
-               (click)="setActiveSection('whyMe')">{{ 'HEADER.WHY_ME' | translate }}</a>
-        
-            <a class="headerMenuLinksFieldsBurgerMenu" href="#mySkills" 
-               [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
-               (click)="setActiveSection('mySkills')">{{ 'HEADER.SKILLS' | translate }}</a>
-        
-            <a class="headerMenuLinksFieldsBurgerMenu" href="#myProjects" 
-               [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
-               (click)="setActiveSection('myProjects')">{{ 'HEADER.PROJECTS' | translate }}</a>
-        
-            <a class="headerMenuLinksFieldsBurgerMenu" href="#contactForm" 
-               [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
-               (click)="setActiveSection('contactForm')">{{ 'HEADER.CONTACT' | translate }}</a>
-    
-            <div class="headerLanguagesBurgerMenu">
-                <p class="headerLanguagesBurgerMenuDE" 
-                   [ngClass]="{ 'active': selectedLanguage === 'DE' }" 
-                   (click)="setLanguage('DE')">DE</p>
-                  <div class="headerLanguagesLine"></div>
-                <p class="headerLanguagesBurgerMenuEN" 
-                   [ngClass]="{ 'active': selectedLanguage === 'EN' }" 
-                   (click)="setLanguage('EN')">EN</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="headerLanguages">
-        <p class="headerLanguagesDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
-         <div class="headerLanguagesLine"></div>
-        <p class="headerLanguagesEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>
-    </div>
-</div>
+      <div class="headerMenuLinksBurgerMenuContainerOne" [ngClass]="{ 'open': isMenuOpen }">
+         <div class="headerMenuLinksBurgerMenuContainerTwo">
+            <img class="burgerMenuClose" src="../../assets/img/burgerMenuClose.png" alt="" (click)="toggleMenu()">
+         
+         <a class="headerMenuLinksFieldsBurgerMenu" href="#whyMe" 
+                  [ngClass]="{ 'active': selectedSection === 'whyMe' }" 
+                  (click)="setActiveSection('whyMe')">{{ 'HEADER.WHY_ME' | translate }}</a>
+         
+               <a class="headerMenuLinksFieldsBurgerMenu" href="#mySkills" 
+                  [ngClass]="{ 'active': selectedSection === 'mySkills' }" 
+                  (click)="setActiveSection('mySkills')">{{ 'HEADER.SKILLS' | translate }}</a>
+         
+               <a class="headerMenuLinksFieldsBurgerMenu" href="#myProjects" 
+                  [ngClass]="{ 'active': selectedSection === 'myProjects' }" 
+                  (click)="setActiveSection('myProjects')">{{ 'HEADER.PROJECTS' | translate }}</a>
+         
+               <a class="headerMenuLinksFieldsBurgerMenu" href="#contactForm" 
+                  [ngClass]="{ 'active': selectedSection === 'contactForm' }" 
+                  (click)="setActiveSection('contactForm')">{{ 'HEADER.CONTACT' | translate }}</a>
+      
+               <div class="headerLanguagesBurgerMenu">
+                  <p class="headerLanguagesBurgerMenuDE" 
+                     [ngClass]="{ 'active': selectedLanguage === 'DE' }" 
+                     (click)="setLanguage('DE')">DE</p>
+                     <div class="headerLanguagesLine"></div>
+                  <p class="headerLanguagesBurgerMenuEN" 
+                     [ngClass]="{ 'active': selectedLanguage === 'EN' }" 
+                     (click)="setLanguage('EN')">EN</p>
+               </div>
+         </div>
+      </div>
+      
+      <div class="headerLanguages">
+         <p class="headerLanguagesDE" [ngClass]="{ 'active': selectedLanguage === 'DE' }" (click)="setLanguage('DE')">DE</p>
+            <div class="headerLanguagesLine"></div>
+         <p class="headerLanguagesEN" [ngClass]="{ 'active': selectedLanguage === 'EN' }" (click)="setLanguage('EN')">EN</p>
+      </div>
+   </div>
+</section>
 
 
 

@@ -1,68 +1,70 @@
-<div class="whyMeContainerOne" id="whyMe">
-    <div class="tjImgWhyMeContainer">
-        <img class="tjImgWhyMe" src="../../assets/img/placeholder.png" alt="">
-    </div>
-    <div class="whyMeContainerTwo">
-        <div class="h2WhyMeContainerTwo">
-            <h2 class="h2WhyMe">{{ 'WHY_ME.WHY_ME' | translate }}</h2>
+<section class="sectionWhyMe">
+    <div class="whyMeContainerOne" id="whyMe">
+        <div class="tjImgWhyMeContainer">
+            <img class="tjImgWhyMe" src="../../assets/img/placeholder.png" alt="">
         </div>
-        <div class="infoWhyMeContainer">
-            <p class="infoText">{{ 'WHY_ME.DESCRIPTION' | translate }}</p>
-        </div>
-        <div class="iAmContainerOne">
-        <div class="iAmContainerTwo">
-            <div class="locatedContainerOne">
-                <p class="iAmText">{{ 'WHY_ME.I_AM' | translate }}</p>
-                <div class="locatedContainerTwo" (mouseover)="onHover('located')" (mouseout)="onLeave('located')">
-                    <div class="locatedContainerThree">
-                        <img class="locatedImg" [src]="locatedSrc" alt="located">
-                        <img class="locatedImgTwo" [src]="locatedSrc2" alt="">
+        <div class="whyMeContainerTwo">
+            <div class="h2WhyMeContainerTwo">
+                <h2 class="h2WhyMe">{{ 'WHY_ME.WHY_ME' | translate }}</h2>
+            </div>
+            <div class="infoWhyMeContainer">
+                <p class="infoText">{{ 'WHY_ME.DESCRIPTION' | translate }}</p>
+            </div>
+            <div class="iAmContainerOne">
+            <div class="iAmContainerTwo">
+                <div class="locatedContainerOne">
+                    <p class="iAmText">{{ 'WHY_ME.I_AM' | translate }}</p>
+                    <div class="locatedContainerTwo" (mouseover)="onHover('located')" (mouseout)="onLeave('located')">
+                        <div class="locatedContainerThree">
+                            <img class="locatedImg" [src]="locatedSrc" alt="located">
+                            <img class="locatedImgTwo" [src]="locatedSrc2" alt="">
+                        </div>
+                        <div class="locatedOpenRemoteInfo">
+                            <p class="locatedText">{{ 'WHY_ME.LOCATED_ONE' | translate }}</p>
+                            <p class="locatedText">{{ 'WHY_ME.LOCATED_TWO' | translate }}</p>
+                        </div>
                     </div>
-                    <div class="locatedOpenRemoteInfo">
-                        <p class="locatedText">{{ 'WHY_ME.LOCATED_ONE' | translate }}</p>
-                        <p class="locatedText">{{ 'WHY_ME.LOCATED_TWO' | translate }}</p>
+                </div>
+                <div class="relocateContainer">
+                    <img class="relocateArrowImg" src="../../assets/img/Arrow 5.png" alt="">
+                    <div class="openToRelocate">
+                        <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate">
+                        <div class="locatedOpenRemoteInfo">
+                            <p class="locatedText">{{ 'WHY_ME.RELOCATE_ONE' | translate }}</p>
+                            <p class="locatedText">{{ 'WHY_ME.RELOCATE_TWO' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="remoteContainerOne">
+                    <div class="remoteContainerTwo">
+                        <img class="remoteImg" [src]="remoteSrc" alt="laptop"
+                            (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')"
+                            [ngClass]="{'laptopHoverImg': isRemoteHovered}">
+                        <div class="locatedOpenRemoteInfo">
+                            <p class="locatedText">{{ 'WHY_ME.REMOTE_ONE' | translate }}</p>
+                            <p class="locatedText">{{ 'WHY_ME.REMOTE_TWO' | translate }}</p>
+                        </div>
+                        <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4 (1).png" alt="">
+                    </div>
+                    
+                    <div class="workRemote">
+                        <img class="remoteArrowTwoImg" src="../../assets/img/Arrow 01.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="relocateContainer">
-                <img class="relocateArrowImg" src="../../assets/img/Arrow 5.png" alt="">
-                <div class="openToRelocate">
-                    <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate">
-                    <div class="locatedOpenRemoteInfo">
-                        <p class="locatedText">{{ 'WHY_ME.RELOCATE_ONE' | translate }}</p>
-                        <p class="locatedText">{{ 'WHY_ME.RELOCATE_TWO' | translate }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="remoteContainerOne">
-                <div class="remoteContainerTwo">
-                    <img class="remoteImg" [src]="remoteSrc" alt="laptop"
-                         (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')"
-                         [ngClass]="{'laptopHoverImg': isRemoteHovered}">
-                    <div class="locatedOpenRemoteInfo">
-                        <p class="locatedText">{{ 'WHY_ME.REMOTE_ONE' | translate }}</p>
-                        <p class="locatedText">{{ 'WHY_ME.REMOTE_TWO' | translate }}</p>
-                    </div>
-                    <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4 (1).png" alt="">
-                  </div>
-                  
-                <div class="workRemote">
-                    <img class="remoteArrowTwoImg" src="../../assets/img/Arrow 01.png" alt="">
-                </div>
-            </div>
         </div>
-    </div>
 
-    <div class="letsTalkContainerOne">
-        <div class="letsTalkContainerTwo">
-            <a href="#contactForm">
-                <div class="letsTalkButton">{{ 'WHY_ME.LETS_TALK' | translate }}</div>
-            </a>
+        <div class="letsTalkContainerOne">
+            <div class="letsTalkContainerTwo">
+                <a href="#contactForm">
+                    <div class="letsTalkButton">{{ 'WHY_ME.LETS_TALK' | translate }}</div>
+                </a>
+            </div>
+        </div>
+            
         </div>
     </div>
-        
-    </div>
-</div>
+</section>
 
 
 

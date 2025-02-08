@@ -3,23 +3,24 @@ $primaryColorTwo: #02F4BF;
 
 body {
     background-color: #120B35;
-    max-width: 1440px;
-    width: 90%;
+    // max-width: 1440px;
+    // width: 100%;
     overflow-x: hidden;
     font-family: 'Roboto Mono';
-    // margin: 0;
+    margin: 0;
     // padding: 0;
     // height: 100%;
+    box-sizing: border-box;
 }
 
-html {
-    display: flex;
-    justify-content: center;
-    scroll-behavior: smooth;
-    // margin: 0;
-    // padding: 0;
-    // height: 100%;
-}
+// html {
+//     // display: flex;
+//     // justify-content: center;
+//     // scroll-behavior: smooth;
+//     // margin: 0;
+//     // padding: 0;
+//     // height: 100%;
+// }
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -125,6 +126,15 @@ html {
 
 .fontRobotoMono {
     font-family: 'Roboto Mono';
+}
+
+@media (min-width: 1441px) {
+
+  html {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 

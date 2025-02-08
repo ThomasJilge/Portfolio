@@ -1,28 +1,30 @@
-<div class="firstSectionAboutMeContainerOne" id="aboutMe">
-        <div class="firstSectionAboutMeContainerTwo">
-            <a class="contactForm" href="#contactForm">
-                <div class="contactMeContainerOne">
-                    <div class="contactMeContainerTwo">
-                        <span class="contactMeContainerTwoAnchor">{{ 'FIRST_SECTION.CONTACT_ME' | translate }}</span>
+<section class="sectionAboutMe">
+    <div class="firstSectionAboutMeContainerOne" id="aboutMe">
+            <div class="firstSectionAboutMeContainerTwo">
+                <a class="contactForm" href="#contactForm">
+                    <div class="contactMeContainerOne">
+                        <div class="contactMeContainerTwo">
+                            <span class="contactMeContainerTwoAnchor">{{ 'FIRST_SECTION.CONTACT_ME' | translate }}</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="arrowDownContainer" id="arrowDownContainer">
+                    <a href="#whyMe">
+                        <img class="arrowDown" id="arrowDown" [ngClass]="{ 'hovered': isHovered }"[src]="arrowDownSrc" (mouseover)="onHover()" (mouseout)="onLeave()" alt="">
+                    </a>
+                </div>
+                <div class="infoFieldOne">
+                    <div class="infoFieldTwo">
+                        <p class="infoFieldDescripton">{{ 'FIRST_SECTION.FRONTEND_DEVELOPER' | translate }}</p>
+                        <p class="infoFieldName">THOMAS JILGE</p>
                     </div>
                 </div>
-            </a>
-            <div class="arrowDownContainer" id="arrowDownContainer">
-                <a href="#whyMe">
-                    <img class="arrowDown" id="arrowDown" [ngClass]="{ 'hovered': isHovered }"[src]="arrowDownSrc" (mouseover)="onHover()" (mouseout)="onLeave()" alt="">
-                </a>
-            </div>
-            <div class="infoFieldOne">
-                <div class="infoFieldTwo">
-                    <p class="infoFieldDescripton">{{ 'FIRST_SECTION.FRONTEND_DEVELOPER' | translate }}</p>
-                    <p class="infoFieldName">THOMAS JILGE</p>
+                <div class="tjImgContainer">
+                    <img class="tjImg" src="../../assets/img/placeholder.png" alt="">
                 </div>
             </div>
-            <div class="tjImgContainer">
-                <img class="tjImg" src="../../assets/img/placeholder.png" alt="">
-            </div>
-        </div>
-</div>
+    </div>
+</section>
 
 
 
