@@ -128,15 +128,27 @@
     }
 }
 
-@media only screen and (min-width: 769px) {
+// @media only screen and (max-width: 999px) {
 
-    .headerMenuLinksBurgerMenuContainerTwo {
-        display: none;
-    }
+//     .headerMenuLinks,
+//     .headerLanguagesDE,
+//     .headerLanguagesEN,
+//     .headerLanguagesLine,
+//     .initialHeader {
+//         display: none;
+//     }
 
-}
+// }
 
-@media only screen and (max-width: 768px) {
+// @media only screen and (min-width: 769px) {
+
+//     .headerMenuLinksBurgerMenuContainerTwo {
+//         display: none;
+//     }
+
+// }
+
+@media only screen and (max-width: 999px) {
 
     .header .headerMenu {
         max-width: 102.14px;
@@ -146,7 +158,8 @@
     .headerMenuLinks,
     .headerLanguagesDE,
     .headerLanguagesEN,
-    .headerLanguagesLine {
+    .headerLanguagesLine,
+    .initialHeader {
         display: none;
     }
 

@@ -25,10 +25,10 @@
     justify-content: space-between;
 }
 
-// .contactForm {
-//     position: absolute;
-//     text-decoration: none;
-// }
+.contactForm {
+    position: absolute;
+    text-decoration: none;
+}
 
 .contactMeContainerOne {
     position: relative;
@@ -135,6 +135,10 @@ p {
     object-fit: contain;
 }
 
+.firstSectionAboutMeContainerOneResponsive {
+    display: none;
+}
+
 // @media only screen and (max-width: 1920px) {
 
 //     .test {
@@ -155,57 +159,48 @@ p {
 
 @media only screen and (max-width: 768px) {
 
-    .firstSectionAboutMeContainerOne {
-        max-width: 1337px;
-        width: 100%;
-        height: 370px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        >.firstSectionAboutMeContainerTwo {
-            max-width: 1284px;
-            width: 100%;
-            height: 370px;
-            display: flex;
-            justify-content: center;
-        }
+    .firstSectionAboutMeContainerOneResponsive {
+        display: block;
     }
 
-    .tjImgContainer {
+    .firstSectionAboutMeContainerOne {
+        display: none;
+    }
+
+    .firstSectionAboutMeContainerOneResponsive {
+        width: 100%;
+        display: flex;
         justify-content: center;
-        position: absolute;
-        >.tjImg {
-            position: relative;
+        position: relative;
+        top: 40px;
+    }
+
+    .tjImgContainerResponsive {
+        width: 100%;
+        >.tjImgResponsive {
             max-width: 388px;
             width: 100%;
             height: 370px;
-            left: 0;
         }
     }
 
-    .infoFieldOne {
-        width: 389px;
-        height: 150px;
+    .infoFieldOneResponsive {
+        position: relative;
+        top: 450px;
+        color: $primaryColorTwo;
         display: flex;
         text-align: center;
         justify-content: center;
-        top: 385px;
     }
 
-    .infoFieldDescripton {
+    .infoFieldDescriptonResponsive {
         font-size: 22px;
+        font-weight: 700;
     }
 
-    .infoFieldName {
+    .infoFieldNameResponsive {
         font-size: 40px;
-    }
-
-    .arrowDown {
-        display: none;
-    }
-
-    .contactMeContainerOne {
-        display: none;
+        font-weight: 700;
     }
 
 } 
