@@ -300,6 +300,10 @@
 
 @media only screen and (max-width: 768px) {
 
+    .h2MyProjectsResponsive {
+        margin-bottom: 0;
+    }
+
     .myProjectsContainerOneResponsive {
         // top: 440px;
         top: 430px;
@@ -308,6 +312,16 @@
         // align-items: center;
     }
 
+}
+
+.projectOneInfoTextResponsive, .projectTwoInfoTextResponsive {
+    display: flex;
+    text-align: center;
+}
+
+.projectContainerImgResponsive {
+    display: flex;
+    justify-content: center;
 }
 
 // @media (orientation: portrait) and (max-width: 667px) {

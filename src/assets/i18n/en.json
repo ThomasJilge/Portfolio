@@ -36,7 +36,9 @@
     "PROJECT_TWO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
   },
   "REFERNCE": {
-    "REFERENCE_HEADER": "Need a teamplayer? Here what my colleagues said about me",
+    "REFERENCE_HEADER_ONE": "Need a teamplayer? Here what my colleagues said about me",
+    "REFERENCE_HEADER_TWO": "Need a teamplayer?",
+    "REFERENCE_TEXT": "Here what my colleagues said about me",
     "REFERENCE_EPL": "Project EL Pollo Loco",
     "REFERENCE_JOIN": "Project Join",
     "REFERENCE_ONE": "'' He is a trustworhty teamplayer and can cope with the stress of deadline, Structured work and clear code. ''",
