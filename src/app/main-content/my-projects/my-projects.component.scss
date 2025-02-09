@@ -33,6 +33,7 @@
     flex-direction: column;
     width: 1439px;
     height: 850px;
+    left: 105px;
     >.projectOne {
         display: flex;
         justify-content: space-between;
@@ -313,6 +314,22 @@
 
 //     .myProjectsContainerOneResponsive {
 //         width: 667px;
+//     }
+
+// }
+
+// @media only screen and (max-width: 768px) {
+
+//     .projectOneResponsive {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+
+//     .projectTwoResponsive {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
 //     }
 
 // }

@@ -13,14 +13,14 @@ body {
     box-sizing: border-box;
 }
 
-// html {
-//     // display: flex;
-//     // justify-content: center;
-//     // scroll-behavior: smooth;
-//     // margin: 0;
-//     // padding: 0;
-//     // height: 100%;
-// }
+html {
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+    // margin: 0;
+    // padding: 0;
+    // height: 100%;
+}
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -128,13 +128,13 @@ body {
     font-family: 'Roboto Mono';
 }
 
-@media (min-width: 1441px) {
+// @media (min-width: 1441px) {
 
-  html {
-    display: flex;
-    justify-content: center;
-  }
+//   html {
+//     display: flex;
+//     justify-content: center;
+//   }
 
-}
+// }
 
 
