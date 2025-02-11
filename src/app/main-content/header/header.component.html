@@ -30,7 +30,7 @@
          <div class="burgerMenuLine"></div>
       </div>
 
-      <div class="headerMenuLinksBurgerMenuContainerOne" [ngClass]="{ 'open': isMenuOpen }">
+      <div class="headerMenuLinksBurgerMenuContainerOne" [ngClass]="{ 'open': isMenuOpen }" (click)="$event.stopPropagation()">
          <div class="headerMenuLinksBurgerMenuContainerTwo">
             <img class="burgerMenuClose" src="../../assets/img/burgerMenuClose.png" alt="" (click)="toggleMenu()">
          

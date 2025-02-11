@@ -52,4 +52,15 @@ export class HeaderComponent {
     }
   }
 
+  @HostListener('document:click', ['$event'])
+onClickOutside(event: Event) {
+  const target = event.target as HTMLElement;
+  const menu = document.querySelector('.headerMenuLinksBurgerMenuContainerOne');
+  const burgerButton = document.querySelector('.burgerMenu');
+
+  if (this.isMenuOpen && menu && !menu.contains(target) && !burgerButton?.contains(target)) {
+    this.isMenuOpen = false;
+  }
+}
+
 }
