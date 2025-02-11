@@ -8,6 +8,7 @@
     height: 307px;
     top: 150px;
     left: 105px;
+    width: calc(100% - 105px);
     >.referenceContainerHeader {
         position: relative;
         // width: 808px;
@@ -164,6 +165,7 @@
         cursor: pointer;
         display: flex;
         gap: 16px;
+        padding-left: 35px;
         >.referenceContainerThreeResponsive {
             position: relative;
             top: 15px;

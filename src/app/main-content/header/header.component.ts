@@ -53,7 +53,7 @@ export class HeaderComponent {
   }
 
   @HostListener('document:click', ['$event'])
-onClickOutside(event: Event) {
+  onClickOutside(event: Event) {
   const target = event.target as HTMLElement;
   const menu = document.querySelector('.headerMenuLinksBurgerMenuContainerOne');
   const burgerButton = document.querySelector('.burgerMenu');

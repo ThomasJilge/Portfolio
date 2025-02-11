@@ -126,23 +126,66 @@
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+// @media only screen and (max-width: 1024px) {
 
-    .footerContainerOne {
-        top: 700px;
-    }
-
-}
-
-// @media (max-width: 768px) {
+//     // .footerContainerOne {
+//     //     top: 700px;
+//     // }
 
 //     .footerContainerOne {
-//         top: 700px;
+//         display: none;
+//     }
+
+//     .footerContainerOneResponsive {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         position: relative;
+//         top: 300px;
+//     }
+
+//     .imgFooterContainerTwoResponsive {
+//         display: flex;
+//         gap: 32px;
+//     }
+
+//     .footerContainerThreeResponsive {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         color: $primaryColorOne;
+//         gap: 8px;
+//         margin-bottom: 30px;
+//     }
+
+//     .initialFooter {
+//         font-size: 48px;
+//         font-weight: 400;
+//         margin-bottom: 0;
+//     }
+
+//     .copyrightText {
+//         margin-top: 0;
+//     }
+
+//     .footerContainerFiveResponsive {
+//         gap: 10px;
+//         display: flex;
+//         flex-direction: column;
+//         margin-bottom: 30px;
+//         >.legalNotice, .privacyPolice {
+//             color: $primaryColorOne;
+//             text-decoration: none;
+//             &:hover{
+//                 color: $primaryColorTwo;
+//                 transition: color 100ms ease-in-out;
+//         }
 //     }
 
 // }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 928px) {
 
     .footerContainerOne {
         display: none;
@@ -154,7 +197,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 750px;
+        top: 300px;
     }
 
     .imgFooterContainerTwoResponsive {
@@ -168,7 +211,6 @@
         align-items: center;
         color: $primaryColorOne;
         gap: 8px;
-        margin-bottom: 30px;
     }
 
     .initialFooter {

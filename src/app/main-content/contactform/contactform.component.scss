@@ -11,6 +11,7 @@
     width: 100%;
     height: 430px;
     left: 105px;
+    width: calc(100% - 105px);
     >.contactMeContainerTwo {
         max-width: 1015px;
         width: 100%;
@@ -347,7 +348,7 @@ textarea.validField {
 
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 1024px) {
 
     .arrowUpContainer {
         display: block;
@@ -362,7 +363,7 @@ textarea.validField {
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 600px;
+        top: 150px;
     }
 
     .containerResponsive {
@@ -390,7 +391,7 @@ textarea.validField {
     }
 
     .contactContainerOneResponsive, .contactContainerTwoResponsive {
-        width: 100%;
+        width: 90%;
     }
 
     .contactMeContainerTwoResponsive {

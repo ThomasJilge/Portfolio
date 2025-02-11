@@ -21,6 +21,7 @@
     width: 100%;
     height: 556px;
     left: 105px;
+    width: calc(100% - 105px);
     display: flex;
     justify-content: space-between;
 }
@@ -157,7 +158,7 @@ p {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     .firstSectionAboutMeContainerOneResponsive {
         display: block;
