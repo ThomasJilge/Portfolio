@@ -15,7 +15,7 @@
     position: relative;
     top: 90px;
     left: 105px;
-    width: calc(100% - 105px);
+    // width: calc(100% - 105px);
     gap: 2px;
 }
 
@@ -287,13 +287,23 @@
     display: none;
 }
 
-// @media only screen and (max-width: 1372px) {
+@media only screen and (max-width: 1440px) {
 
-//     .infoWhyMeContainer {
-//         left: 0;
-//     }
+    .whyMeContainerOne {
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
 
-// }
+}
+
+@media only screen and (max-width: 1372px) {
+
+    .whyMeContainerOne, .infoWhyMeContainer {
+        left: 0;
+    }
+
+}
 
 @media only screen and (max-width: 1024px) {
 

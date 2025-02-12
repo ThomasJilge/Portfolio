@@ -34,7 +34,7 @@
     width: 1439px;
     height: 850px;
     left: 105px;
-    width: calc(100% - 105px);
+    // width: calc(100% - 105px);
     >.projectOne {
         display: flex;
         justify-content: space-between;
@@ -204,6 +204,24 @@
 
 .myProjectsContainerOneResponsive {
     display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .myProjectsContainerThree {
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 1372px) {
+
+    .myProjectsContainerThree {
+        left: 0;
+    }
+
 }
 
 @media only screen and (max-width: 1224px) {

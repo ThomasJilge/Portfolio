@@ -21,7 +21,7 @@
     width: 100%;
     height: 556px;
     left: 105px;
-    width: calc(100% - 105px);
+    // width: calc(100% - 105px);
     display: flex;
     justify-content: space-between;
 }
@@ -149,7 +149,17 @@ p {
 
 // }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1440px) {
+
+    .firstSectionAboutMeContainerTwo {
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 1172px) {
 
     .arrowDownContainer {
         display: none;
@@ -158,7 +168,7 @@ p {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 
     .firstSectionAboutMeContainerOneResponsive {
         display: block;
@@ -187,12 +197,16 @@ p {
 
     .infoFieldOneResponsive {
         position: relative;
-        top: 450px;
+        top: 465px;
         color: $primaryColorTwo;
         display: flex;
         text-align: center;
         justify-content: center;
     }
+
+    // .infoFieldTwoResponsive {
+    //     margin-top: 50px;
+    // }
 
     .infoFieldDescriptonResponsive {
         font-size: 22px;

@@ -11,7 +11,7 @@
     width: 100%;
     height: 430px;
     left: 105px;
-    width: calc(100% - 105px);
+    // width: calc(100% - 105px);
     >.contactMeContainerTwo {
         max-width: 1015px;
         width: 100%;
@@ -336,6 +336,16 @@ textarea.validField {
     display: none;
 }
 
+@media only screen and (max-width: 1440px) {
+
+    .contactMeContainerOne {
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
 @media only screen and (max-width: 1080px) {
 
     .arrowUpContainer {
@@ -494,6 +504,14 @@ textarea.validField {
 
     .customCheckbox {
         margin-top: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contactMeContainerOneResponsive {
+        top: 600px;
     }
 
 }
