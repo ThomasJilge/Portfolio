@@ -9,13 +9,11 @@
     display: flex;
     justify-content: space-around;
     max-width: 1224px;
-    // max-width: 1920px;
     width: 100%;
     height: 452px;
     position: relative;
     top: 90px;
     left: 105px;
-    // width: calc(100% - 105px);
     gap: 2px;
 }
 
@@ -39,7 +37,6 @@
 .h2WhyMeContainerOne {
     position: relative;
     display: flex;
-    // justify-content: flex-end;
     max-width: 524px;
     width: 100%;
     height: 53px;
@@ -329,7 +326,6 @@
     }
 
     .whyMeContainerOneResponsive {
-        // width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -338,8 +334,6 @@
     }
 
     .whyMeContainerTwoResponsive {
-        // width: 389px;
-        // width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -354,7 +348,6 @@
     }
 
     .infoWhyMeContainerResponsive {
-        // width: 338px;
         width: 90%;
         display: flex;
         text-align: center;
@@ -373,7 +366,6 @@
         >.relocateArrowImgResponsiveOne {
             display: flex;
             width: 22.95px;
-            // padding-left: 24px;
         }
     }
 
@@ -387,7 +379,6 @@
         margin-bottom: 5px;
         >.relocateArrowImgResponsiveTwo {
             display: flex;
-            // padding-left: 320px;
             width: 23.22px;
             height: 41.3px;
         }

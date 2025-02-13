@@ -7,12 +7,9 @@
 
 .header {
     max-width: 1440px;
-    // max-width: 1920px;
     position: fixed;
     z-index: 1000;
-    // width: 90%;
     width: 100%;
-    // width: calc(100% - 50px);
     height: 92px;
     color: $primaryColorOne;
     display: flex;
@@ -20,7 +17,6 @@
     align-items: center;
     background-color: #120B35;
     padding: 24px 140px 24px 140px;
-    // margin: 24px 140px 24px 140px;
     margin: 0 auto;
     box-sizing: border-box;
     >.headerMenu {
@@ -32,7 +28,6 @@
         height: 44px;
         gap: 48px;
         position: relative;
-        // left: 70px;
     }
     >.initialHeader {
         width: 92px;
@@ -67,7 +62,6 @@
     height: 44px;
     display: flex;
     align-items: center;
-    // justify-content: center;
     &:hover {
         cursor: pointer;
     }

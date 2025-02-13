@@ -11,7 +11,6 @@
     width: 100%;
     height: 430px;
     left: 105px;
-    // width: calc(100% - 105px);
     >.contactMeContainerTwo {
         max-width: 1015px;
         width: 100%;
@@ -223,6 +222,7 @@ input:focus, textarea:focus {
 }
 
 .customCheckbox {
+    position: relative;
     border: 1px solid red;
     background-color: transparent;
     width: 18px;
@@ -242,13 +242,14 @@ input:focus, textarea:focus {
 .customCheckbox:checked::before {
     content: "";
     position: absolute;
-    top: 7px;
-    left: 11px;
+    top: 50%;
+    left: 50%;
     width: 5px;
     height: 9px;
     border: solid red;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(45deg);
   }
 
   .sendButton {
