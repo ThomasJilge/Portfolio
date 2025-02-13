@@ -114,7 +114,7 @@
     </div>
 
     <div class="containerResponsive">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form (ngSubmit)="onSubmit(contactFormResponsive)" #contactFormResponsive="ngForm">
             <div class="contactFormResponsive">
                 <div class="contactContainerOneResponsive">
                     <label for="name"></label>
@@ -132,7 +132,7 @@
                     <input #email="ngModel" 
                            [(ngModel)]="contactData.email" 
                            type="email" id="email" name="email" 
-                           [placeholder]="email.invalid && email.touched ? ('CONTACT.CONTACT_MAIL_REQUIRED' | translate) : ('CONTACT.CONTACT_MESSAGE' | translate)" 
+                           [placeholder]="email.invalid && email.touched ? ('CONTACT.CONTACT_MAIL_REQUIRED' | translate) : ('CONTACT.CONTACT_MAIL' | translate)" 
                            required autocomplete="off"
                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                            [ngClass]="{

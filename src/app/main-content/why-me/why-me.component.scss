@@ -334,7 +334,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 200px;
+        top: 70px;
     }
 
     .whyMeContainerTwoResponsive {
@@ -434,13 +434,13 @@
 
 }
 
-// @media (orientation: portrait) and (max-width: 667px) {
+@media (orientation: portrait) and (max-width: 768px) {
 
-//     .whyMeContainerOneResponsive {
-//         width: 667px;
-//     }
+    .whyMeContainerOneResponsive {
+        top: 170px;
+    }
 
-// }
+}
 
 
 

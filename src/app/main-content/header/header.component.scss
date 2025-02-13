@@ -128,25 +128,20 @@
     }
 }
 
-// @media only screen and (max-width: 999px) {
+.burgerMenuClose {
+    width: 35px;
+    height: 32px;
+    position: relative;
+    top: 40px;
+    left: 155px;
+    &:hover {
+        cursor: pointer;
+    }
+}
 
-//     .headerMenuLinks,
-//     .headerLanguagesDE,
-//     .headerLanguagesEN,
-//     .headerLanguagesLine,
-//     .initialHeader {
-//         display: none;
-//     }
-
-// }
-
-// @media only screen and (min-width: 769px) {
-
-//     .headerMenuLinksBurgerMenuContainerTwo {
-//         display: none;
-//     }
-
-// }
+.hide {
+    display: none;
+}
 
 @media only screen and (max-width: 999px) {
 
@@ -272,17 +267,10 @@
     }
 }
 
-.burgerMenuClose {
-    width: 35px;
-    height: 32px;
-    position: relative;
-    top: 40px;
-    left: 155px;
-    &:hover {
-        cursor: pointer;
-    }
-}
+@media only screen and (max-width: 360px) {
 
-.hide {
-    display: none;
-  }
+    .headerMenuLinksBurgerMenuContainerOne .burgerMenuClose {
+        left: 120px;
+    }
+
+}

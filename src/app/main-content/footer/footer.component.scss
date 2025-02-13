@@ -185,6 +185,14 @@
 
 // }
 
+@media only screen and (max-width: 1024px) {
+
+    .footerContainerOne {
+        top: 300px;
+    }
+
+}
+
 @media only screen and (max-width: 928px) {
 
     .footerContainerOne {
@@ -235,10 +243,10 @@
     }
 }
 
-@media only screen and (max-width: 928px) {
+@media only screen and (max-width: 768px) {
 
     .footerContainerOneResponsive {
-        top: 750px;
+        top: 720px;
     }
 
 }

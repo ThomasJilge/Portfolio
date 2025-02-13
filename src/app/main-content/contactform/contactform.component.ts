@@ -64,7 +64,6 @@ onSubmit(ngForm: NgForm) {
   }
 }
 
-
 mailContactMe: string = '../../assets/img/email.png';
 phoneContactMe: string = '../../assets/img/phone.png';
 arrowUpSrc: string = '../../assets/img/arrowUp.png';
