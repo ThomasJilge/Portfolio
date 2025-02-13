@@ -106,17 +106,16 @@ p {
 }
 
 .arrowDown {
-    // position: relative;
     position: absolute;
     width: 22px;
     height: 50px;
     top: 306px;
     left: 600px;
+    border: 1px solid transparent;
     &:hover.hovered {
         cursor: pointer;
-        width: 38px;
-        height: 68px;
-        transition: 100ms ease-in-out;
+        border-color: $primaryColorTwo;
+        transition: 125ms ease-in-out;
     }
 }
 

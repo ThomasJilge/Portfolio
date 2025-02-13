@@ -118,10 +118,10 @@
     width: 22px;
     height: 50px;
     position: relative;
+    border: 1px solid transparent;
     &:hover.hovered {
         cursor: pointer;
-        width: 38px;
-        height: 68px;
+        border-color: $primaryColorTwo;
         transition: 125ms ease-in-out;
     }
 }
