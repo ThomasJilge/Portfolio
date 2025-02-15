@@ -179,9 +179,9 @@ input::placeholder, ::placeholder {
     color: #0B8D8F;
 }
 
-input:valid, textarea:valid {
-    border: 1px solid $primaryColorOne; 
-}
+// input:valid, textarea:valid {
+//     border: 1px solid $primaryColorOne; 
+// }
 
 input:focus, textarea:focus {
     border: 1px solid $primaryColorTwo; 
@@ -271,6 +271,9 @@ input:focus, textarea:focus {
     &.activeButton {
         border: 1px solid $primaryColorTwo;
         color: $primaryColorOne;
+        &:hover {
+            color: $primaryColorTwo;
+        }
       }
   }
 
@@ -319,14 +322,14 @@ textarea.errorField {
 }
 
 textarea.validField {
-    background-image: url('/portfolio/src/assets/img/greenCheckMark.png');
+    background-image: url('../../../assets/img/greenCheckMark.png');
     background-position: right 10px top 5px; 
     background-size: 25px 36.37px;
     padding-right: 35px;
 }
 
 .validField {
-    background-image: url('/portfolio/src/assets/img/greenCheckMark.png');
+    background-image: url('../../../assets/img/greenCheckMark.png');
     background-repeat: no-repeat;
     background-position: right 10px center; 
     background-size: 25px 36.37px; 

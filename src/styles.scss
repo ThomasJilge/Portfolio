@@ -3,13 +3,9 @@ $primaryColorTwo: #02F4BF;
 
 body {
     background-color: #120B35;
-    // max-width: 1440px;
-    // width: 100%;
     overflow: auto;
     font-family: 'Roboto Mono';
     margin: 0;
-    // padding: 0;
-    // height: 100%;
     box-sizing: border-box;
 }
 
@@ -17,31 +13,11 @@ html {
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
-    // overflow-x: hidden;
-    // margin: 0;
-    // padding: 0;
-    // height: 100%;
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Versteckt die Scrollbar */
+  display: none; 
 }
-
-// ::-webkit-scrollbar {
-//     width: 15px;
-// }
-  
-// ::-webkit-scrollbar-track {
-//     background: #f1f1f1;
-// }
-  
-// ::-webkit-scrollbar-thumb {
-//     background: #02F4BF;
-// }
-  
-// ::-webkit-scrollbar-thumb:hover {
-//     background: $primaryColorOne;
-// }
 
 /* handjet-regular - latin */
 @font-face {

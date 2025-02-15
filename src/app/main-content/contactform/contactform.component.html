@@ -45,6 +45,7 @@
                         type="text" id="name" name="name" 
                         [placeholder]="name.invalid && name.touched ? ('CONTACT.CONTACT_NAME_REQUIRED' | translate) : ('CONTACT.CONTACT_NAME' | translate)" 
                         required autocomplete="off"
+                        minlength="5"
                         [ngClass]="{
                             'errorField': name.invalid && name.touched, 
                             'validField': name.valid && name.touched
