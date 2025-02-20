@@ -1,9 +1,9 @@
 @import "../../../styles.scss";
 
-.sectionAboutMe {
-    max-width: 1440px;
-    width: 100%;
-}
+// .sectionAboutMe {
+//     max-width: 1440px;
+//     width: 100%;
+// }
 
 .firstSectionAboutMeContainerOne {
     max-width: 1337px;
@@ -11,21 +11,19 @@
     height: 665px;
     top: 94px;
     position: relative;
-}
-
-.firstSectionAboutMeContainerTwo {
-    position: relative;
-    max-width: 1284px;
-    width: 100%;
-    height: 556px;
-    left: 105px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contactForm {
-    position: absolute;
-    text-decoration: none;
+    >.firstSectionAboutMeContainerTwo {
+        position: relative;
+        max-width: 1284px;
+        width: 100%;
+        height: 556px;
+        left: 105px;
+        display: flex;
+        justify-content: space-between;
+        >.contactForm {
+            position: absolute;
+            text-decoration: none;
+        }
+    }
 }
 
 .contactMeContainerOne {
@@ -121,14 +119,13 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.tjImg {
-    position: relative;
-    max-width: 539px;
-    width: 100%;
-    height: 554px;
-    object-fit: contain;
+    >.tjImg {
+        position: relative;
+        max-width: 539px;
+        width: 100%;
+        height: 554px;
+        object-fit: contain;
+    }
 }
 
 .firstSectionAboutMeContainerOneResponsive {
