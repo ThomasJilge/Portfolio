@@ -1,9 +1,5 @@
 @import "../../../styles.scss";
 
-.sectionContact {
-    max-width: 1440px;
-}
-
 .contactMeContainerOne {
     position: relative;
     top: 200px;
@@ -178,10 +174,6 @@ textarea {
 input::placeholder, ::placeholder {
     color: #0B8D8F;
 }
-
-// input:valid, textarea:valid {
-//     border: 1px solid $primaryColorOne; 
-// }
 
 input:focus, textarea:focus {
     border: 1px solid $primaryColorTwo; 

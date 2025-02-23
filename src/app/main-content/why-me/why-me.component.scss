@@ -1,10 +1,5 @@
 @import "../../../styles.scss";
 
-.sectionWhyMe {
-    max-width: 1440px;
-    width: 100%;
-}
-
 .whyMeContainerOne {
     display: flex;
     justify-content: space-around;
@@ -34,26 +29,15 @@
     height: 452px;
 }
 
-.h2WhyMeContainerOne {
-    position: relative;
-    display: flex;
-    max-width: 524px;
-    width: 100%;
-    height: 53px;
-    left: 206px;
-    gap: 10px;
-}
-
 .h2WhyMeContainerTwo {
     display: flex;
     justify-content: end;
+    >.h2WhyMe {
+        font-size: 54px;
+        color:$primaryColorOne;
+        margin: 0;
+    } 
 }
-
-.h2WhyMe {
-    font-size: 54px;
-    color:$primaryColorOne;
-    margin: 0;
-} 
 
 .infoWhyMeContainer {
     position: relative;

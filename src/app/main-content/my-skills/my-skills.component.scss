@@ -1,19 +1,12 @@
 @import "../../../styles.scss";
 
-.sectionMySkills {
-    max-width: 1440px;
-    width: 100%;
-}
-
 .mySkillsContainerOne {
     position: relative;
-    // width: 1439px;
     max-width: 1439px;
     width: 100%;
     height: 423px;
     top: 130px;
     left: 105px;
-    // width: calc(100% - 105px);
     >.h2MySkillsContainer {
         position: relative;
         width: 292px;
@@ -29,32 +22,23 @@
     >.mySkillsContainerTwo {
         display: flex;
         position: relative;
-        // width: 1219px;
         max-width: 1219px;
         width: 100%;
         height: 325px;
         top: 1px;
         flex-wrap: wrap;
         >.skillsImgsContainerOne {
-            // width: 1122px;
             max-width: 1122px;
             width: 100%;
             height: 100px;
             display: flex;
-            // gap: 100px;
-            // gap: 10vw;
-            // gap: 7vw;
             gap: max(7vw, 50px);
         }
         >.skillsImgsContainerTwo {
-            // width: 1219px;
             max-width: 1219px;
             width: 100%;
             height: 125px;
             display: flex;
-            // gap: 100px;
-            // gap: 10vw;
-            // gap: 7vw;
             gap: max(7vw, 50px);
         }
     }
@@ -229,121 +213,6 @@
         }
     }
     
-}
-
-// @media (orientation: portrait) and (max-width: 667px) {
-
-//     .mySkillsContainerOneResponsive {
-//         width: 667px;
-//     }
-
-// }
-
-@media only screen and (max-width: 576px) {
-
-// .mySkillsContainerOne {
-//     display: none;
-// }
-
-// .mySkillsContainerOneResponsive {
-//     display: flex;
-//     position: relative;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     top: 230px;
-//     >.h2MySkillsContainerResponsive {
-//         color: $primaryColorOne;
-//         font-size: 32px;
-//         font-weight: 700;
-//     }
-// }
-
-// .mySkillsContainerTwoResponsive {
-//     width: 90%;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-// }
-
-// .mySkillsTextContainerTwoResponsive {
-//     color: $primaryColorTwo;
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-
-// }
-
-// .skillsImgsContainerOneResponsive {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     width: 388px;
-//     height: 215px;
-//     gap: 80px;
-//     position: relative;
-// }
-
-// .skillsImgsContainerTwoResponsive {
-//     color: $primaryColorTwo;
-//     display: flex;
-//     justify-content: center;
-//     gap: 74px;
-//     width: 388px;
-//     position: relative;
-//     top: 140px;
-//     >.challengeMe2Text {
-//         position: relative;
-//         right: 65px;
-//     }
-// }
-
-// .skillsImgsMobile {
-//     height: 45px;
-//     width: 45px;
-// }
-
-// .mySkillsArrowResponsiveContainerResponsive {
-//     position: relative;
-//     top: 170px;
-//     width: 388px;
-//     display: flex;
-//     justify-content: center;
-//     >.mySkillsArrowResponsive {
-//         display: block;
-//     }
-// }
-
-// .mySkillsTextContainerOneResponsive {
-//     position: relative;
-//     top: 190px;
-// }
-
-// .letsTalkContainerOneResponsive {
-//     display: flex;
-//     justify-content: center;
-//     position: relative;
-// }
-
-// .letsTalkContainerTwoResponsive > a {
-//     text-decoration: none;
-// }
-
-// .letsTalkButton {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 137px;
-//     height: 43px;
-//     color: black;
-//     background-color: $primaryColorTwo;
-//     &:hover {
-//         cursor: pointer;
-//         color: $primaryColorOne;
-//         transition: color 100ms ease-in-out;
-//     }
-// }
-
 }
 
 @media only screen and (max-width: 370px) {
