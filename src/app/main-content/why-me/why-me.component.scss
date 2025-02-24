@@ -66,6 +66,7 @@
     height: 186px;
     left: 159;
     gap: 8px;
+    top: 10px;
     >.locatedContainerOne {
         position: relative;
         display: flex;
@@ -98,7 +99,8 @@
 .locatedImg {
     width: 33.31px;
     height: 41px;
-    top: 8px;
+    position: relative;
+    right: 7px;
 }
 
 .locatedContainerTwo {
