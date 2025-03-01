@@ -4,10 +4,10 @@
     display: none;
     height: 100vh;
     width: 100vw;
-
+    
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-height: 600px) and (orientation: landscape) {
 
     .landscapeContainerOne {
         display: none;
@@ -17,13 +17,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
 
     .landscapeContainerThree {
         color: $primaryColorOne;
         padding: 25px;
         border: 2px solid $primaryColorTwo;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        >h2 {
+            margin: 0;
+        }
     }
 
 }
