@@ -142,7 +142,7 @@
               [(ngModel)]="isPrivacyPolicyChecked"
             />
           </label>
-          <p class="contactMeContainerSixText">
+          <!-- <p class="contactMeContainerSixText">
             <span
               [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"
             ></span>
@@ -155,7 +155,19 @@
             <span
               [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"
             ></span>
+          </p> -->
+          <p class="contactMeContainerSixText">
+            <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"></span>
+            <span class="pp">
+              &nbsp;
+              <a class="privacyLink" routerLink="/data-protection">
+                <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate"></span>
+              </a>
+              &nbsp;
+            </span>
+            <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"></span>
           </p>
+          
         </div>
 
         <div class="contactMeContainerSeven">

@@ -201,16 +201,18 @@ input:focus, textarea:focus {
             font-size: 14px;
             font-weight: 400px;
             margin: 0;
-            >.pp {
-                color: #AE4247;
-                &:hover {
+        }
+    }
+}
+
+.privacyLink {
+    text-decoration: none;
+    color: #AE4247;
+         &:hover {
                     color: $primaryColorOne;
                     cursor: pointer;
                     transition: color 125ms ease-in-out;
                 }
-            }
-        }
-    }
 }
 
 .customCheckbox {
