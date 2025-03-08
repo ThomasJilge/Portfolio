@@ -209,10 +209,10 @@ input:focus, textarea:focus {
     text-decoration: none;
     color: #AE4247;
          &:hover {
-                    color: $primaryColorOne;
-                    cursor: pointer;
-                    transition: color 125ms ease-in-out;
-                }
+            color: $primaryColorOne;
+            cursor: pointer;
+            transition: color 125ms ease-in-out;
+        }
 }
 
 .customCheckbox {

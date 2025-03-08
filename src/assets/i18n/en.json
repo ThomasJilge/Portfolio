@@ -55,7 +55,7 @@
     "CONTACT_MESSAGE": "Your Message",
     "CONTACT_MESSAGE_REQUIRED": "Your message is required",
     "CONTACT_PRIVACY_ONE": "I've read the",
-    "CONTACT_PRIVACY_TWO": " <span class=\"pp\">privacy policy</span> ",
+    "CONTACT_PRIVACY_TWO": "privacy policy",
     "CONTACT_PRIVACY_THREE": "and agree to the processing of my data as outlined.",
     "CONTACT_SEND": "Send"
   },
