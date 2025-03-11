@@ -35,7 +35,7 @@
 
 .contactMeContainerFive {
     display: flex;
-    gap: 40px;
+    justify-content: stretch;
     >.contactMeTextContainer {
         display: flex;
         max-width: 504px;
@@ -183,27 +183,24 @@ input:focus, textarea:focus {
 }
 
 .contactMeContainerFour {
-    // display: flex;
-    // justify-content: space-between;
     position: relative;
     width: 100%;
-    // height: 74px;
     top: 20px;
-    >.contactMeContainerSix {
+    >.contactMeContainerSeven {
         display: flex;
         align-items: center;
         max-width: 978px;
         width: 100%;
         height: 27px;
         gap: 8px;
-        >.contactMeContainerSixText {
+        >.contactMeContainerSevenText {
             color: $primaryColorTwo;
             font-size: 14px;
             font-weight: 400px;
             margin: 0;
         }
     }
-    >.contactMeContainerSeven {
+    >.contactMeContainerEight {
         display: flex;
         justify-content: end;
     }
@@ -260,7 +257,6 @@ input:focus, textarea:focus {
     color: #685F75;
     font-size: 18px;
     position: relative;
-    // top: 21px;
     background-color: transparent;
     &:hover {
         cursor: pointer;
@@ -349,6 +345,10 @@ textarea.validField {
 
 @media only screen and (max-width: 1080px) {
 
+    .contactMeContainerFive {
+        gap: 20px;
+    }
+
     .arrowUpContainer {
         display: none;
     }
@@ -371,6 +371,10 @@ textarea.validField {
         max-width: none;
     }
 
+    .contactMeText {
+        font-size: clamp(14px, 3vw, 18px) !important;
+    }
+
     .contactContainerOne > #name {
         margin-bottom: 0;
     }
@@ -382,11 +386,11 @@ textarea.validField {
         max-width: none;
     }
 
-    .contactMeContainerSix {
-        flex-wrap: nowrap;
-    }
+    // .contactMeContainerSix {
+    //     flex-wrap: nowrap;
+    // }
 
-    .contactMeContainerSeven {
+    .contactMeContainerEight {
         position: relative;
         top: 20px;
         justify-content: center !important;
@@ -423,15 +427,11 @@ textarea.validField {
     .contactMeContainerFive {
         gap: 0;
     }
-
-    .contactMeText {
-        font-size: clamp(14px, 3vw, 18px) !important;
-    }
 }
 
 @media only screen and (max-width: 410px) {
 
-    .contactMeContainerSeven {
+    .contactMeContainerEight {
         top: 35px;
     }
 
