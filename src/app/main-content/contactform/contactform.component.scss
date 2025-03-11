@@ -183,11 +183,11 @@ input:focus, textarea:focus {
 }
 
 .contactMeContainerFour {
-    display: flex;
+    // display: flex;
+    // justify-content: space-between;
     position: relative;
-    max-width: 1185px;
-    width: 90%;
-    height: 74px;
+    width: 100%;
+    // height: 74px;
     top: 20px;
     >.contactMeContainerSix {
         display: flex;
@@ -202,6 +202,10 @@ input:focus, textarea:focus {
             font-weight: 400px;
             margin: 0;
         }
+    }
+    >.contactMeContainerSeven {
+        display: flex;
+        justify-content: end;
     }
 }
 
@@ -256,8 +260,7 @@ input:focus, textarea:focus {
     color: #685F75;
     font-size: 18px;
     position: relative;
-    left: 118px;
-    top: 21px;
+    // top: 21px;
     background-color: transparent;
     &:hover {
         cursor: pointer;
@@ -358,58 +361,18 @@ textarea.validField {
 
 @media only screen and (max-width: 1024px) {
 
-    .arrowUpContainer {
-        display: block;
-    }
-
-    .contactMeContainerOne {
-        display: none;
-    }
-
-    .contactMeContainerOneResponsive {
-        display: flex;
+    .contactForm {
         flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 200px;
-    }
-
-    .containerResponsive {
-        width: 90%;
-    }
-
-    .contactMeContainerThreeResponsive {
-        display: flex;
-        justify-content: center;
-        color: $primaryColorOne;
-        font-size: 32px;
-        font-weight: 700;
-        >.h2ContactMeResponsive {
-            margin: 0;
-        }
-    }
-
-    .contactMeTextContainerResponsive {
-        display: flex;
-        text-align: center;
-        color: $primaryColorTwo;
-        font-size: 16px;
-        font-weight: 400;
-        width: 90%;
-    }
-
-    .contactContainerOneResponsive, .contactContainerTwoResponsive {
         width: 100%;
+        gap: 0;
     }
 
-    .contactMeContainerTwoResponsive {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .contactContainerOne, .contactContainerTwo {
+        max-width: none;
     }
 
-    #name {
-        margin-bottom: 10px;
+    .contactContainerOne > #name {
+        margin-bottom: 0;
     }
 
     #name,
@@ -419,106 +382,57 @@ textarea.validField {
         max-width: none;
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .contactMeContainerSix {
+        flex-wrap: nowrap;
     }
 
-    .contactFormResponsive {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .contactMeContainerFiveResponsive {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contactMeTextResponsive {
-        width: 100%;
-    }
-
-    .contactMeContainerSixResponsive {
-        display: flex;
-        justify-content: center;
-        color: $primaryColorTwo;
-        top: 10px;
+    .contactMeContainerSeven {
         position: relative;
-        gap: 5px;
-        >.contactMeContainerSixText {
-            margin: 0;
-        }
-    }
-
-    .contactMeContainerSevenResponsive {
-        position: relative;
-        top: 30px;
-        display: flex;
-        justify-content: center;
-        >.sendButton {
-            width: 79px;
-            height: 43px;
-            left: 0;
-        }
-    }
-
-    .containerMailAndPhoneResponsive {
-        position: relative;
-        top: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .mailContactMeContainerResponsive, .phoneContactMeContainerResponsive {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .phoneContactMe {
-        color: $primaryColorTwo;
-        font-size: 20px;
-    }
-
-    .arrowUpContainerResponsive {
-        position: relative;
-        top: 50px;
-        display: flex;
-        justify-content: right;
-        width: 90%;
-    }
-
-    .arrowUp {
-        top: 0;
-    }
-
-    .customCheckbox {
-        margin-top: 15px;
+        top: 20px;
+        justify-content: center !important;
     }
 
 }
 
 @media only screen and (max-width: 768px) {
 
-    .contactMeContainerOneResponsive {
+    .contactMeContainerOne {
         top: 600px;
     }
 
+    .contactMeContainerSix, .arrowContactMeContainer {
+        display: none;
+    }
+
+    .contactMeContainerTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactMeContainerThree {
+        justify-content: center;
+    }
+
+    .h2ContactMe {
+        font-size: 38px !important;
+    }
+
+    .contactMeContainerFive {
+        gap: 0;
+    }
+
+    .contactMeText {
+        font-size: clamp(14px, 3vw, 18px) !important;
+    }
 }
 
-@media only screen and (max-width: 577px) {
+@media only screen and (max-width: 410px) {
 
-    .contactMeContainerOneResponsive {
-        top: 620px;
+    .contactMeContainerSeven {
+        top: 35px;
     }
 
 }
