@@ -144,23 +144,16 @@
           </label>
           <p class="contactMeContainerSevenText">
             <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"></span>
-            
-              &nbsp;
-              <a class="privacyLink" routerLink="/data-protection" ngClass="pp" [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate">
-                
-              </a>
-              &nbsp;
-            
+              <a class="privacyLink" routerLink="/data-protection" ngClass="pp" [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate"></a>
             <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"></span>
           </p>
-          
         </div>
         <div class="contactMeContainerEight">
           <button
             class="sendButton"
             type="submit"
-            [disabled]="!isPrivacyPolicyChecked"
-            [ngClass]="{ activeButton: isPrivacyPolicyChecked }">
+            [disabled]="!contactForm.valid || !isPrivacyPolicyChecked"
+            [ngClass]="{ activeButton: contactForm.valid && isPrivacyPolicyChecked }">
             {{ "CONTACT.CONTACT_SEND" | translate }}
           </button>
         </div>

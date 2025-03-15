@@ -45,13 +45,11 @@ post = {
   },
 };
 
-
 onSubmit(ngForm: NgForm) {
-  if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+  if (ngForm.valid && !this.mailTest) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
-
           ngForm.resetForm();
         },
         error: (error) => {
@@ -59,8 +57,7 @@ onSubmit(ngForm: NgForm) {
         },
         complete: () => console.info('send post complete'),
       });
-  } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+  } else if (ngForm.valid && this.mailTest) {
     ngForm.resetForm();
   }
 }

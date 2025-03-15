@@ -209,6 +209,7 @@ input:focus, textarea:focus {
 .privacyLink {
     text-decoration: none;
     color: #AE4247;
+    padding: 0 10px 0 10px;
          &:hover {
             color: $primaryColorOne;
             cursor: pointer;
@@ -372,7 +373,7 @@ textarea.validField {
     }
 
     .contactMeText {
-        font-size: clamp(14px, 3vw, 18px) !important;
+        font-size: clamp(16px, 2vw, 18px) !important;
     }
 
     .contactContainerOne > #name {
