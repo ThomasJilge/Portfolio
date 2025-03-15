@@ -234,7 +234,6 @@
     align-items: center;
 }
 
-
 .locatedContainerTwo:hover .locatedImgTwo {
     display: block;
 }
@@ -296,10 +295,6 @@
 
     .tjImgWhyMeContainer {
         display: none;
-    }
-
-    .locatedText {
-        min-width: 271px;
     }
 
     .whyMeContainerOne,
@@ -370,7 +365,6 @@
     }
 
     .iAmContainerOneResponsive {
-        width: 261px;
         >.iAmContainerTwoResponsive {
             display: flex;
             flex-direction: column;
@@ -383,6 +377,7 @@
         color: $primaryColorOne;
         font-size: 18px;
         font-weight: 700;
+        margin: 0;
     }
 
     .locatedContainerOneResponsive {
@@ -392,12 +387,19 @@
     }
 
     .locatedContainerTwoResponsive,
-    .openToRelocate,
     .remoteContainerTwoResponsive {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 221px;
+    }
+
+    .relocateContainerResponsive {
+        display: flex;
+    }
+
+    .openToRelocateResponsive {
+        display: flex;
+        align-items: center;
     }
 
     .letsTalkContainerTwoResponsive > a {
@@ -407,7 +409,6 @@
             height: 43px;
         }
     }
-
 }
 
 @media (orientation: portrait) and (max-width: 768px) {

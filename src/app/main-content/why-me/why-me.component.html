@@ -13,11 +13,7 @@
       <div class="iAmContainerTwo">
         <div class="locatedContainerOne">
           <p class="iAmText">{{ "WHY_ME.I_AM" | translate }}</p>
-          <div
-            class="locatedContainerTwo"
-            (mouseover)="onHover('located')"
-            (mouseout)="onLeave('located')"
-          >
+          <div class="locatedContainerTwo" (mouseover)="onHover('located')" (mouseout)="onLeave('located')">
             <div class="locatedContainerThree">
               <img class="locatedImg" [src]="locatedSrc" alt="located" />
               <img class="locatedImgTwo" [src]="locatedSrc2" alt="" />
@@ -29,19 +25,9 @@
           </div>
         </div>
         <div class="relocateContainer">
-          <img
-            class="relocateArrowImg"
-            src="../../assets/img/Arrow 5.png"
-            alt=""
-          />
+          <img class="relocateArrowImg" src="../../assets/img/Arrow 5.png" alt="" />
           <div class="openToRelocate">
-            <img
-              class="relocateImg"
-              src="{{ relocateSrc }}"
-              (mouseover)="onHover('relocate')"
-              (mouseout)="onLeave('relocate')"
-              alt="relocate"
-            />
+            <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate" />
             <div class="locatedOpenRemoteInfo">
               <p class="locatedText">{{ "WHY_ME.RELOCATE_ONE" | translate }}</p>
               <p class="locatedText">{{ "WHY_ME.RELOCATE_TWO" | translate }}</p>
@@ -50,31 +36,15 @@
         </div>
         <div class="remoteContainerOne">
           <div class="remoteContainerTwo">
-            <img
-              class="remoteImg"
-              [src]="remoteSrc"
-              alt="laptop"
-              (mouseover)="onHover('remote')"
-              (mouseout)="onLeave('remote')"
-              [ngClass]="{ laptopHoverImg: isRemoteHovered }"
-            />
+            <img class="remoteImg" [src]="remoteSrc" alt="laptop" (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')" [ngClass]="{ laptopHoverImg: isRemoteHovered }" />
             <div class="locatedOpenRemoteInfo">
               <p class="locatedText">{{ "WHY_ME.REMOTE_ONE" | translate }}</p>
               <p class="locatedText">{{ "WHY_ME.REMOTE_TWO" | translate }}</p>
             </div>
-            <img
-              class="remoteArrowOneImg"
-              src="../../assets/img/Arrow 4 (1).png"
-              alt=""
-            />
+            <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4 (1).png" alt="" />
           </div>
-
           <div class="workRemote">
-            <img
-              class="remoteArrowTwoImg"
-              src="../../assets/img/Arrow 01.png"
-              alt=""
-            />
+            <img class="remoteArrowTwoImg" src="../../assets/img/Arrow 01.png" alt="" />
           </div>
         </div>
       </div>
@@ -110,65 +80,43 @@
     </div>
     <div class="iAmContainerOneResponsive">
       <div class="iAmContainerTwoResponsive">
+        <div class="iAmContainerThreeResponsive">
         <div class="locatedContainerOneResponsive">
           <p class="iAmText">{{ "WHY_ME.I_AM" | translate }}</p>
-          <div
-            class="locatedContainerTwoResponsive"
-            (mouseover)="onHover('located')"
-            (mouseout)="onLeave('located')"
-          >
+        </div>
+        </div>
+          <div class="locatedContainerTwoResponsive">
             <div class="locatedContainerThreeResponsive">
               <img class="locatedImg" [src]="locatedSrc" alt="located" />
               <img class="locatedImgTwo" [src]="locatedSrc2" alt="" />
             </div>
-            <div class="locatedOpenRemoteInfoResponsive">
               <p class="locatedText">
                 {{ "WHY_ME.LOCATED_ONE" | translate }}
                 {{ "WHY_ME.LOCATED_TWO" | translate }}
               </p>
-            </div>
           </div>
-        </div>
         <div class="relocateContainerResponsive">
-          <div class="openToRelocate">
-            <img
-              class="relocateImg"
-              src="{{ relocateSrc }}"
-              (mouseover)="onHover('relocate')"
-              (mouseout)="onLeave('relocate')"
-              alt="relocate"
-            />
-            <div class="locatedOpenRemoteInfoResponsive">
+          <div class="openToRelocateResponsive">
+            <img class="relocateImg" src="{{ relocateSrc }}" alt="relocate">
               <p class="locatedText">
                 {{ "WHY_ME.RELOCATE_ONE" | translate }}
                 {{ "WHY_ME.RELOCATE_TWO" | translate }}
               </p>
-            </div>
           </div>
         </div>
         <div class="remoteContainerOneResponsive">
           <div class="remoteContainerTwoResponsive">
-            <img
-              class="remoteImg"
-              [src]="remoteSrc"
-              alt="laptop"
-              (mouseover)="onHover('remote')"
-              (mouseout)="onLeave('remote')"
-              [ngClass]="{ laptopHoverImg: isRemoteHovered }"
-            />
-            <div class="locatedOpenRemoteInfoResponsive">
+            <img class="remoteImg" [src]="remoteSrc" alt="laptop"/>
               <p class="locatedText">
                 {{ "WHY_ME.REMOTE_ONE" | translate }}
                 {{ "WHY_ME.REMOTE_TWO" | translate }}
               </p>
-            </div>
             <img
               class="remoteArrowOneImg"
               src="../../assets/img/Arrow 4 (1).png"
               alt=""
             />
           </div>
-
           <div class="workRemoteResponsive">
             <img
               class="remoteArrowTwoImg"
@@ -179,7 +127,6 @@
         </div>
       </div>
     </div>
-
     <div class="relocateArrowImgResponsiveContainerTwo">
       <img
         class="relocateArrowImgResponsiveTwo"
@@ -187,7 +134,6 @@
         alt=""
       />
     </div>
-
     <div class="letsTalkContainerOneResponsive">
       <div class="letsTalkContainerTwoResponsive">
         <a href="#contactForm">
