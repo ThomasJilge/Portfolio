@@ -35,7 +35,8 @@
     "PROJECT_TWO": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop Funktionen, Benutzer und Kategorien zuweisen."
   },
   "REFERNCE": {
-    "REFERENCE_HEADER": "Brauchen Sie einen Teamplayer?",
+    "REFERENCE_HEADER_ONE": "Brauchen Sie einen Teamplayer? Das sagen meine Kollegen über mich",
+    "REFERENCE_HEADER_TWO": "Brauchen Sie einen Teamplayer?",
     "REFERENCE_TEXT": "Das sagen meine Kollegen über mich",
     "REFERENCE_EPL": "Projekt El Pollo Loco",
     "REFERENCE_JOIN": "Projekt Join",

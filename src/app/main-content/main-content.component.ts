@@ -9,7 +9,14 @@ import { ContactformComponent } from "./contactform/contactform.component";
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [FirstSectionAboutMeComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, ReferenceComponent, ContactformComponent],
+  imports: [
+    FirstSectionAboutMeComponent,
+    WhyMeComponent,
+    MySkillsComponent,
+    MyProjectsComponent,
+    ReferenceComponent,
+    ContactformComponent
+        ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

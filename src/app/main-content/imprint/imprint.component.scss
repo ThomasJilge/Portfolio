@@ -1,22 +1,28 @@
 @import '../../../styles.scss';
 
-// .header {
-//     margin: 0;
-//     position: relative;
-//     top: 500px;
-// }
+.header {
+    position: relative !important;
+}
+
+.headerMenuLinks {
+    display: none !important;
+}
 
 .content {
+    max-width: 1440px;
     color: $primaryColorTwo;
     display: flex;
     flex-direction: column;
-    // margin-top: 100px;
+    position: relative;
+    top: 100px;
     >span {
         font-size: 24px;
     }
     >h2 {
         margin-bottom: 0;
     }
+
+    
 
 
 }
