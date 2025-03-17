@@ -31,8 +31,8 @@ export class ContactformComponent {
 binding: any;
 
 mailTest = true;
-
 isPrivacyPolicyChecked = false;
+successPopup = false;  // Steuert das Anzeigen des Popups
 
 post = {
   endPoint: 'https://deineDomain.de/sendMail.php',
@@ -45,19 +45,39 @@ post = {
   },
 };
 
+// onSubmit(ngForm: NgForm) {
+//   if (ngForm.valid && !this.mailTest) {
+//     this.http.post(this.post.endPoint, this.post.body(this.contactData))
+//       .subscribe({
+//         next: (response) => {
+//           ngForm.resetForm();
+//         },
+//         error: (error) => {
+//           console.error(error);
+//         },
+//         complete: () => console.info('send post complete'),
+//       });
+//   } else if (ngForm.valid && this.mailTest) {
+//     ngForm.resetForm();
+//   }
+// }
+
 onSubmit(ngForm: NgForm) {
   if (ngForm.valid && !this.mailTest) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
-        next: (response) => {
+        next: () => {
+          this.successPopup = true;  // Popup anzeigen
           ngForm.resetForm();
         },
         error: (error) => {
           console.error(error);
+          alert('Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.');
         },
         complete: () => console.info('send post complete'),
       });
   } else if (ngForm.valid && this.mailTest) {
+    this.successPopup = true;  // Popup auch im Testmodus anzeigen
     ngForm.resetForm();
   }
 }
@@ -97,4 +117,7 @@ onLeave(item: string) {
   }
 }
 
+closePopup() {
+  this.successPopup = false;
+}
 }

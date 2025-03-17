@@ -59,6 +59,9 @@
     "CONTACT_PRIVACY_THREE": "and agree to the processing of my data as outlined.",
     "CONTACT_SEND": "Send"
   },
+  "POPUP": {
+    "POPUP_TEXT": "Your message has been sent successfully!"
+  },
   "FOOTER": {
     "FOOTER_IMPRINT": "Legal notice",
     "FOOTER_PRIVACY_POLICY": "privacy policy"

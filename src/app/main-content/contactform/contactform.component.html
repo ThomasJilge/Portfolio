@@ -161,3 +161,10 @@
     </form>
   </div>
 </div>
+
+<div class="popup-overlay" *ngIf="successPopup">
+  <div class="popup">
+    <p>{{ "POPUP.POPUP_TEXT" | translate }}</p>
+    <button (click)="closePopup()">OK</button>
+  </div>
+</div>

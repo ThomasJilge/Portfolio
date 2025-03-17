@@ -334,6 +334,47 @@ textarea.validField {
     display: none;
 }
 
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    >.popup {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 2px solid $primaryColorTwo;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 400px;
+        width: 80%;
+        font-size: 18px;
+    }
+}
+  
+.popup p {
+    margin-bottom: 20px;
+    color: $primaryColorTwo;
+}
+  
+.popup button {
+    background-color: $primaryColorTwo;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    &:hover {
+        color: $primaryColorOne;
+    }
+}
+  
 @media only screen and (max-width: 1440px) {
 
     .contactMeContainerOne {
@@ -386,10 +427,6 @@ textarea.validField {
         width: 100%;
         max-width: none;
     }
-
-    // .contactMeContainerSix {
-    //     flex-wrap: nowrap;
-    // }
 
     .contactMeContainerEight {
         position: relative;

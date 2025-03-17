@@ -29,8 +29,6 @@ export class HeaderComponent {
     this.translate.use(language.toLowerCase());
   }
   
-  
-
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }

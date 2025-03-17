@@ -135,6 +135,17 @@ p {
         margin: 0 auto;
     }
 
+    .tjImgContainer {
+        max-width: 100%;
+    }
+    .tjImg {
+        // max-width: 90%; /* Das Bild wird bei breiteren Bildschirmen kleiner */
+        // height: auto; /* Höhe bleibt proportional zur Breite */
+        max-width: 388px;
+        width: 100%;
+        height: 370px;
+    }
+
 }
 
 @media only screen and (max-width: 1172px) {
