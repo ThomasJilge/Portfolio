@@ -42,11 +42,27 @@
             />
             <p class="phoneContactMe">Tel: 0170/7032983</p>
           </div>
+                          <!-- <div class="arrowUpContainer"> -->
+            <a href="#aboutMe">
+              <img
+                class="arrowUp"
+                id="arrowUp"
+                [ngClass]="{ hovered: isHovered }"
+                [src]="arrowUpSrc"
+                (mouseover)="onHover('arrowUp')"
+                (mouseout)="onLeave('arrowUp')"
+                alt=""
+              />
+            </a>
+          <!-- </div> -->
+          
         </div>
       </div>
+
+
     </div>
 
-    <div class="arrowUpContainer">
+    <!-- <div class="arrowUpContainer">
       <a href="#aboutMe">
         <img
           class="arrowUp"
@@ -58,7 +74,7 @@
           alt=""
         />
       </a>
-    </div>
+    </div> -->
   </div>
 
   <div class="container">

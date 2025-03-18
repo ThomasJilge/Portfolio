@@ -2,12 +2,13 @@
 
 .footerContainerOne {
     position: relative;
-    top: 250px;
+    // top: 250px;
     max-width: 1440px;
     width: 100%;
     height: 196px;
     gap: 16px;
     box-sizing: border-box;
+    margin-top: 100px;
     padding: 0 140px 0 140px;
     >.footerContainerTwo {
         display: flex;

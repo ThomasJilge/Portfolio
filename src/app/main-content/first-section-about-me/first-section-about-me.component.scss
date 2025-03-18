@@ -3,8 +3,9 @@
 .firstSectionAboutMeContainerOne {
     max-width: 1337px;
     width: 100%;
-    height: 665px;
-    top: 94px;
+    // height: 665px;
+    // top: 94px;
+    padding-top: 100px;
     position: relative;
     >.firstSectionAboutMeContainerTwo {
         position: relative;
@@ -62,7 +63,7 @@
     max-width: 808px;
     width: 100%;
     height: 142px;
-    top: 412px;
+    top: 395px;
     gap: 8px;
     >.infoFieldTwo {
         color: $primaryColorTwo;
