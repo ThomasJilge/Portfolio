@@ -9,11 +9,11 @@
     >.firstSectionAboutMeContainerTwo {
         position: relative;
         max-width: 1284px;
-        width: 100%;
         height: 556px;
         left: 105px;
         display: flex;
         justify-content: space-between;
+        margin: 0;
         >.contactForm {
             position: absolute;
             text-decoration: none;
@@ -139,8 +139,6 @@ p {
         max-width: 100%;
     }
     .tjImg {
-        // max-width: 90%; /* Das Bild wird bei breiteren Bildschirmen kleiner */
-        // height: auto; /* Höhe bleibt proportional zur Breite */
         max-width: 388px;
         width: 100%;
         height: 370px;
