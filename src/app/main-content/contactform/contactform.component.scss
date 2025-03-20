@@ -36,8 +36,10 @@
 
 .contactMeContainerFive {
     display: flex;
+    justify-content: space-between;
     max-width: 1184px;
     width: 100%;
+    // gap: clamp(10px, 3vw, 42px);
     gap: 42px;
     >.contactMeTextContainer {
         display: flex;
@@ -57,7 +59,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 637px;
+    // max-width: 637px;
     width: 100%;
     gap: 16px;
     >.mailContactMeContainer, .phoneContactMeContainer {
@@ -106,6 +108,7 @@
 .arrowUpContainer {
     // max-width: 1184px;
     // width: 100%;
+    width: 637px;
     display: flex;
     justify-content: right;
     // position: absolute;
@@ -117,6 +120,7 @@
     height: 50px;
     position: relative;
     border: 1px solid transparent;
+    bottom: 70px;
     &:hover.hovered {
         cursor: pointer;
         border-color: $primaryColorTwo;
@@ -145,6 +149,8 @@ input[type=text], [type=email] {
 textarea {
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 999;
 }
 
 #name {

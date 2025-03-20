@@ -7,12 +7,14 @@ body {
     font-family: 'Roboto Mono';
     margin: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 html {
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 ::-webkit-scrollbar {

@@ -130,7 +130,7 @@
 @media only screen and (max-width: 1024px) {
 
     .footerContainerOne {
-        top: 400px;
+        top: 150px;
     }
 
 }
@@ -147,7 +147,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 450px;
+        top: 250px;
     }
 
     .imgFooterContainerTwoResponsive {
@@ -190,5 +190,9 @@
     .footerContainerOneResponsive {
         top: 840px;
     }
+
+    // .footerContainerOneResponsive {
+    //     top: 240px;
+    // }
 
 }
