@@ -7,8 +7,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss',
-  encapsulation: ViewEncapsulation.None
+  styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
 

@@ -7,7 +7,8 @@
     width: 1439px;
     position: relative;
     // top: 130px;
-    // padding-top: 50px;
+    padding-top: 100px;
+    // margin-top: 100px;
     >.h2MyProjectsTwo {
         display: flex;
         justify-content: center;
@@ -53,7 +54,7 @@
         display: flex;
         position: relative;
         justify-content: space-between;
-        top: 50px;
+        padding-top: 50px;
         width: 1134px;
         height: 371px;
         left: 44px;
@@ -129,7 +130,7 @@
 
 .projectOneInfoText {
     position: relative;
-    top: 60px;
+    // top: 60px;
     color: $primaryColorTwo;
     margin: 0;
     font-size: 18px;
@@ -140,7 +141,7 @@
     display: flex;
     justify-content: end;
     position: relative;
-    top: 60px;
+    // top: 60px;
     color: $primaryColorTwo;
     margin: 0;
     font-size: 18px;
@@ -287,7 +288,7 @@
 
     .projectTwoDescriptionResponsive {
         position: relative;
-        top: 30px;
+        // top: 30px;
     }
 
     .githubButton {
@@ -314,9 +315,9 @@
         margin-bottom: 0;
     }
 
-    .myProjectsContainerOneResponsive {
-        top: 430px;
-    }
+    // .myProjectsContainerOneResponsive {
+    //     top: 430px;
+    // }
 
 }
 
@@ -333,9 +334,9 @@
 
 @media only screen and (max-width: 576px) {
 
-    .myProjectsContainerOneResponsive {
-        top: 450px;
-    }
+    // .myProjectsContainerOneResponsive {
+    //     top: 450px;
+    // }
 
 }
 

@@ -5,10 +5,11 @@
     justify-content: space-around;
     max-width: 1224px;
     width: 100%;
-    height: 452px;
+    // height: 452px;
     position: relative;
     // top: 90px;
     padding-top: 100px;
+    // margin-top: 100px;
     left: 105px;
     gap: 2px;
 }
@@ -145,7 +146,7 @@
     font-size: 18px;
     width: 96px;
     height: 40px;
-    top: 1px;
+    // top: 1px;
     color: $primaryColorTwo;
     left: 25px;
     margin: 0;
@@ -291,7 +292,7 @@
 
     .whyMeContainerOne {
         position: relative;
-        top: 200px;
+        // top: 200px;
     }
 
     .tjImgWhyMeContainer {
@@ -311,7 +312,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 70px;
+        // top: 70px;
     }
 
     .whyMeContainerTwoResponsive {
@@ -414,9 +415,9 @@
 
 @media (orientation: portrait) and (max-width: 768px) {
 
-    .whyMeContainerOneResponsive {
-        top: 170px;
-    }
+    // .whyMeContainerOneResponsive {
+    //     // top: 170px;
+    // }
 
 }
 
