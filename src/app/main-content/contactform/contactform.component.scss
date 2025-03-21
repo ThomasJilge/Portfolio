@@ -441,7 +441,7 @@ textarea.validField {
 
     .contactMeContainerEight {
         position: relative;
-        // top: 20px;
+        margin-top: 20px;
         justify-content: center !important;
     }
 
@@ -480,9 +480,9 @@ textarea.validField {
 
 @media only screen and (max-width: 410px) {
 
-    // .contactMeContainerEight {
-    //     top: 35px;
-    // }
+    .contactMeContainerEight {
+        margin-top: 35px;
+    }
 
 }
   

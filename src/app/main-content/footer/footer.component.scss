@@ -149,7 +149,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 250px;
+        padding-top: 250px;
     }
 
     .imgFooterContainerTwoResponsive {
@@ -187,14 +187,10 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+// @media only screen and (max-width: 768px) {
 
-    .footerContainerOneResponsive {
-        top: 840px;
-    }
+//     .footerContainerOneResponsive {
+//         padding-top: 100px;
+//     }
 
-    // .footerContainerOneResponsive {
-    //     top: 240px;
-    // }
-
-}
+// }
