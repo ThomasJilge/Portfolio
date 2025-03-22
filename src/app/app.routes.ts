@@ -6,5 +6,5 @@ import { DataProtectionComponent } from './main-content/data-protection/data-pro
 export const routes: Routes = [
     { path: '', component: MainContentComponent },
     { path: 'imprint', component: ImprintComponent },
-    { path: 'data-protection', component: DataProtectionComponent }
+    { path: 'data-protection', component: DataProtectionComponent },
 ];

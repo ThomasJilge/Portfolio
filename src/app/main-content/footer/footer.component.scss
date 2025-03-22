@@ -1,5 +1,11 @@
 @import "../../../styles.scss";
 
+.sectionFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .footerContainerOne {
     position: relative;
     // top: 250px;
@@ -10,7 +16,7 @@
     box-sizing: border-box;
     // padding-top: 100px;
     // padding: 150px 140px 50px 140px;
-    padding: 0 140px 0 140px;
+    // padding: 0 140px 0 140px;
     padding-bottom: 50px;
     >.footerContainerTwo {
         display: flex;

@@ -1,5 +1,11 @@
 @import "../../../styles.scss";
 
+.sectionContactForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .contactMeContainerOne {
     position: relative;
     // top: 200px;

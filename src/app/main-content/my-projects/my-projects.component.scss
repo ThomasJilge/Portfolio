@@ -1,5 +1,11 @@
 @import "../../../styles.scss";
 
+.sectionMyProjects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .myProjectsContainerOne {
     display: flex;
     justify-content: center;

@@ -1,5 +1,11 @@
 @import "../../../styles.scss";
 
+.sectionWhyMe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .whyMeContainerOne {
     display: flex;
     justify-content: space-around;
@@ -10,7 +16,7 @@
     // top: 90px;
     padding-top: 100px;
     // margin-top: 100px;
-    left: 105px;
+    // left: 105px;
     gap: 2px;
 }
 

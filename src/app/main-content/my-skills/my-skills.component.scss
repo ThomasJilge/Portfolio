@@ -1,5 +1,11 @@
 @import "../../../styles.scss";
 
+.sectionMySkills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .mySkillsContainerOne {
     position: relative;
     max-width: 1439px;
