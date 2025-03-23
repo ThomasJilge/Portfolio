@@ -9,6 +9,7 @@ import { RouterLink, RouterModule } from '@angular/router';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
+
 export class FooterComponent {
 
   constructor(private translate: TranslateService) { 
@@ -50,3 +51,13 @@ export class FooterComponent {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
