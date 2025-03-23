@@ -1,20 +1,23 @@
 @import '../../../styles.scss';
 
-.header {
-    position: relative !important;
-}
-
-.headerMenuLinks {
-    display: none !important;
+.sectionImprint {
+    width: 100%;
+    display: flex;
 }
 
 .content {
     max-width: 1440px;
+    width: 100%;
     color: $primaryColorTwo;
     display: flex;
     flex-direction: column;
     position: relative;
     top: 100px;
+    margin-bottom: 100px;
+    padding: 24px;
+    >h1 {
+        margin-top: 0;
+    }
     >span {
         font-size: 24px;
     }
@@ -22,7 +25,10 @@
         margin-bottom: 0;
     }
 
-    
+    // .footerContainerOne {
+    //     padding: 24px !important;
+    //     padding-bottom: 0;
+    // }
 
 
 }
