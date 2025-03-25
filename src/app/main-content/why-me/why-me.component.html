@@ -10,6 +10,13 @@
     <div class="infoWhyMeContainer">
       <p class="infoText">{{ "WHY_ME.DESCRIPTION" | translate }}</p>
     </div>
+    <div class="relocateArrowImgContainerOne">
+      <img
+        class="relocateArrowImgOne"
+        src="../../assets/img/Arrow 5.png"
+        alt=""
+      />
+    </div>
     <div class="iAmContainerOne">
       <div class="iAmContainerTwo">
         <div class="locatedContainerOne">
@@ -21,7 +28,6 @@
             </div>
             <div class="locatedOpenRemoteInfo">
               <p class="locatedText">{{ "WHY_ME.LOCATED_ONE" | translate }}</p>
-              <p class="locatedText">{{ "WHY_ME.LOCATED_TWO" | translate }}</p>
             </div>
           </div>
         </div>
@@ -31,7 +37,6 @@
             <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="relocate" />
             <div class="locatedOpenRemoteInfo">
               <p class="locatedText">{{ "WHY_ME.RELOCATE_ONE" | translate }}</p>
-              <p class="locatedText">{{ "WHY_ME.RELOCATE_TWO" | translate }}</p>
             </div>
           </div>
         </div>
@@ -40,7 +45,6 @@
             <img class="remoteImg" [src]="remoteSrc" alt="laptop" (mouseover)="onHover('remote')" (mouseout)="onLeave('remote')" [ngClass]="{ laptopHoverImg: isRemoteHovered }" />
             <div class="locatedOpenRemoteInfo">
               <p class="locatedText">{{ "WHY_ME.REMOTE_ONE" | translate }}</p>
-              <p class="locatedText">{{ "WHY_ME.REMOTE_TWO" | translate }}</p>
             </div>
             <img class="remoteArrowOneImg" src="../../assets/img/Arrow 4 (1).png" alt="" />
           </div>
@@ -50,93 +54,16 @@
         </div>
       </div>
     </div>
-
-    <div class="letsTalkContainerOne">
-      <div class="letsTalkContainerTwo">
-        <a href="#contactForm">
-          <div class="letsTalkButton">{{ "WHY_ME.LETS_TALK" | translate }}</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="whyMeContainerOneResponsive" id="whyMe">
-  <div class="tjImgWhyMeContainerResponsive">
-    <img class="tjImgWhyMe" src="../../assets/img/pp.png" alt="" />
-  </div>
-  <div class="whyMeContainerTwoResponsive">
-    <div class="h2WhyMeContainerResponsive">
-      <h2 class="h2WhyMe">{{ "WHY_ME.WHY_ME" | translate }}</h2>
-    </div>
-    <div class="infoWhyMeContainerResponsive">
-      <p class="infoText">{{ "WHY_ME.DESCRIPTION" | translate }}</p>
-    </div>
-    <div class="relocateArrowImgResponsiveContainerOne">
+    <div class="relocateArrowImgContainerTwo">
       <img
-        class="relocateArrowImgResponsiveOne"
-        src="../../assets/img/Arrow 5.png"
-        alt=""
-      />
-    </div>
-    <div class="iAmContainerOneResponsive">
-      <div class="iAmContainerTwoResponsive">
-        <div class="iAmContainerThreeResponsive">
-        <div class="locatedContainerOneResponsive">
-          <p class="iAmText">{{ "WHY_ME.I_AM" | translate }}</p>
-        </div>
-        </div>
-          <div class="locatedContainerTwoResponsive">
-            <div class="locatedContainerThreeResponsive">
-              <img class="locatedImg" [src]="locatedSrc" alt="located" />
-              <img class="locatedImgTwo" [src]="locatedSrc2" alt="" />
-            </div>
-              <p class="locatedText">
-                {{ "WHY_ME.LOCATED_ONE" | translate }}
-                {{ "WHY_ME.LOCATED_TWO" | translate }}
-              </p>
-          </div>
-        <div class="relocateContainerResponsive">
-          <div class="openToRelocateResponsive">
-            <img class="relocateImg" src="{{ relocateSrc }}" alt="relocate">
-              <p class="locatedText">
-                {{ "WHY_ME.RELOCATE_ONE" | translate }}
-                {{ "WHY_ME.RELOCATE_TWO" | translate }}
-              </p>
-          </div>
-        </div>
-        <div class="remoteContainerOneResponsive">
-          <div class="remoteContainerTwoResponsive">
-            <img class="remoteImg" [src]="remoteSrc" alt="laptop"/>
-              <p class="locatedText">
-                {{ "WHY_ME.REMOTE_ONE" | translate }}
-                {{ "WHY_ME.REMOTE_TWO" | translate }}
-              </p>
-            <img
-              class="remoteArrowOneImg"
-              src="../../assets/img/Arrow 4 (1).png"
-              alt=""
-            />
-          </div>
-          <div class="workRemoteResponsive">
-            <img
-              class="remoteArrowTwoImg"
-              src="../../assets/img/Arrow 01.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="relocateArrowImgResponsiveContainerTwo">
-      <img
-        class="relocateArrowImgResponsiveTwo"
+        class="relocateArrowImgTwo"
         src="../../assets/img/Arrow6.png"
         alt=""
       />
     </div>
-    <div class="letsTalkContainerOneResponsive">
-      <div class="letsTalkContainerTwoResponsive">
+
+    <div class="letsTalkContainerOne">
+      <div class="letsTalkContainerTwo">
         <a href="#contactForm">
           <div class="letsTalkButton">{{ "WHY_ME.LETS_TALK" | translate }}</div>
         </a>

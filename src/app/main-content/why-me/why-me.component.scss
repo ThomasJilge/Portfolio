@@ -79,7 +79,7 @@
         height: 56px;
         gap: 64px;
         >.iAmText {
-            max-width: 116px;
+            // max-width: 116px;
             width: 100%;
             height: 49px;
             font-size: 48px;
@@ -131,12 +131,12 @@
     position: relative;
     display: flex;
     height: 56px;
-    gap: 208px;
+    gap: 180px;
     padding-left: 152px;
     >.openToRelocate {
         display: flex;
         align-items: center;
-        width: 130px;
+        // width: 130px;
         height: 48px;
     }
 }
@@ -161,10 +161,10 @@
     >.remoteContainerTwo {
         display: flex;
         justify-content: space-between;
-        align-items: end;
-        width: 241.85px;
+        align-items: center;
+        // width: 241.85px;
         height: 58px;
-        gap: 13px;
+        gap: 20px;
         padding-left: 168px;
     }
 }
@@ -193,7 +193,7 @@
     display: flex;
     justify-content: end;
     position: relative;
-    top: 57px;
+    padding-top: 57px;
     >.letsTalkContainerTwo {
         display: flex;
         justify-content: end;
@@ -270,6 +270,10 @@
     display: none;
 }
 
+.relocateArrowImgContainerOne, .relocateArrowImgContainerTwo {
+    display: none;
+}
+
 @media only screen and (max-width: 1440px) {
 
     .whyMeContainerOne {
@@ -290,89 +294,75 @@
 
 @media only screen and (max-width: 1024px) {
 
+    .relocateArrowImgContainerOne, .relocateArrowImgContainerTwo {
+        display: block;
+        max-width: 685px;
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .relocateArrowImgContainerTwo {
+        display: flex;
+        justify-content: end;
+    }
+
     .whyMeContainerOne {
         position: relative;
-        padding-top: 200px;
-    }
-
-    .tjImgWhyMeContainer {
-        display: none;
-    }
-
-    .whyMeContainerOne,
-    .remoteArrowOneImg,
-    .remoteArrowTwoImg, 
-    .tjImgWhyMeContainer, 
-    .tjImgWhyMe{
-        display: none;
-    }
-
-    .whyMeContainerOneResponsive {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        // top: 70px;
-    }
-
-    .whyMeContainerTwoResponsive {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        >.h2WhyMeContainerResponsive {
-            color: $primaryColorOne;
-            font-size: 32px;
-            font-weight: 700;
-            >.h2WhyMe {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    .infoWhyMeContainerResponsive {
-        width: 90%;
-        display: flex;
-        text-align: center;
-        color: $primaryColorTwo;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .relocateArrowImgResponsiveContainerOne {
-        display: flex;
-        max-width: 389px;
-        width: 90%;
-        height: 56px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        >.relocateArrowImgResponsiveOne {
-            display: flex;
-            width: 22.95px;
-        }
-    }
-
-    .relocateArrowImgResponsiveContainerTwo {
-        display: flex;
-        justify-content: right;
-        max-width: 389px;
-        width: 90%;
-        height: 41.3px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        >.relocateArrowImgResponsiveTwo {
-            display: flex;
-            width: 23.22px;
-            height: 41.3px;
-        }
-    }
-
-    .iAmContainerOneResponsive {
-        >.iAmContainerTwoResponsive {
+        // padding-top: 200px;
+        >.whyMeContainerTwo {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 16px;
+            height: auto;
         }
+    }
+
+    .locatedContainerOne {
+        flex-direction: column;
+    }
+
+    .iAmContainerTwo {
+        height: auto;
+    }
+
+    .iAmContainerTwo > .locatedContainerOne {
+        height: auto;
+        gap: 0;
+    }
+
+    .iAmText {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .infoText {
+        text-align: center !important;
+    }
+
+    .locatedContainerTwo,
+    .relocateContainer,
+    .remoteContainerTwo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .relocateContainer,
+    .remoteContainerTwo {
+        padding-left: 0;
+    }
+
+    .tjImgWhyMeContainer,
+    .relocateArrowImg,
+    .remoteArrowOneImg,
+    .workRemote {
+        display: none;
+    }
+
+
+
+    .letsTalkContainerOne > .letsTalkContainerTwo {
+        justify-content: center;
     }
 
     .iAmText {
@@ -382,44 +372,9 @@
         margin: 0;
     }
 
-    .locatedContainerOneResponsive {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .locatedContainerTwoResponsive,
-    .remoteContainerTwoResponsive {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .relocateContainerResponsive {
-        display: flex;
-    }
-
-    .openToRelocateResponsive {
-        display: flex;
-        align-items: center;
-    }
-
-    .letsTalkContainerTwoResponsive > a {
-        text-decoration: none;
-        >.letsTalkButton {
-            width: 137px;
-            height: 43px;
-        }
-    }
 }
 
-@media (orientation: portrait) and (max-width: 768px) {
 
-    .whyMeContainerOneResponsive {
-        padding-top: 100px;
-    }
-
-}
 
 
 

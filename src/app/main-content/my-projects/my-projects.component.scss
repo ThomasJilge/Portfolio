@@ -28,14 +28,16 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 1439px;
+    width: 1440px;
     height: 850px;
     left: 105px;
     >.projectOne {
         display: flex;
         justify-content: space-between;
-        width: 1134px;
-        height: 371px;
+        max-width: 1134px;
+        width: 100%;
+        // width: 1134px;
+        // height: 371px;
         >.projectImg {
             width: 588px;
             height: 371px;
@@ -218,78 +220,73 @@
 
 @media only screen and (max-width: 1224px) {
 
-    .myProjectsContainerOne {
-        display: none;
-    }
+    // .myProjectsContainerOne {
+    //     display: none;
+    // }
 
-    .myProjectsContainerOneResponsive {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            padding-top: 100px;
-            width: 90%;
-            margin: 0 auto;
-    }
+    // .myProjectsContainerOneResponsive {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         position: relative;
+    //         padding-top: 100px;
+    //         width: 90%;
+    //         margin: 0 auto;
+    // }
 
-    .h2MyProjectsResponsive {
-        color: $primaryColorOne;
-        font-size: 32px;
-        font-weight: 700;
-    }
 
-    .projectOneDescriptionHeaderResponsive, 
-    .projectOneLanguagesContainerResponsive, 
-    .projectOneInfoResponsive,
-    .projectTwoDescriptionHeaderResponsive, 
-    .projectTwoLanguagesContainerResponsive, 
-    .projectTwoInfoResponsive {
-        display: flex;
-        justify-content: center;
-    }
+    // .projectOneDescriptionHeaderResponsive, 
+    // .projectOneLanguagesContainerResponsive, 
+    // .projectOneInfoResponsive,
+    // .projectTwoDescriptionHeaderResponsive, 
+    // .projectTwoLanguagesContainerResponsive, 
+    // .projectTwoInfoResponsive {
+    //     display: flex;
+    //     justify-content: center;
+    // }
 
-    .projectOneHeadlineResponsive,
-    .projectTwoHeadlineResponsive {
-        color: $primaryColorTwo;
-        font-size: 24px;
-        font-weight: 700;
-    }
+    // .projectOneHeadlineResponsive,
+    // .projectTwoHeadlineResponsive {
+    //     color: $primaryColorTwo;
+    //     font-size: 24px;
+    //     font-weight: 700;
+    // }
 
-    .projectOneLanguagesResponsive,
-    .projectTwoLanguagesResponsive{
-        color: $primaryColorTwo;
-        font-size: 18px;
-        font-weight: 400;
-        margin: 0;
-    }
+    // .projectOneLanguagesResponsive,
+    // .projectTwoLanguagesResponsive{
+    //     color: $primaryColorTwo;
+    //     font-size: 18px;
+    //     font-weight: 400;
+    //     margin: 0;
+    // }
 
-    .projectOneInfoTextResponsive,
-    .projectTwoInfoTextResponsive {
-        color: $primaryColorTwo;
-        font-size: 16px;
-        font-weight: 400;
-    }
+    // .projectOneInfoTextResponsive,
+    // .projectTwoInfoTextResponsive {
+    //     color: $primaryColorTwo;
+    //     font-size: 16px;
+    //     font-weight: 400;
+    // }
 
-    .projectImgResponsive {
-        max-width: 588px;
-        width: 100%;
-        height: auto;
-    }
+    // .projectImgResponsive {
+    //     max-width: 588px;
+    //     width: 100%;
+    //     height: auto;
+    // }
 
-    .projectOneInfoButtonsResponsive,
-    .projectTwoInfoButtonsResponsive {
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-        // position: relative;
-        // top: 20px;
-    }
+    // .projectOneInfoButtonsResponsive,
+    // .projectTwoInfoButtonsResponsive {
+    //     display: flex;
+    //     justify-content: center;
+    //     gap: 24px;
+    //     // position: relative;
+    //     // top: 20px;
+    // }
 
-    .projectTwoDescriptionResponsive {
-        position: relative;
-        // top: 30px;
-    }
+    // .projectTwoDescriptionResponsive {
+    //     position: relative;
+    //     // top: 30px;
+    // }
 
     .githubButton {
         width: 98px;
@@ -301,53 +298,53 @@
         height: 43px;
     }
 
-    .myProjectsContainerThreeResponsive {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .h2MyProjectsResponsive {
-        margin-bottom: 0;
-    }
-
-    .myProjectsContainerOneResponsive {
-        padding-top: 50px;
-    }
-
-}
-
-.projectOneInfoTextResponsive, .projectTwoInfoTextResponsive {
-    display: flex;
-    text-align: center;
-}
-
-.projectContainerImgResponsive {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 576px) {
-
-    // .myProjectsContainerOneResponsive {
-    //     top: 450px;
+    // .myProjectsContainerThreeResponsive {
+    //     width: 90%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
     // }
-
 }
 
-@media only screen and (max-width: 340px) {
+// @media only screen and (max-width: 768px) {
 
-    .projectOneInfoResponsive, .projectTwoInfoResponsive {
-        justify-content: center;
-    }
+//     .h2MyProjectsResponsive {
+//         margin-bottom: 0;
+//     }
 
-    .projectOneInfoTextResponsive, .projectTwoInfoTextResponsive {
-        font-size: 14px;
-    }
+//     .myProjectsContainerOneResponsive {
+//         padding-top: 50px;
+//     }
 
-}
+// }
+
+// .projectOneInfoTextResponsive, .projectTwoInfoTextResponsive {
+//     display: flex;
+//     text-align: center;
+// }
+
+// .projectContainerImgResponsive {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 20px;
+// }
+
+// @media only screen and (max-width: 576px) {
+
+//     // .myProjectsContainerOneResponsive {
+//     //     top: 450px;
+//     // }
+
+// }
+
+// @media only screen and (max-width: 340px) {
+
+//     .projectOneInfoResponsive, .projectTwoInfoResponsive {
+//         justify-content: center;
+//     }
+
+//     .projectOneInfoTextResponsive, .projectTwoInfoTextResponsive {
+//         font-size: 14px;
+//     }
+
+// }
