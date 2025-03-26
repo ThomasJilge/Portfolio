@@ -4,16 +4,13 @@
     position: relative;
     max-width: 1440px;
     width: 100%;
-    // height: 423px;
-    // top: 130px;
     padding-top: 100px;
-    // margin-top: 100px;
     left: 105px;
     >.h2MySkillsContainer {
         position: relative;
         width: 292px;
         height: 65px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         white-space: nowrap;
         >.h2MySkills {
             color: $primaryColorOne;
@@ -21,30 +18,14 @@
             font-size: 54px;
         }
     }
-    >.mySkillsContainerTwo {
-        display: flex;
-        position: relative;
-        // max-width: 1219px;
-        width: 100%;
-        // gap: 100px;
-        // height: 325px;
-        flex-wrap: wrap;
-        >.skillsImgsContainerOne {
-            max-width: 1122px;
-            width: 100%;
-            margin-bottom: 70px;
-            // height: 100px;
-            display: flex;
-            gap: max(7vw, 50px);
-        }
-        >.skillsImgsContainerTwo {
-            max-width: 1219px;
-            width: 100%;
-            // height: 125px;
-            display: flex;
-            gap: max(7vw, 50px);
-        }
-    }
+}
+
+.skillsImgsContainerOne {
+    max-width: 1219px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 101px;
 }
 
 .skillsImgs {
@@ -55,7 +36,6 @@
 .challengeMeTextContainer {
     display: flex;
     position: relative;
-    left: 20px;
     >.challengeMeText {
         position: absolute;
         display: none;
@@ -64,6 +44,10 @@
         margin: 0;
         width: 200px;
     }
+}
+
+.challengeMeClass {
+    cursor: pointer;
 }
 
 .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
@@ -80,7 +64,7 @@
     display: none;
 }
 
-.mySkillsTextContainerOne, .mySkillsTextContainerTwo, .mySkillsText {
+.mySkillsTextContainerOne, .mySkillsTextContainerTwo, .mySkillsText, .letsTalkContainerOne {
     display: none;
 }
 
@@ -100,105 +84,57 @@
 
 @media only screen and (max-width: 930px) {
 
-    .skillsImgsContainerOne, .skillsImgsContainerTwo  {
-        gap: 5vw !important;
+    .h2MySkillsContainer {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
     }
-    
+
+    .skillsImgsContainerOne  {
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .challengeMeClass {
+        cursor: default;
+    }
+
+    .challengeMeTextContainer {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
 
-    .skillsImgsContainerOne, .skillsImgsContainerTwo  {
-        gap: 3vw !important;
+    .mySkillsArrowResponsiveContainer, .mySkillsArrowResponsive {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
     }
 
-    .mySkillsContainerOne {
-        display: none;
-    }
-    
-    .mySkillsContainerOneResponsive {
+    .mySkillsTextContainerOne, .mySkillsTextContainerTwo, .mySkillsText, .letsTalkContainerOne {
         display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 50px;
-        >.h2MySkillsContainerResponsive {
-            color: $primaryColorOne;
-            font-size: 32px;
-            font-weight: 700;
-        }
-    }
-    
-    .mySkillsContainerTwoResponsive {
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
-    
-    .mySkillsTextContainerTwoResponsive {
+
+    .mySkillsTextContainerOne {
         color: $primaryColorTwo;
-        display: flex;
-        justify-content: center;
         text-align: center;
-    
     }
-    
-    .skillsImgsContainerOneResponsive {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 388px;
-        height: 215px;
-        gap: 80px;
-        position: relative;
+
+    .letsTalkContainerTwo {
+        padding-top: 20px;
     }
-    
-    .skillsImgsContainerTwoResponsive {
-        color: $primaryColorTwo;
-        display: flex;
-        justify-content: end;
-        gap: 74px;
-        width: 388px;
-        position: relative;
-        // top: 140px;
-        padding-left: 18px;
-        >.challengeMe2Text {
-            position: relative;
-            right: 65px;
-        }
+
+    .letsTalkContainerTwo > a {
+        text-decoration: none;
     }
-    
-    .skillsImgsMobile {
-        height: 45px;
-        width: 45px;
-    }
-    
-    .mySkillsArrowResponsiveContainerResponsive {
-        position: relative;
-        // top: 170px;
-        width: 388px;
-        display: flex;
-        justify-content: center;
-        >.mySkillsArrowResponsive {
-            display: block;
-        }
-    }
-    
-    .mySkillsTextContainerOneResponsive {
-        position: relative;
-        // top: 190px;
-    }
-    
+
     .letsTalkContainerOneResponsive {
         display: flex;
         justify-content: center;
         position: relative;
-    }
-    
-    .letsTalkContainerTwoResponsive > a {
-        text-decoration: none;
     }
     
     .letsTalkButton {
@@ -215,21 +151,7 @@
             transition: color 100ms ease-in-out;
         }
     }
+}
     
-}
 
-@media only screen and (max-width: 370px) {
 
-    .skillsImgsContainerOneResponsive {
-        gap: 65px;
-    }
-
-    .skillsImgsContainerTwoResponsive {
-        gap: 60px;
-    }
-
-    .skillsImgsContainerTwoResponsive > .challengeMe2Text {
-        right: 50px;
-    }
-
-}

@@ -3,18 +3,9 @@
   <div class="h2MySkillsContainer">
     <h2 class="h2MySkills">{{ "MY_SKILLS.SKILLS" | translate }}</h2>
   </div>
-  <div class="mySkillsContainerTwo">
     <div class="skillsImgsContainerOne">
       <img
-        *ngFor="let img of skillImagesOne"
-        class="skillsImgs"
-        [src]="img"
-        alt=""
-      />
-    </div>
-    <div class="skillsImgsContainerTwo">
-      <img
-        *ngFor="let img of skillImagesTwo"
+        *ngFor="let img of skillImages"
         class="skillsImgs"
         [src]="img"
         alt=""
@@ -33,7 +24,6 @@
         alt=""
       />
     </div>
-
     <div class="mySkillsTextContainerOne">
       <div class="mySkillsTextContainerTwo">
         <p class="mySkillsText">{{ "MY_SKILLS.CHALLENGE_TEXT" | translate }}</p>
@@ -49,57 +39,5 @@
         </a>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="mySkillsContainerOneResponsive" id="mySkills">
-  <div class="h2MySkillsContainerResponsive">
-    <h2 class="h2MySkillsResponsive">{{ "MY_SKILLS.SKILLS" | translate }}</h2>
-  </div>
-  <div class="mySkillsContainerTwoResponsive">
-    <div class="skillsImgsContainerOneResponsive">
-      <img
-        *ngFor="let img of skillImagesOneMobile"
-        class="skillsImgsMobile"
-        [src]="img"
-        alt=""
-      />
-    </div>
-    <div class="skillsImgsContainerTwoResponsive">
-      <img
-        *ngFor="let img of skillImagesTwoMobile"
-        class="skillsImgsMobile"
-        [src]="img"
-        alt=""
-      />
-      <span class="challengeMe2Text">{{
-        "MY_SKILLS.CHALLENGE" | translate
-      }}</span>
-    </div>
-    <div class="mySkillsArrowResponsiveContainerResponsive">
-      <img
-        class="mySkillsArrowResponsive"
-        src="../../assets/img/Arrow8.png"
-        alt=""
-      />
-    </div>
-
-    <div class="mySkillsTextContainerOneResponsive">
-      <div class="mySkillsTextContainerTwoResponsive">
-        <p class="mySkillsTextResponsive">
-          {{ "MY_SKILLS.CHALLENGE_TEXT" | translate }}
-        </p>
-      </div>
-      <div class="letsTalkContainerOneResponsive">
-        <div class="letsTalkContainerTwoResponsive">
-          <a href="#contactForm">
-            <div class="letsTalkButton">
-              {{ "MY_SKILLS.LETS_TALK" | translate }}
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </section>
