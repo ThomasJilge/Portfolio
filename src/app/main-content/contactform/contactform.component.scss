@@ -449,9 +449,9 @@ textarea.validField {
 
 @media only screen and (max-width: 768px) {
 
-    // .contactMeContainerOne {
-    //     top: 600px;
-    // }
+    .contactMeContainerOne {
+        top: 550px;
+    }
 
     .contactMeContainerSix, .arrowContactMeContainer {
         display: none;
@@ -475,6 +475,7 @@ textarea.validField {
 
     .contactMeContainerFive {
         gap: 0;
+        justify-content: center;
     }
 }
 

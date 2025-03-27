@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1439px;
+    max-width: 1440px;
+    width: 100%;
     position: relative;
     // top: 130px;
     padding-top: 100px;
@@ -28,48 +29,56 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     height: 850px;
     left: 105px;
     >.projectOne {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         max-width: 1134px;
         width: 100%;
+        gap: 30px;
         // width: 1134px;
         // height: 371px;
-        >.projectImg {
-            width: 588px;
-            height: 371px;
-        }
         >.projectOneDescription {
             position: relative;
-            left: 30px;
-            width: 498px;
-            height: 318px;
+            // left: 30px;
+            max-width: 498px;
+            width: 100%;
+            // height: 318px;
             >.projectOneDescriptionHeader {
-                width: 498px;
+                max-width: 498px;
+                width: 100%;
             }
         }
     }
     >.projectTwo {
         display: flex;
+        flex-direction: row-reverse;
         position: relative;
         justify-content: space-between;
         padding-top: 50px;
-        width: 1134px;
-        height: 371px;
-        left: 44px;
-        >.projectImg {
-            width: 588px;
-            height: 371px;
-        }
+        max-width: 1134px;
+        width: 100%;
+        // left: 44px;
+        gap: 30px;
     }
+}
+
+.projectOneImgContainer, .projectTwoImgContainer {
+    max-width: 588px;
+    width: 100%;
+}
+
+.projectImg {
+    min-width: 320px;
+    width: 100%;
+    height: 371px;
 }
 
 .projectOneHeadline {
     color: $primaryColorTwo;
-    font-size: 48px;
+    font-size: clamp(36px, 4vw, 48px);
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 5px;
@@ -79,9 +88,8 @@
 
 .projectTwoDescription {
     position: relative;
-    right: 30px;
-    width: 498px;
-    height: 318px;
+    max-width: 498px;
+    width: 100%;
     >.projectTwoDescriptionHeader {
         display: flex;
         justify-content: end;
@@ -92,40 +100,45 @@
     display: flex;
     justify-content: end;
     color: $primaryColorTwo;
-    font-size: 48px;
+    font-size: clamp(36px, 4vw, 48px);
     font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 5px;
-    width: 475px;
+    margin: 0;
+    max-width: 475px;
+    width: 100%;
     height: 59px;
 }
 
 .projectOneLanguagesContainer {
     letter-spacing: 0.2em;
+    padding: 20px 0;
+    width: 100%;
     >.projectOneLanguages {
         color: $primaryColorTwo;
-        size: 18px;
+        font-size: clamp(16px, 4vw, 18px);
         font-weight: 400;
         margin: 0;
+        width: 100%;
     }
 }
 
 .projectTwoLanguagesContainer {
     letter-spacing: 0.2em;
-}
-
-.projectTwoLanguages {
-    display: flex;
-    justify-content: end;
-    color: $primaryColorTwo;
-    size: 18px;
-    font-weight: 400;
-    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    >.projectTwoLanguages {
+        display: flex;
+        justify-content: end;
+        color: $primaryColorTwo;
+        font-size: clamp(16px, 4vw, 18px);
+        font-weight: 400;
+        margin: 0;
+        width: 100%;
+    }
 }
 
 .projectOneInfo, .projectTwoInfo {
-    width: 499px;
-    height: 175px;
+    max-width: 499px;
+    width: 100%;
 }
 
 .projectOneInfoText {
@@ -133,18 +146,18 @@
     // top: 60px;
     color: $primaryColorTwo;
     margin: 0;
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: 400;
 }
 
 .projectTwoInfoText {
     display: flex;
-    justify-content: end;
+    text-align: end;
     position: relative;
     // top: 60px;
     color: $primaryColorTwo;
     margin: 0;
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: 400;
 }
 
@@ -152,6 +165,8 @@
     display: flex;
     height: 52px;
     gap: 24px;
+    padding: 30px 0;
+    width: 100%;
 }
 
 .projectTwoInfoButtons {
@@ -159,6 +174,7 @@
     justify-content: end;
     height: 52px;
     gap: 24px;
+    padding: 30px 0;
 }
 
 .githubButton {
@@ -196,7 +212,7 @@
     transition: color 125ms ease-in-out;
 }
 
-.myProjectsContainerOneResponsive {
+.projectInfoButtonsResponsive {
     display: none;
 }
 
@@ -220,73 +236,7 @@
 
 @media only screen and (max-width: 1224px) {
 
-    // .myProjectsContainerOne {
-    //     display: none;
-    // }
 
-    // .myProjectsContainerOneResponsive {
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         align-items: center;
-    //         position: relative;
-    //         padding-top: 100px;
-    //         width: 90%;
-    //         margin: 0 auto;
-    // }
-
-
-    // .projectOneDescriptionHeaderResponsive, 
-    // .projectOneLanguagesContainerResponsive, 
-    // .projectOneInfoResponsive,
-    // .projectTwoDescriptionHeaderResponsive, 
-    // .projectTwoLanguagesContainerResponsive, 
-    // .projectTwoInfoResponsive {
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
-    // .projectOneHeadlineResponsive,
-    // .projectTwoHeadlineResponsive {
-    //     color: $primaryColorTwo;
-    //     font-size: 24px;
-    //     font-weight: 700;
-    // }
-
-    // .projectOneLanguagesResponsive,
-    // .projectTwoLanguagesResponsive{
-    //     color: $primaryColorTwo;
-    //     font-size: 18px;
-    //     font-weight: 400;
-    //     margin: 0;
-    // }
-
-    // .projectOneInfoTextResponsive,
-    // .projectTwoInfoTextResponsive {
-    //     color: $primaryColorTwo;
-    //     font-size: 16px;
-    //     font-weight: 400;
-    // }
-
-    // .projectImgResponsive {
-    //     max-width: 588px;
-    //     width: 100%;
-    //     height: auto;
-    // }
-
-    // .projectOneInfoButtonsResponsive,
-    // .projectTwoInfoButtonsResponsive {
-    //     display: flex;
-    //     justify-content: center;
-    //     gap: 24px;
-    //     // position: relative;
-    //     // top: 20px;
-    // }
-
-    // .projectTwoDescriptionResponsive {
-    //     position: relative;
-    //     // top: 30px;
-    // }
 
     .githubButton {
         width: 98px;
@@ -306,17 +256,54 @@
     // }
 }
 
-// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-//     .h2MyProjectsResponsive {
-//         margin-bottom: 0;
-//     }
+    .projectOne, .projectTwo {
+        flex-direction: column-reverse !important;
+    }
 
-//     .myProjectsContainerOneResponsive {
-//         padding-top: 50px;
-//     }
+    .projectOneDescription, .projectTwoDescription {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: none !important;
+    }
 
-// }
+    .projectOneDescriptionHeader, .projectTwoDescriptionHeader {
+        max-width: none !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .projectOneLanguages, .projectTwoLanguages {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .projectOneInfoText, .projectTwoInfoText {
+        text-align: center;
+    }
+
+    .projectOneImgContainer, .projectTwoImgContainer {
+        max-width: none !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .projectOneInfoButtons, .projectTwoInfoButtons {
+        display: none;
+    }
+
+    .projectInfoButtonsResponsive {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 24px;
+    }
+
+ }
 
 // .projectOneInfoTextResponsive, .projectTwoInfoTextResponsive {
 //     display: flex;

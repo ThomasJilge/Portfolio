@@ -108,7 +108,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    
+
     .referenceContainerOne {
         display: none;
     }
@@ -116,7 +116,7 @@
     .referenceContainerOneResponsive {
         display: block;
         position: relative;
-        // top: 550px;
+        top: 600px;
     }
 
     .referenceContainerHeaderResponsive {
@@ -125,6 +125,7 @@
         flex-direction: column;
         text-align: center;
         gap: 8px;
+        padding-bottom: 20px;
     }
 
     .referenceContainerTextHeaderResponsive {
