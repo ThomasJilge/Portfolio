@@ -1,79 +1,115 @@
 <section class="sectionReference flex-center-100">
-<div class="referenceContainerOne">  
+  <div class="referenceContainerOne">
     <div class="referenceContainerHeader">
-        <p class="referenceContainerTextHeader">{{ 'REFERNCE.REFERENCE_HEADER_ONE' | translate }}</p>
-        <p class="referenceContainerText">{{ 'REFERNCE.REFERENCE_TEXT' | translate }}</p>
-    </div>  
+      <p class="referenceContainerTextHeader">
+        {{ "REFERNCE.REFERENCE_HEADER_ONE" | translate }}
+      </p>
+      <p class="referenceContainerText">
+        {{ "REFERNCE.REFERENCE_TEXT" | translate }}
+      </p>
+    </div>
     <div class="referenceContainerTwo">
-        <img class="arrowReference" src="../../assets/img/arrowReference.png" alt="">
-        <div class="referenceContainerThree">
-            <div class="referenceNameAndProject">
-                <p class="referenceName">Evelyn Marx</p>
-                <p class="referenceProject">{{ 'REFERNCE.REFERENCE_EPL' | translate }}</p>
-            </div>
-            <div class="referenceInfo">
-                <p class="referenceText">{{ 'REFERNCE.REFERENCE_ONE' | translate }}</p>
-            </div>
+      <img
+        class="arrowReference"
+        src="../../assets/img/arrowReference.png"
+        alt=""
+      />
+      <div class="referenceContainerThree">
+        <div class="referenceNameAndProject">
+          <p class="referenceName">Evelyn Marx</p>
+          <p class="referenceProject">
+            {{ "REFERNCE.REFERENCE_EPL" | translate }}
+          </p>
         </div>
-        <div class="referenceContainerThree">
-            <div class="referenceNameAndProject">
-                <p class="referenceName">Noah Mueller</p>
-                <p class="referenceProject">{{ 'REFERNCE.REFERENCE_JOIN' | translate }}</p>
-            </div>
-            <div class="referenceInfo">
-                <p class="referenceText">{{ 'REFERNCE.REFERENCE_TWO' | translate }}</p>
-            </div>
+        <div class="referenceInfo">
+          <p class="referenceText">
+            {{ "REFERNCE.REFERENCE_ONE" | translate }}
+          </p>
         </div>
-        <div class="referenceContainerThree">
-            <div class="referenceNameAndProject">
-                <p class="referenceName">James Rugman</p>
-                <p class="referenceProject">{{ 'REFERNCE.REFERENCE_JOIN' | translate }}</p>
-            </div>
-            <div class="referenceInfo">
-                <p class="referenceText">{{ 'REFERNCE.REFERENCE_THREE' | translate }}</p>
-            </div>
+      </div>
+      <div class="referenceContainerThree">
+        <div class="referenceNameAndProject">
+          <p class="referenceName">Noah Mueller</p>
+          <p class="referenceProject">
+            {{ "REFERNCE.REFERENCE_JOIN" | translate }}
+          </p>
         </div>
+        <div class="referenceInfo">
+          <p class="referenceText">
+            {{ "REFERNCE.REFERENCE_TWO" | translate }}
+          </p>
+        </div>
+      </div>
+      <div class="referenceContainerThree">
+        <div class="referenceNameAndProject">
+          <p class="referenceName">James Rugman</p>
+          <p class="referenceProject">
+            {{ "REFERNCE.REFERENCE_JOIN" | translate }}
+          </p>
+        </div>
+        <div class="referenceInfo">
+          <p class="referenceText">
+            {{ "REFERNCE.REFERENCE_THREE" | translate }}
+          </p>
+        </div>
+      </div>
     </div>
-</div>
-
-<div class="referenceContainerOneResponsive">  
+  </div>
+  <div class="referenceContainerOneResponsive">
     <div class="referenceContainerHeaderResponsive">
-        <p class="referenceContainerTextHeaderResponsive">{{ 'REFERNCE.REFERENCE_HEADER_TWO' | translate }}</p>
-        <p class="referenceContainerTextResponsive">{{ 'REFERNCE.REFERENCE_TEXT' | translate }}</p>
-    </div>  
-    <div class="referenceContainerTwoResponsive"
-            (mousedown)="onMouseDown($event)"
-            (mousemove)="onMouseMove($event)"
-            (mouseup)="onMouseUp($event)"
-            (mouseleave)="onMouseUp($event)">
-        <div class="referenceContainerThreeResponsive">
-            <div class="referenceNameAndProjectResponsive">
-                <p class="referenceNameResponsive">Evelyn Marx</p>
-                <p class="referenceProjectResponsive">{{ 'REFERNCE.REFERENCE_EPL' | translate }}</p>
-            </div>
-            <div class="referenceInfoResponsive">
-                <p class="referenceTextResponsive">{{ 'REFERNCE.REFERENCE_ONE' | translate }}</p>
-            </div>
-        </div>
-        <div class="referenceContainerThreeResponsive">
-            <div class="referenceNameAndProjectResponsive">
-                <p class="referenceNameResponsive">Noah Mueller</p>
-                <p class="referenceProjectResponsive">{{ 'REFERNCE.REFERENCE_JOIN' | translate }}</p>
-            </div>
-            <div class="referenceInfoResponsive">
-                <p class="referenceTextResponsive">{{ 'REFERNCE.REFERENCE_TWO' | translate }}</p>
-            </div>
-        </div>
-        <div class="referenceContainerThreeResponsive">
-            <div class="referenceNameAndProjectResponsive">
-                <p class="referenceNameResponsive">James Rugman</p>
-                <p class="referenceProjectResponsive">{{ 'REFERNCE.REFERENCE_JOIN' | translate }}</p>
-            </div>
-            <div class="referenceInfoResponsive">
-                <p class="referenceTextResponsive">{{ 'REFERNCE.REFERENCE_THREE' | translate }}</p>
-            </div>
-        </div>
+      <p class="referenceContainerTextHeaderResponsive">
+        {{ "REFERNCE.REFERENCE_HEADER_TWO" | translate }}
+      </p>
+      <p class="referenceContainerTextResponsive">
+        {{ "REFERNCE.REFERENCE_TEXT" | translate }}
+      </p>
     </div>
-</div>
+    <div
+      class="referenceContainerTwoResponsive"
+      (mousedown)="onMouseDown($event)"
+      (mousemove)="onMouseMove($event)"
+      (mouseup)="onMouseUp($event)"
+      (mouseleave)="onMouseUp($event)"
+    >
+      <div class="referenceContainerThreeResponsive">
+        <div class="referenceNameAndProjectResponsive">
+          <p class="referenceNameResponsive">Evelyn Marx</p>
+          <p class="referenceProjectResponsive">
+            {{ "REFERNCE.REFERENCE_EPL" | translate }}
+          </p>
+        </div>
+        <div class="referenceInfoResponsive">
+          <p class="referenceTextResponsive">
+            {{ "REFERNCE.REFERENCE_ONE" | translate }}
+          </p>
+        </div>
+      </div>
+      <div class="referenceContainerThreeResponsive">
+        <div class="referenceNameAndProjectResponsive">
+          <p class="referenceNameResponsive">Noah Mueller</p>
+          <p class="referenceProjectResponsive">
+            {{ "REFERNCE.REFERENCE_JOIN" | translate }}
+          </p>
+        </div>
+        <div class="referenceInfoResponsive">
+          <p class="referenceTextResponsive">
+            {{ "REFERNCE.REFERENCE_TWO" | translate }}
+          </p>
+        </div>
+      </div>
+      <div class="referenceContainerThreeResponsive">
+        <div class="referenceNameAndProjectResponsive">
+          <p class="referenceNameResponsive">James Rugman</p>
+          <p class="referenceProjectResponsive">
+            {{ "REFERNCE.REFERENCE_JOIN" | translate }}
+          </p>
+        </div>
+        <div class="referenceInfoResponsive">
+          <p class="referenceTextResponsive">
+            {{ "REFERNCE.REFERENCE_THREE" | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-

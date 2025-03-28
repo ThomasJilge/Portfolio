@@ -1,176 +1,176 @@
 <section class="sectionContactForm flex-center-100">
-<div class="contactMeContainerOne" id="contactForm">
-  <div class="contactMeContainerTwo">
-    <div class="contactMeContainerThree">
-      <h2 class="h2ContactMe">{{ "CONTACT.CONTACT" | translate }}</h2>
-      <div class="arrowContactMeContainer">
-        <img
-          class="arrowContactMe"
-          src="../../assets/img/arrowContactMe.png"
-          alt=""
-        />
+  <div class="contactMeContainerOne" id="contactForm">
+    <div class="contactMeContainerTwo">
+      <div class="contactMeContainerThree">
+        <h2 class="h2ContactMe">{{ "CONTACT.CONTACT" | translate }}</h2>
+        <div class="arrowContactMeContainer">
+          <img
+            class="arrowContactMe"
+            src="../../assets/img/arrowContactMe.png"
+            alt=""
+          />
+        </div>
       </div>
-    </div>
-
-    <div class="contactMeContainerFive">
-      <div class="contactMeTextContainer">
-        <p class="contactMeText">{{ "CONTACT.CONTACT_TEXT" | translate }}</p>
-      </div>
-      <div class="containerMailAndPhone">
-        <div class="contactMeContainerSix">
-          <div class="mailContactMeContainer">
-            <img
-              class="mailImg"
-              src="{{ mailContactMe }}"
-              (mouseover)="onHover('mail')"
-              (mouseout)="onLeave('mail')"
-              alt=""
-            />
-            <p class="mailContactMe">
-              E-mail:
-              <a class="mailAdress" href="mailto:thomasjilge@gmx.de"
-                >thomasjilge&#64;gmx.de</a
-              >
-            </p>
-          </div>
-          <div class="phoneContactMeContainer">
-            <img
-              class="phoneImg"
-              src="{{ phoneContactMe }}"
-              (mouseover)="onHover('phone')"
-              (mouseout)="onLeave('phone')"
-              alt=""
-            />
-            <p class="phoneContactMe">Tel: 0170/7032983</p>
-          </div>
- 
-          <div class="arrowUpContainer">
-            <a href="#aboutMe">
+      <div class="contactMeContainerFive">
+        <div class="contactMeTextContainer">
+          <p class="contactMeText">{{ "CONTACT.CONTACT_TEXT" | translate }}</p>
+        </div>
+        <div class="containerMailAndPhone">
+          <div class="contactMeContainerSix">
+            <div class="mailContactMeContainer">
               <img
-                class="arrowUp"
-                id="arrowUp"
-                [ngClass]="{ hovered: isHovered }"
-                [src]="arrowUpSrc"
-                (mouseover)="onHover('arrowUp')"
-                (mouseout)="onLeave('arrowUp')"
+                class="mailImg"
+                src="{{ mailContactMe }}"
+                (mouseover)="onHover('mail')"
+                (mouseout)="onLeave('mail')"
                 alt=""
               />
-            </a>
+              <p class="mailContactMe">
+                E-mail:
+                <a class="mailAdress" href="mailto:thomasjilge@gmx.de"
+                  >thomasjilge&#64;gmx.de</a
+                >
+              </p>
+            </div>
+            <div class="phoneContactMeContainer">
+              <img
+                class="phoneImg"
+                src="{{ phoneContactMe }}"
+                (mouseover)="onHover('phone')"
+                (mouseout)="onLeave('phone')"
+                alt=""
+              />
+              <p class="phoneContactMe">Tel: 0170/7032983</p>
+            </div>
+            <div class="arrowUpContainer">
+              <a href="#aboutMe">
+                <img
+                  class="arrowUp"
+                  id="arrowUp"
+                  [ngClass]="{ hovered: isHovered }"
+                  [src]="arrowUpSrc"
+                  (mouseover)="onHover('arrowUp')"
+                  (mouseout)="onLeave('arrowUp')"
+                  alt=""
+                />
+              </a>
+            </div>
           </div>
-
-          
         </div>
       </div>
-
-
+    </div>
+    <div class="container">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="contactForm">
+          <div class="contactContainerOne">
+            <label for="name"></label>
+            <input
+              #name="ngModel"
+              [(ngModel)]="contactData.name"
+              type="text"
+              id="name"
+              name="name"
+              [placeholder]="
+                name.invalid && name.touched
+                  ? ('CONTACT.CONTACT_NAME_REQUIRED' | translate)
+                  : ('CONTACT.CONTACT_NAME' | translate)
+              "
+              required
+              autocomplete="off"
+              minlength="5"
+              [ngClass]="{
+                errorField: name.invalid && name.touched,
+                validField: name.valid && name.touched
+              }"
+            />
+            <label for="email"></label>
+            <input
+              #email="ngModel"
+              [(ngModel)]="contactData.email"
+              type="email"
+              id="email"
+              name="email"
+              [placeholder]="
+                email.invalid && email.touched
+                  ? ('CONTACT.CONTACT_MAIL_REQUIRED' | translate)
+                  : ('CONTACT.CONTACT_MAIL' | translate)
+              "
+              required
+              autocomplete="off"
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+              [ngClass]="{
+                errorField: email.invalid && email.touched,
+                validField: email.valid && email.touched
+              }"
+            />
+          </div>
+          <div class="contactContainerTwo">
+            <label for="message"></label>
+            <textarea
+              #message="ngModel"
+              minlength="4"
+              [(ngModel)]="contactData.message"
+              id="message"
+              name="message"
+              [placeholder]="
+                message.invalid && message.touched
+                  ? ('CONTACT.CONTACT_MESSAGE_REQUIRED' | translate)
+                  : ('CONTACT.CONTACT_MESSAGE' | translate)
+              "
+              required
+              [ngClass]="{
+                errorField: message.invalid && message.touched,
+                validField: message.valid && message.touched
+              }"
+            ></textarea>
+          </div>
+        </div>
+        <div class="contactMeContainerFour">
+          <div class="contactMeContainerSeven">
+            <label for="privacyPolicy">
+              <input
+                class="customCheckbox"
+                type="checkbox"
+                id="privacyPolicy"
+                name="privacyPolicy"
+                [(ngModel)]="isPrivacyPolicyChecked"
+              />
+            </label>
+            <p class="contactMeContainerSevenText">
+              <span
+                [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"
+              ></span>
+              <a
+                class="privacyLink"
+                routerLink="/data-protection"
+                ngClass="pp"
+                [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate"
+              ></a>
+              <span
+                [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"
+              ></span>
+            </p>
+          </div>
+          <div class="contactMeContainerEight">
+            <button
+              class="sendButton"
+              type="submit"
+              [disabled]="!contactForm.valid || !isPrivacyPolicyChecked"
+              [ngClass]="{
+                activeButton: contactForm.valid && isPrivacyPolicyChecked
+              }"
+            >
+              {{ "CONTACT.CONTACT_SEND" | translate }}
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
-
-  <div class="container">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <div class="contactForm">
-        <div class="contactContainerOne">
-          <label for="name"></label>
-
-          <input
-            #name="ngModel"
-            [(ngModel)]="contactData.name"
-            type="text"
-            id="name"
-            name="name"
-            [placeholder]="
-              name.invalid && name.touched
-                ? ('CONTACT.CONTACT_NAME_REQUIRED' | translate)
-                : ('CONTACT.CONTACT_NAME' | translate)
-            "
-            required
-            autocomplete="off"
-            minlength="5"
-            [ngClass]="{
-              errorField: name.invalid && name.touched,
-              validField: name.valid && name.touched
-            }"
-          />
-
-          <label for="email"></label>
-          <input
-            #email="ngModel"
-            [(ngModel)]="contactData.email"
-            type="email"
-            id="email"
-            name="email"
-            [placeholder]="
-              email.invalid && email.touched
-                ? ('CONTACT.CONTACT_MAIL_REQUIRED' | translate)
-                : ('CONTACT.CONTACT_MAIL' | translate)
-            "
-            required
-            autocomplete="off"
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-            [ngClass]="{
-              errorField: email.invalid && email.touched,
-              validField: email.valid && email.touched
-            }"
-          />
-        </div>
-
-        <div class="contactContainerTwo">
-          <label for="message"></label>
-          <textarea
-            #message="ngModel"
-            minlength="4"
-            [(ngModel)]="contactData.message"
-            id="message"
-            name="message"
-            [placeholder]="
-              message.invalid && message.touched
-                ? ('CONTACT.CONTACT_MESSAGE_REQUIRED' | translate)
-                : ('CONTACT.CONTACT_MESSAGE' | translate)
-            "
-            required
-            [ngClass]="{
-              errorField: message.invalid && message.touched,
-              validField: message.valid && message.touched
-            }"
-          ></textarea>
-        </div>
-      </div>
-
-      <div class="contactMeContainerFour">
-        <div class="contactMeContainerSeven">
-          <label for="privacyPolicy">
-            <input
-              class="customCheckbox"
-              type="checkbox"
-              id="privacyPolicy"
-              name="privacyPolicy"
-              [(ngModel)]="isPrivacyPolicyChecked"
-            />
-          </label>
-          <p class="contactMeContainerSevenText">
-            <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_ONE' | translate"></span>
-              <a class="privacyLink" routerLink="/data-protection" ngClass="pp" [innerHTML]="'CONTACT.CONTACT_PRIVACY_TWO' | translate"></a>
-            <span [innerHTML]="'CONTACT.CONTACT_PRIVACY_THREE' | translate"></span>
-          </p>
-        </div>
-        <div class="contactMeContainerEight">
-          <button
-            class="sendButton"
-            type="submit"
-            [disabled]="!contactForm.valid || !isPrivacyPolicyChecked"
-            [ngClass]="{ activeButton: contactForm.valid && isPrivacyPolicyChecked }">
-            {{ "CONTACT.CONTACT_SEND" | translate }}
-          </button>
-        </div>
-      </div>
-    </form>
+  <div class="popup-overlay" *ngIf="successPopup">
+    <div class="popup">
+      <p>{{ "POPUP.POPUP_TEXT" | translate }}</p>
+      <button (click)="closePopup()">OK</button>
+    </div>
   </div>
-</div>
-
-<div class="popup-overlay" *ngIf="successPopup">
-  <div class="popup">
-    <p>{{ "POPUP.POPUP_TEXT" | translate }}</p>
-    <button (click)="closePopup()">OK</button>
-  </div>
-</div>
 </section>

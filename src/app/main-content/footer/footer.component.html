@@ -1,64 +1,106 @@
 <section class="sectionFooter flex-center-100">
-<div class="footerContainerOne">
+  <div class="footerContainerOne">
     <div class="footerContainerTwo">
-        <div class="footerContainerThree">
-            <p class="initialFooter">&lt;TJ&gt;</p>
-            <div class="footerContainerFd">
-                <p class="fdText">frontend developer</p>
-            </div>
+      <div class="footerContainerThree">
+        <p class="initialFooter">&lt;TJ&gt;</p>
+        <div class="footerContainerFd">
+          <p class="fdText">frontend developer</p>
         </div>
-        <div class="copyrightContainer">
-            <p class="copyrightText">© Thomas Jilge 2024</p>
+      </div>
+      <div class="copyrightContainer">
+        <p class="copyrightText">© Thomas Jilge 2024</p>
+      </div>
+      <div class="imgFooterContainerOne">
+        <div class="imgFooterContainerTwo">
+          <a href="https://github.com/ThomasJilge" target="_blank">
+            <img
+              class="imgFooter"
+              src="{{ githubSrc }}"
+              (mouseover)="onHover('github')"
+              (mouseout)="onLeave('github')"
+              alt="Github"
+            />
+          </a>
+          <a href="#contactForm" target="">
+            <img
+              class="imgFooter"
+              src="{{ mailSrc }}"
+              (mouseover)="onHover('mail')"
+              (mouseout)="onLeave('mail')"
+              alt="Mail"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/thomas-jilge-510a091b5/"
+            target="_blank"
+          >
+            <img
+              class="imgFooter"
+              src="{{ linkedinSrc }}"
+              (mouseover)="onHover('linkedin')"
+              (mouseout)="onLeave('linkedin')"
+              alt="LinkedIn"
+            />
+          </a>
         </div>
-        
-        <div class="imgFooterContainerOne">
-            <div class="imgFooterContainerTwo">
-                <a href="https://github.com/ThomasJilge" target="_blank">
-                    <img class="imgFooter" src="{{ githubSrc }}" (mouseover)="onHover('github')" (mouseout)="onLeave('github')" alt="Github">
-                </a>
-                <a href="#contactForm" target="">
-                    <img class="imgFooter" src="{{ mailSrc }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="Mail">
-                </a>
-                <a href="https://www.linkedin.com/in/thomas-jilge-510a091b5/" target="_blank">
-                    <img class="imgFooter" src="{{ linkedinSrc }}" (mouseover)="onHover('linkedin')" (mouseout)="onLeave('linkedin')" alt="LinkedIn">
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="footerContainerFour">
-        <div class="footerContainerFive">
-            <a class="legalNotice" routerLink="/imprint">{{ 'FOOTER.FOOTER_IMPRINT' | translate }}</a>
-        </div>
+      <div class="footerContainerFive">
+        <a class="legalNotice" routerLink="/imprint">{{
+          "FOOTER.FOOTER_IMPRINT" | translate
+        }}</a>
+      </div>
     </div>
-</div>
-
-<div class="footerContainerOneResponsive">
-
+  </div>
+  <div class="footerContainerOneResponsive">
     <div class="imgFooterContainerOneResponsive">
-        <div class="imgFooterContainerTwoResponsive">
-            <a href="https://github.com/ThomasJilge" target="_blank">
-                <img class="imgFooter" src="{{ githubSrc }}" (mouseover)="onHover('github')" (mouseout)="onLeave('github')" alt="Github">
-            </a>
-            <a href="#contactForm" target="_blank">
-                <img class="imgFooter" src="{{ mailSrc }}" (mouseover)="onHover('mail')" (mouseout)="onLeave('mail')" alt="Mail">
-            </a>
-            <a href="https://www.linkedin.com/in/thomas-jilge-510a091b5/" target="_blank">
-                <img class="imgFooter" src="{{ linkedinSrc }}" (mouseover)="onHover('linkedin')" (mouseout)="onLeave('linkedin')" alt="LinkedIn">
-            </a>
-        </div>
+      <div class="imgFooterContainerTwoResponsive">
+        <a href="https://github.com/ThomasJilge" target="_blank">
+          <img
+            class="imgFooter"
+            src="{{ githubSrc }}"
+            (mouseover)="onHover('github')"
+            (mouseout)="onLeave('github')"
+            alt="Github"
+          />
+        </a>
+        <a href="#contactForm" target="_blank">
+          <img
+            class="imgFooter"
+            src="{{ mailSrc }}"
+            (mouseover)="onHover('mail')"
+            (mouseout)="onLeave('mail')"
+            alt="Mail"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/thomas-jilge-510a091b5/"
+          target="_blank"
+        >
+          <img
+            class="imgFooter"
+            src="{{ linkedinSrc }}"
+            (mouseover)="onHover('linkedin')"
+            (mouseout)="onLeave('linkedin')"
+            alt="LinkedIn"
+          />
+        </a>
+      </div>
     </div>
-
     <div class="footerContainerTwoResponsive">
-        <div class="footerContainerThreeResponsive">
-            <p class="initialFooter">&lt;TJ&gt;</p>
-            <p class="copyrightText">© Thomas Jilge 2024</p>
-        </div>
+      <div class="footerContainerThreeResponsive">
+        <p class="initialFooter">&lt;TJ&gt;</p>
+        <p class="copyrightText">© Thomas Jilge 2024</p>
+      </div>
     </div>
     <div class="footerContainerFourResponsive">
-        <div class="footerContainerFiveResponsive">
-            <a class="legalNotice" href="../../app/imprint/imprint.component.html" target="_blank">Legal notice</a>
-        </div>
+      <div class="footerContainerFiveResponsive">
+        <a class="legalNotice" routerLink="/imprint">{{
+            "FOOTER.FOOTER_IMPRINT" | translate
+          }}</a>
+        >
+      </div>
     </div>
-</div>
+  </div>
 </section>
-
