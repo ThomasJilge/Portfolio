@@ -3,18 +3,13 @@
 .firstSectionAboutMeContainerOne {
     max-width: 1337px;
     width: 100%;
-    // height: 665px;
-    // top: 94px;
     padding-top: 92px;
-    // margin-top: 92px;
     position: relative;
     >.firstSectionAboutMeContainerTwo {
         position: relative;
         max-width: 1284px;
         height: 556px;
-        // left: 105px;
         display: flex;
-        justify-content: space-between;
         margin: 0;
         >.contactForm {
             position: absolute;
@@ -163,46 +158,47 @@ p {
 
 @media only screen and (max-width: 768px) {
 
-    .firstSectionAboutMeContainerOneResponsive {
-        display: block;
-    }
-
-    .firstSectionAboutMeContainerOne {
+    .contactForm {
         display: none;
     }
 
-    .firstSectionAboutMeContainerOneResponsive {
+
+    .firstSectionAboutMeContainerOne {
         width: 100%;
         display: flex;
         justify-content: center;
         position: relative;
-        top: 40px;
+        >.firstSectionAboutMeContainerTwo {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-    .tjImgContainerResponsive {
+    .tjImgContainer {
         width: 100%;
-        >.tjImgResponsive {
+        justify-content: center;
+        >.tjImg {
             max-width: 388px;
             width: 100%;
             height: 370px;
         }
     }
 
-    .infoFieldOneResponsive {
+    .infoFieldOne {
         position: relative;
-        top: 465px;
         color: $primaryColorTwo;
         display: flex;
         text-align: center;
         justify-content: center;
+        height: 0;
     }
 
-    .infoFieldDescriptonResponsive {
+    .infoFieldDescripton {
         font-size: 22px;
         font-weight: 700;
     }
 
-    .infoFieldNameResponsive {
+    .infoFieldName {
         font-size: 40px;
         font-weight: 700;
     }
