@@ -1,6 +1,7 @@
 @import "../../../styles.scss";
 
 .contactMeContainerOne {
+    // display: none;
     position: relative;
     // top: 200px;
     padding-top: 100px;
@@ -396,7 +397,12 @@ textarea.validField {
 
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1024px) {
+
+    .sectionContactForm {
+        position: relative;
+        top: 500px;
+    }
 
     .contactMeContainerFive {
         gap: 20px;
@@ -409,10 +415,6 @@ textarea.validField {
     .contactForm {
         margin-top: 40px;
     }
-
-}
-
-@media only screen and (max-width: 1024px) {
 
     .contactForm {
         flex-direction: column;
@@ -449,9 +451,13 @@ textarea.validField {
 
 @media only screen and (max-width: 768px) {
 
-    .contactMeContainerOne {
-        top: 550px;
+    .sectionContactForm  {
+        top: 670px;
     }
+
+    // .contactMeContainerOne {
+    //     top: 550px;
+    // }
 
     .contactMeContainerSix, .arrowContactMeContainer {
         display: none;
@@ -485,9 +491,22 @@ textarea.validField {
 
 @media only screen and (max-width: 410px) {
 
+    .contactMeContainerFour {
+        padding-top: 20px;
+    }
+
     .contactMeContainerEight {
         margin-top: 35px;
     }
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    .contactMeContainerFour {
+        padding-top: 30px;
+    }
+
 
 }
   

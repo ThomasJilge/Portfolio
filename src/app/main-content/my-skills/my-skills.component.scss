@@ -107,6 +107,11 @@
 
 @media only screen and (max-width: 768px) {
 
+    .sectionMySkills  {
+        position: relative;
+        top: 120px;
+    }
+
     .mySkillsArrowResponsiveContainer, .mySkillsArrowResponsive {
         display: flex;
         justify-content: center;

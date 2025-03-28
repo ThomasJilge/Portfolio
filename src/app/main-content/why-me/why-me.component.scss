@@ -359,8 +359,6 @@
         display: none;
     }
 
-
-
     .letsTalkContainerOne > .letsTalkContainerTwo {
         justify-content: center;
     }
@@ -370,6 +368,30 @@
         font-size: 18px;
         font-weight: 700;
         margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sectionWhyMe {
+        position: relative;
+        top: 120px;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .infoWhyMeContainer {
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    .infoWhyMeContainer {
+        padding-top: 40px;
     }
 
 }
