@@ -18,7 +18,7 @@
             display: flex;
             >.h2ContactMe {
                 height: 60px;
-                font-size: 54px;
+                font-size: clamp(32px, 4vw, 54px);
                 color: $primaryColorOne;
                 margin: 0;
             }
@@ -44,7 +44,7 @@
         width: 100%;
         height: 73px;
         >.contactMeText {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
             color: $primaryColorTwo;
             margin: 0;
@@ -52,15 +52,23 @@
     }
 }
 
+.containerMailAndPhone {
+    max-width: 637px;
+    width: 100%;
+}
+
 .contactMeContainerSix {
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 637px;
     width: 100%;
     gap: 16px;
     >.mailContactMeContainer, .phoneContactMeContainer {
         display: flex;
         align-items: center;
+        max-width: 637px;
+        width: 100%;
         gap: 16px;
         >.mailImg {
             width: 28.4x;
@@ -102,7 +110,8 @@
 }
 
 .arrowUpContainer {
-    width: 637px;
+    max-width: 637px;
+    width: 100%;
     display: flex;
     justify-content: right;
 
@@ -415,9 +424,9 @@ textarea.validField {
         max-width: none;
     }
 
-    .contactMeText {
-        font-size: clamp(16px, 2vw, 18px) !important;
-    }
+    // .contactMeText {
+    //     font-size: clamp(16px, 2vw, 18px) !important;
+    // }
 
     .contactContainerOne > #name {
         margin-bottom: 0;
@@ -438,7 +447,7 @@ textarea.validField {
 
 @media only screen and (max-width: 768px) {
 
-    .contactMeContainerSix, .arrowContactMeContainer {
+    .contactMeContainerSix, .containerMailAndPhone, .arrowContactMeContainer {
         display: none;
     }
 

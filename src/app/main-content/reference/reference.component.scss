@@ -135,7 +135,7 @@
     }
 
     .referenceContainerTextHeaderResponsive {
-        font-size: 24px;
+        font-size: clamp(20px, 4vw, 24px);
         font-weight: 700;
         color: $primaryColorOne;
         margin: 0;
@@ -185,7 +185,7 @@
 @media (max-width: 575px) {
 
     .sectionReference {
-        top: 595px
+        top: 640px
     }
 
     .referenceContainerHeaderResponsive {

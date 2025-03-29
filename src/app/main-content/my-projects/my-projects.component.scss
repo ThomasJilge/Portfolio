@@ -17,7 +17,7 @@
         white-space: nowrap;
         >.h2MyProjects {
             color: $primaryColorOne;
-            font-size: 54px;
+            font-size: clamp(32px, 4vw, 54px);
             margin: 0;
         }
     }
@@ -285,9 +285,9 @@
 
 @media only screen and (max-width: 380px) {
 
-    h2 {
-        font-size: 46px !important;
-    }
+    // h2 {
+    //     font-size: 46px !important;
+    // }
 
     .projectImg {
         max-width: 315px;
