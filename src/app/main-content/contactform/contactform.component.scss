@@ -218,7 +218,7 @@ input:focus, textarea:focus {
 
 .privacyLink {
     text-decoration: none;
-    color: #AE4247;
+    color: $primaryColorThree;
     padding: 0 10px 0 10px;
          &:hover {
             color: $primaryColorOne;
