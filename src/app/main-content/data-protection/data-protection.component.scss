@@ -12,22 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     position: relative;
-    padding: 24px;
-}
-
-.source {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.href {
-    color: $primaryColorThree;
-    &:hover {
-        color: $primaryColorOne;
-        cursor: pointer;
-        transition: color 125ms ease-in-out;
-    }
+    padding: 92px 24px 24px 24px;
 }
