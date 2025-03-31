@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { RouterLink, RouterModule, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,17 +10,48 @@ import { CommonModule } from '@angular/common';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-
 export class FooterComponent {
-
-  constructor(private translate: TranslateService) { 
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
+  topValue: string = '0';
 
   githubSrc: string = '../../assets/img/Github button.png';
   mailSrc: string = '../../assets/img/mail button.png';
   linkedinSrc: string = '../../assets/img/linkedin button.png';
+
+  constructor(
+    private translate: TranslateService,
+    private router: Router
+  ) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+    this.checkRouteAndViewport();
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.checkRouteAndViewport();
+      }
+    });
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.checkRouteAndViewport();
+  }
+
+  private checkRouteAndViewport() {
+    const isHome = this.router.url === '/' || this.router.url.includes('home');
+    const isImprint = this.router.url.includes('/imprint');
+    const isDataProtection = this.router.url.includes('/data-protection');
+
+    if (isHome) {
+      if (window.innerWidth <= 575) {
+        this.topValue = '775px'; 
+      } else if (window.innerWidth <= 1024) {
+        this.topValue = '700px';
+      } 
+    } else if (isImprint || isDataProtection) {
+      this.topValue = '0'; 
+    }
+
+  }
 
   onHover(buttonType: string) {
     switch (buttonType) {
@@ -36,7 +67,6 @@ export class FooterComponent {
     }
   }
 
-  
   onLeave(buttonType: string) {
     switch (buttonType) {
       case 'github':
@@ -50,10 +80,7 @@ export class FooterComponent {
         break;
     }
   }
-
 }
-
-
 
 
 
