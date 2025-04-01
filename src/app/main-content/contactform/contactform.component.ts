@@ -21,7 +21,6 @@ export class ContactformComponent {
   }
 
   http = inject(HttpClient);
-  // translate = inject(TranslateService);
 
   contactData = {
     name: "",
@@ -32,10 +31,10 @@ binding: any;
 
 mailTest = true;
 isPrivacyPolicyChecked = false;
-successPopup = false;  // Steuert das Anzeigen des Popups
+successPopup = false;
 
 post = {
-  endPoint: 'https://deineDomain.de/sendMail.php',
+  endPoint: 'https://thomas-jilge.com/sendMail.php',
   body: (payload: any) => JSON.stringify(payload),
   options: {
     headers: {
@@ -45,29 +44,12 @@ post = {
   },
 };
 
-// onSubmit(ngForm: NgForm) {
-//   if (ngForm.valid && !this.mailTest) {
-//     this.http.post(this.post.endPoint, this.post.body(this.contactData))
-//       .subscribe({
-//         next: (response) => {
-//           ngForm.resetForm();
-//         },
-//         error: (error) => {
-//           console.error(error);
-//         },
-//         complete: () => console.info('send post complete'),
-//       });
-//   } else if (ngForm.valid && this.mailTest) {
-//     ngForm.resetForm();
-//   }
-// }
-
 onSubmit(ngForm: NgForm) {
   if (ngForm.valid && !this.mailTest) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: () => {
-          this.successPopup = true;  // Popup anzeigen
+          this.successPopup = true;
           ngForm.resetForm();
         },
         error: (error) => {
@@ -77,7 +59,7 @@ onSubmit(ngForm: NgForm) {
         complete: () => console.info('send post complete'),
       });
   } else if (ngForm.valid && this.mailTest) {
-    this.successPopup = true;  // Popup auch im Testmodus anzeigen
+    this.successPopup = true; 
     ngForm.resetForm();
   }
 }
