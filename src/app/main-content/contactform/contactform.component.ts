@@ -29,7 +29,7 @@ export class ContactformComponent {
   }
 binding: any;
 
-mailTest = true;
+mailTest = false;
 isPrivacyPolicyChecked = false;
 successPopup = false;
 

@@ -1,12 +1,17 @@
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} -s [OR]
-
 RewriteCond %{REQUEST_FILENAME} -l [OR]
-
 RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [NC,L]
 
-RewriteRule ^.*$ - [NC,L]
+RewriteCond %{HTTP_HOST} ^el-pollo-loco\.thomas-jilge\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/El Pollo Loco/
+RewriteRule ^(.*)$ /El%20Pollo%20Loco/$1 [L]
 
+RewriteCond %{HTTP_HOST} ^join\.thomas-jilge\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/Join/
+RewriteRule ^(.*)$ /Join/$1 [L]
 
-RewriteRule ^(.*) /index.html [NC,L]
+# Standard-Weiterleitung auf das Hauptprojekt (Portfolio)
+RewriteRule ^.*$ /index.html [NC,L]
