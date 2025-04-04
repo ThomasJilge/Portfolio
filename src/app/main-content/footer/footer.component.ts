@@ -43,7 +43,7 @@ export class FooterComponent {
 
     if (isHome) {
       if (window.innerWidth <= 575) {
-        this.topValue = '775px'; 
+        this.topValue = '735px'; 
       } else if (window.innerWidth <= 1024) {
         this.topValue = '700px';
       } 

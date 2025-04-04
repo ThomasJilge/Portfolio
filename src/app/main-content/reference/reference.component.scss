@@ -107,7 +107,7 @@
 
     .sectionReference  {
         position: relative;
-        top: 550px;
+        top: 460px;
     }
 
     .referenceContainerOne {
@@ -180,7 +180,7 @@
 @media (max-width: 575px) {
 
     .sectionReference {
-        top: 640px
+        top: 510px
     }
 
     .referenceContainerHeaderResponsive {
@@ -200,7 +200,23 @@
 @media (max-width: 490px) {
 
     .sectionReference {
-        top: 595px;
+        top: 410px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .sectionReference {
+        top: 365px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .sectionReference {
+        top: 405px;
     }
 
 }

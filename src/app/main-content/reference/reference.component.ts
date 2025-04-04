@@ -19,7 +19,6 @@ export class ReferenceComponent {
     translate.use('en');
   }
 
-  // TOUCH EVENTS
   onTouchStart(event: TouchEvent) {
     this.isDragging = true;
     this.startX = event.touches[0].clientX;
@@ -39,7 +38,6 @@ export class ReferenceComponent {
     this.isDragging = false;
   }
 
-  // MOUSE EVENTS (Kommentierung entfernt)
   onMouseDown(event: MouseEvent) {
     this.isDragging = true;
     this.startX = event.clientX;

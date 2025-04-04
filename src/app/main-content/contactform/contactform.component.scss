@@ -399,7 +399,7 @@ textarea.validField {
 
     .sectionContactForm {
         position: relative;
-        top: 500px;
+        top: 460px;
     }
 
     .contactMeContainerFive {
@@ -476,7 +476,15 @@ textarea.validField {
 @media (max-width: 575px) {
 
     .sectionContactForm  {
-        top: 595px;
+        top: 510px;
+    }
+
+}
+
+@media (max-width: 490px) {
+
+    .sectionContactForm  {
+        top: 410px;
     }
 
 }
@@ -493,10 +501,10 @@ textarea.validField {
 
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 380px) {
 
-    .contactMeContainerFour {
-        padding-top: 30px;
+    .sectionContactForm  {
+        top: 365px;
     }
 
 }
