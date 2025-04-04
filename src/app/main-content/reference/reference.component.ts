@@ -19,6 +19,27 @@ export class ReferenceComponent {
     translate.use('en');
   }
 
+  // TOUCH EVENTS
+  onTouchStart(event: TouchEvent) {
+    this.isDragging = true;
+    this.startX = event.touches[0].clientX;
+    this.initialPosition = this.currentTransform;
+  }
+
+  onTouchMove(event: TouchEvent) {
+    if (this.isDragging) {
+      const deltaX = event.touches[0].clientX - this.startX;
+      this.currentTransform = this.initialPosition + deltaX;
+      const container = event.currentTarget as HTMLElement;
+      container.style.transform = `translateX(${this.currentTransform}px)`;
+    }
+  }
+
+  onTouchEnd(event: TouchEvent) {
+    this.isDragging = false;
+  }
+
+  // MOUSE EVENTS (Kommentierung entfernt)
   onMouseDown(event: MouseEvent) {
     this.isDragging = true;
     this.startX = event.clientX;
@@ -26,13 +47,12 @@ export class ReferenceComponent {
     event.preventDefault();
   }
 
-
   onMouseMove(event: MouseEvent) {
     if (this.isDragging) {
-      const deltaX = event.clientX - this.startX; 
-      this.currentTransform = this.initialPosition + deltaX; 
-      const container = event.currentTarget as HTMLElement; 
-      container.style.transform = `translateX(${this.currentTransform}px)`; 
+      const deltaX = event.clientX - this.startX;
+      this.currentTransform = this.initialPosition + deltaX;
+      const container = event.currentTarget as HTMLElement;
+      container.style.transform = `translateX(${this.currentTransform}px)`;
     }
   }
 
@@ -40,5 +60,3 @@ export class ReferenceComponent {
     this.isDragging = false;
   }
 }
-
-

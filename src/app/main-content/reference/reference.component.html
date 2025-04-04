@@ -57,7 +57,9 @@
       (mousemove)="onMouseMove($event)"
       (mouseup)="onMouseUp($event)"
       (mouseleave)="onMouseUp($event)"
-    >
+      (touchstart)="onTouchStart($event)"
+      (touchmove)="onTouchMove($event)"
+      (touchend)="onTouchEnd($event)">
       <div class="referenceContainerThreeResponsive">
         <div class="referenceNameAndProjectResponsive">
           <p class="referenceNameResponsive">Noah Mueller</p>
