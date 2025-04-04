@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChildren, QueryList, AfterViewInit } from '@angular/core';
 import { FirstSectionAboutMeComponent } from "./first-section-about-me/first-section-about-me.component";
 import { WhyMeComponent } from "./why-me/why-me.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
@@ -20,6 +20,7 @@ import { ContactformComponent } from "./contactform/contactform.component";
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
-export class MainContentComponent {
+export class MainContentComponent  {
 
 }
+

@@ -31,6 +31,9 @@
 .skillsImgs {
     width: 88px;
     height: 100px;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .challengeMeTextContainer {
