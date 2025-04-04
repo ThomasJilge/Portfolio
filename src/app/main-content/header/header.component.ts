@@ -22,6 +22,7 @@ export class HeaderComponent {
 
   setActiveSection(section: string) {
     this.selectedSection = section;
+    this.toggleMenu();
   }
 
   setLanguage(language: string) {
