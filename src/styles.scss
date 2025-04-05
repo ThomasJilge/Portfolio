@@ -25,6 +25,17 @@ html {
   display: none; 
 }
 
+.section {
+  opacity: 0;
+  transform: translateY(20px);  /* Startposition nach unten verschoben */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);  /* Endposition - sichtbar ohne Verschiebung */
+}
+
 /* handjet-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

@@ -1,4 +1,4 @@
-import { Component, ViewChildren, QueryList, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { FirstSectionAboutMeComponent } from "./first-section-about-me/first-section-about-me.component";
 import { WhyMeComponent } from "./why-me/why-me.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
@@ -20,7 +20,29 @@ import { ContactformComponent } from "./contactform/contactform.component";
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
-export class MainContentComponent  {
+export class MainContentComponent implements AfterViewInit {
 
+  constructor() {}
+
+  ngAfterViewInit() {
+    this.observeSections();
+  }
+
+  observeSections() {
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    sections.forEach(section => observer.observe(section));
+  }
 }
-
