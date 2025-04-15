@@ -21,16 +21,12 @@ import { ContactformComponent } from "./contactform/contactform.component";
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent implements AfterViewInit {
-
-  constructor() {}
-
   ngAfterViewInit() {
     this.observeSections();
   }
 
   observeSections() {
     const sections = document.querySelectorAll('.section');
-
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -42,7 +38,6 @@ export class MainContentComponent implements AfterViewInit {
     }, {
       threshold: 0.1,
     });
-
     sections.forEach(section => observer.observe(section));
   }
 }
