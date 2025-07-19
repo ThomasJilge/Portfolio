@@ -43,6 +43,7 @@
     >.challengeMeText {
         position: absolute;
         display: none;
+        text-align: center;
         left: -80px;
         color: $primaryColorTwo;
         margin: 0;
@@ -50,8 +51,25 @@
     }
 }
 
-.challengeMeClass {
-    cursor: pointer;
+.newTechnologiesContainerOne {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    >.newTechnologiesContainerTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+    }
+}
+}
+
+.textNewTechnologies {
+    margin: 0;
 }
 
 .challengeMeClass:hover ~ .challengeMeTextContainer .challengeMeText {
