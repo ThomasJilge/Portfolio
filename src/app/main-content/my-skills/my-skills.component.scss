@@ -41,14 +41,23 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    // justify-content: end;
+    align-items: center;
     >.skillLabel {
         color: $primaryColorTwo;
         margin: 0;
         font-weight: 500;
+        &.challengeMeTextLabel {
+            margin-top: 10px;
+        }
     }
     &:hover > .skillLabel {
         color: $primaryColorOne;
   }
+}
+
+.challengeMeClass {
+    justify-content: end;
 }
 
 .skillLabel.twoLines {
@@ -56,7 +65,10 @@
   max-width: 88px;      
 }
 
-
+.challengeMeImage {
+    width: 68px;
+    height: 68px;
+}
 
 .challengeMeTextContainer {
     display: flex;

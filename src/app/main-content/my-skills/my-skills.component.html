@@ -13,10 +13,14 @@
           class="skillsImgs"
           [src]="img.src"
           [alt]="img.label"
+          [ngClass]="{ 'challengeMeImage': img.label === 'Challenge Me' }"
         />
         <p 
           class="skillLabel" 
-          [ngClass]="{ 'twoLines': img.label === 'Material Design' || img.label === 'Challenge Me' }"
+          [ngClass]="{
+            'twoLines': img.label === 'Material Design' || img.label === 'Challenge Me',
+            'challengeMeTextLabel': img.label === 'Challenge Me'
+          }"
         >
           {{ img.label | translate }}
         </p>
