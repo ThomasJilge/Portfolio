@@ -37,6 +37,27 @@
     }
 }
 
+.skillsItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    >.skillLabel {
+        color: $primaryColorTwo;
+        margin: 0;
+        font-weight: 500;
+    }
+    &:hover > .skillLabel {
+        color: $primaryColorOne;
+  }
+}
+
+.skillLabel.twoLines {
+  white-space: normal; 
+  max-width: 88px;      
+}
+
+
+
 .challengeMeTextContainer {
     display: flex;
     position: relative;

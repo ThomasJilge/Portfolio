@@ -4,23 +4,33 @@
       <h2 class="h2MySkills">{{ "MY_SKILLS.SKILLS" | translate }}</h2>
     </div>
     <div class="skillsImgsContainerOne">
-      <img
+      <div
         *ngFor="let img of skillImages"
-        class="skillsImgs"
-        [src]="img"
-        alt=""
-        [ngClass]="{ challengeMeClass: img.includes('challengeMe.png') }"
-      />
+        class="skillsItem"
+        [ngClass]="{ challengeMeClass: img.src.includes('challengeMeNew.png') }"
+      >
+        <img
+          class="skillsImgs"
+          [src]="img.src"
+          [alt]="img.label"
+        />
+        <p 
+          class="skillLabel" 
+          [ngClass]="{ 'twoLines': img.label === 'Material Design' || img.label === 'Challenge Me' }"
+        >
+          {{ img.label | translate }}
+        </p>
+      </div>
       <div class="challengeMeTextContainer">
         <p class="challengeMeText">
-          {{ "MY_SKILLS.CHALLENGE_TEXT" | translate }}<br>
+          {{ "MY_SKILLS.CHALLENGE_TEXT" | translate }}<br />
           <span class="newTechnologiesContainerOne">
             <span class="newTechnologiesContainerTwo">
-              <img src="../../assets/img/skills/react.png" alt="">
+              <img src="../../assets/img/skills/react.png" alt="React" />
               <p class="textNewTechnologies">React</p>
-              </span>
-              <span class="newTechnologiesContainerTwo">
-              <img src="../../assets/img/skills/vue.js.png" alt="">
+            </span>
+            <span class="newTechnologiesContainerTwo">
+              <img src="../../assets/img/skills/vue.js.png" alt="Vue.js" />
               <p class="textNewTechnologies">Vue.js</p>
             </span>
           </span>
@@ -42,11 +52,16 @@
     <div class="letsTalkContainerOne">
       <div class="letsTalkContainerTwo">
         <a href="#contactForm">
-          <div class="letsTalkButton">
-            {{ "MY_SKILLS.LETS_TALK" | translate }}
-          </div>
+          <div class="letsTalkButton">{{ "MY_SKILLS.LETS_TALK" | translate }}</div>
         </a>
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
