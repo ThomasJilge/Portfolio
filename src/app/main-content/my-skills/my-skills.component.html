@@ -3,6 +3,7 @@
     <div class="h2MySkillsContainer">
       <h2 class="h2MySkills">{{ "MY_SKILLS.SKILLS" | translate }}</h2>
     </div>
+
     <div class="skillsImgsContainerOne">
       <div
         *ngFor="let img of skillImages"
@@ -12,7 +13,7 @@
         <img
           class="skillsImgs"
           [src]="img.src"
-          [alt]="img.label"
+          [alt]="img.alt"
           [ngClass]="{ 'challengeMeImage': img.label === 'Challenge Me' }"
         />
         <p 
@@ -25,22 +26,24 @@
           {{ img.label | translate }}
         </p>
       </div>
+
       <div class="challengeMeTextContainer">
         <p class="challengeMeText">
           {{ "MY_SKILLS.CHALLENGE_TEXT" | translate }}<br />
           <span class="newTechnologiesContainerOne">
             <span class="newTechnologiesContainerTwo">
-              <img src="../../assets/img/skills/react.png" alt="React" />
+              <img src="../../assets/img/skills/react.png" alt="React logo – new technology skill" />
               <p class="textNewTechnologies">React</p>
             </span>
             <span class="newTechnologiesContainerTwo">
-              <img src="../../assets/img/skills/vue.js.png" alt="Vue.js" />
+              <img src="../../assets/img/skills/vue.js.png" alt="Vue.js logo – new technology skill" />
               <p class="textNewTechnologies">Vue.js</p>
             </span>
           </span>
         </p>
       </div>
     </div>
+
     <div class="mySkillsArrowResponsiveContainer">
       <img
         class="mySkillsArrowResponsive"
@@ -48,11 +51,13 @@
         alt=""
       />
     </div>
+
     <div class="mySkillsTextContainerOne">
       <div class="mySkillsTextContainerTwo">
         <p class="mySkillsText">{{ "MY_SKILLS.CHALLENGE_TEXT" | translate }}</p>
       </div>
     </div>
+
     <div class="letsTalkContainerOne">
       <div class="letsTalkContainerTwo">
         <a href="#contactForm">
@@ -62,10 +67,3 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
