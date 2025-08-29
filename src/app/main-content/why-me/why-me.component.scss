@@ -55,131 +55,198 @@
      }
 }
 
-.iAmContainerTwo {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 568px;
-    width: 100%;
-    height: 186px;
-    left: 159;
-    gap: 8px;
-    top: 10px;
-    >.locatedContainerOne {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        max-width: 568px;
-        width: 100%;
-        height: 56px;
-        gap: 64px;
-        >.iAmText {
-            height: 49px;
-            font-size: clamp(32px, 4vw, 54px);
-            font-weight: 700;
-            color: $primaryColorOne;
-            margin: 0;
-        }
-    }
-}
-
-.locatedText {
-    color: $primaryColorTwo;
-    font-size: 18px;
-    margin: 0;
-    position: relative;
-    left: 15px;
-}
-
-.locatedImg {
-    width: 33.31px;
-    height: 41px;
-    position: relative;
-    right: 7px;
-}
-
-.locatedContainerTwo {
-    display: flex;
-    align-items: center;
-    width: 235px;
-    height: 57px;
-}
-
 .iAmContainerOne {
     display: flex;
-    justify-content: end;
-    margin-top: 25px;
+    gap: 64px;
+    width: 568px;
+    // left: 159px;
+    // position: relative;
+    
 }
 
-.relocateArrowImg {
-    width: 22.95px;
-    height: 56px;
+.iAmContainerTwo {
+    color: $primaryColorOne;
 }
 
-.relocateImg {
-    width: 30px;
-    height: 48.98px;
-}
+// .locatedContainerTwo {
+//     display: flex;
+// }
 
-.relocateContainer {
-    position: relative;
-    display: flex;
-    height: 56px;
-    gap: 180px;
-    padding-left: 152px;
-    >.openToRelocate {
-        display: flex;
-        align-items: center;
-        height: 48px;
-    }
-}
-
-.relocateText {
-    position: relative;
-    font-size: 18px;
-    width: 96px;
-    height: 40px;
-    color: $primaryColorTwo;
-    left: 25px;
+.iAmText {
     margin: 0;
+    font-size: 48px;
+    width: 116px;
 }
 
 .remoteContainerOne {
     display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    height: 58px;
-    >.remoteContainerTwo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 58px;
-        gap: 20px;
-        padding-left: 168px;
-    }
 }
 
-.remoteText {
-    width: 125px;
-    color: $primaryColorTwo;
-    font-size: 18px;
-    margin: 0;
+.remoteContainerTwo {
     display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.relocateContainer {
+    display: flex;
+}
+
+.openToRelocate {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 15px;
+}
+
+.locatedContainerTwo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $primaryColorTwo;
+}
+
+.locatedContainerThree {
+    display: flex;
+    gap: 15px;
+}
+
+.locatedContainerFour {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.remoteImg {
-    width: 53.58px;
-    height: 46.99px;
-}
+// .locatedContainerFour {
+//     display: flex;
+// }
 
-.remoteArrowOneImg {
-    width: 23.85px;
-    height: 39.95px;
-    object-fit: cover;
-}
+// .iAmContainerTwo {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 568px;
+//     width: 100%;
+//     height: 186px;
+//     left: 159;
+//     gap: 8px;
+//     top: 10px;
+//     >.locatedContainerOne {
+//         position: relative;
+//         display: flex;
+//         align-items: center;
+//         justify-content: start;
+//         max-width: 568px;
+//         width: 100%;
+//         height: 56px;
+//         gap: 64px;
+//         >.iAmText {
+//             height: 49px;
+//             font-size: clamp(32px, 4vw, 54px);
+//             font-weight: 700;
+//             color: $primaryColorOne;
+//             margin: 0;
+//         }
+//     }
+// }
+
+// .locatedText {
+//     color: $primaryColorTwo;
+//     font-size: 18px;
+//     margin: 0;
+//     position: relative;
+//     left: 15px;
+// }
+
+// .locatedImg {
+//     width: 33.31px;
+//     height: 41px;
+//     position: relative;
+//     right: 7px;
+// }
+
+// .locatedContainerTwo {
+//     display: flex;
+//     align-items: center;
+//     width: 235px;
+//     height: 57px;
+// }
+
+// .iAmContainerOne {
+//     display: flex;
+//     justify-content: end;
+//     margin-top: 25px;
+// }
+
+// .relocateArrowImg {
+//     width: 22.95px;
+//     height: 56px;
+// }
+
+// .relocateImg {
+//     width: 30px;
+//     height: 48.98px;
+// }
+
+// .relocateContainer {
+//     position: relative;
+//     display: flex;
+//     height: 56px;
+//     gap: 180px;
+//     padding-left: 152px;
+//     >.openToRelocate {
+//         display: flex;
+//         align-items: center;
+//         height: 48px;
+//     }
+// }
+
+// .relocateText {
+//     position: relative;
+//     font-size: 18px;
+//     width: 96px;
+//     height: 40px;
+//     color: $primaryColorTwo;
+//     left: 25px;
+//     margin: 0;
+// }
+
+// .remoteContainerOne {
+//     display: flex;
+//     position: relative;
+//     justify-content: space-between;
+//     align-items: center;
+//     height: 58px;
+//     >.remoteContainerTwo {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         height: 58px;
+//         gap: 20px;
+//         padding-left: 168px;
+//     }
+// }
+
+// .remoteText {
+//     width: 125px;
+//     color: $primaryColorTwo;
+//     font-size: 18px;
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .remoteImg {
+//     width: 53.58px;
+//     height: 46.99px;
+// }
+
+// .remoteArrowOneImg {
+//     width: 23.85px;
+//     height: 39.95px;
+//     object-fit: cover;
+// }
 
 .letsTalkContainerOne {
     display: flex;
@@ -228,9 +295,14 @@
     align-items: center;
 }
 
-.locatedContainerTwo:hover .locatedImgTwo {
-    display: block;
+// .locatedContainerTwo:hover .locatedImgTwo {
+//     display: block;
+// }
+
+.locatedImg:hover + .locatedImgTwo {
+  display: block;
 }
+
 
 .laptopHoverImg {
     width: 53.58px;
@@ -253,10 +325,10 @@
     display: none;
 }
 
-.remoteContainerTwo > .locatedOpenRemoteInfo {
-    position: relative;
-    right: 25px;
-}
+// .remoteContainerTwo > .locatedOpenRemoteInfo {
+//     position: relative;
+//     right: 25px;
+// }
 
 .whyMeContainerOneResponsive {
     display: none;

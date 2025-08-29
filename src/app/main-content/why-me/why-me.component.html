@@ -21,7 +21,80 @@
           alt=""
         />
       </div>
+
       <div class="iAmContainerOne">
+        <div class="iAmContainerTwo">
+          <p class="iAmText">{{ "WHY_ME.I_AM" | translate }}</p>
+        </div>
+        <div class="locatedContainerTwo">
+        <div class="locatedContainerThree">
+          <div class="locatedContainerFour">
+          <img class="locatedImg" [src]="locatedSrc" alt="Current location icon" (mouseover)="onHover('located')" (mouseout)="onLeave('located')"/>
+          <img class="locatedImgTwo" [src]="locatedSrc2" alt="Current location icon" />
+        </div>
+        <div class="locatedOpenRemoteInfo">
+          <p class="locatedText">
+            {{ "WHY_ME.LOCATED_ONE" | translate }}
+          </p>
+        </div>
+        </div>
+        <div class="relocateContainer">
+            <img
+              class="relocateArrowImg"
+              src="../../assets/img/Arrow 5.png"
+              alt=""
+            />
+            <div class="openToRelocate">
+              <img class="relocateImg" src="{{ relocateSrc }}" (mouseover)="onHover('relocate')" (mouseout)="onLeave('relocate')" alt="Open to relocate icon"/>
+              <div class="locatedOpenRemoteInfo">
+                <p class="locatedText">
+                  {{ "WHY_ME.RELOCATE_ONE" | translate }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="remoteContainerOne">
+            <div class="remoteContainerTwo">
+              <img
+                class="remoteImg"
+                [src]="remoteSrc"
+                alt="Remote work option icon"
+                (mouseover)="onHover('remote')"
+                (mouseout)="onLeave('remote')"
+                [ngClass]="{ laptopHoverImg: isRemoteHovered }"
+              />
+              <div class="locatedOpenRemoteInfo">
+                <p class="locatedText">{{ "WHY_ME.REMOTE_ONE" | translate }}</p>
+              </div>
+              <img
+                class="remoteArrowOneImg"
+                src="../../assets/img/Arrow 4 (1).png"
+                alt=""
+              />
+            </div>
+            <div class="workRemote">
+              <img
+                class="remoteArrowTwoImg"
+                src="../../assets/img/Arrow 01.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relocateArrowImgContainerTwo">
+        <img
+          class="relocateArrowImgTwo"
+          src="../../assets/img/Arrow6.png"
+          alt=""
+        />
+      </div>
+
+      </div>
+
+
+      <!-- <div class="iAmContainerOne">
         <div class="iAmContainerTwo">
           <div class="locatedContainerOne">
             <p class="iAmText">{{ "WHY_ME.I_AM" | translate }}</p>
@@ -109,4 +182,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
