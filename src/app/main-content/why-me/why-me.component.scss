@@ -55,198 +55,140 @@
      }
 }
 
-.iAmContainerOne {
+.locatedContainerFour {
     display: flex;
-    gap: 64px;
-    width: 568px;
-    // left: 159px;
-    // position: relative;
-    
 }
 
 .iAmContainerTwo {
-    color: $primaryColorOne;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 568px;
+    width: 100%;
+    height: 186px;
+    left: 159;
+    gap: 8px;
+    top: 10px;
+    >.locatedContainerOne {
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 568px;
+        width: 100%;
+        height: 56px;
+        gap: 50px;
+        >.iAmText {
+            font-size: clamp(32px, 4vw, 54px);
+            font-weight: 700;
+            color: $primaryColorOne;
+            margin: 0;
+        }
+    }
 }
 
-// .locatedContainerTwo {
-//     display: flex;
-// }
-
-.iAmText {
+.locatedText {
+    color: $primaryColorTwo;
+    font-size: 18px;
     margin: 0;
-    font-size: 48px;
-    width: 116px;
+    position: relative;
 }
 
-.remoteContainerOne {
-    display: flex;
-}
-
-.remoteContainerTwo {
-    display: flex;
-    width: 100%;
-    gap: 15px;
-}
-
-.relocateContainer {
-    display: flex;
-}
-
-.openToRelocate {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    gap: 15px;
+.locatedImg {
+    width: 33.31px;
+    height: 41px;
+    position: relative;
 }
 
 .locatedContainerTwo {
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
     gap: 20px;
-    color: $primaryColorTwo;
 }
 
 .locatedContainerThree {
-    display: flex;
-    gap: 15px;
-}
-
-.locatedContainerFour {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-// .locatedContainerFour {
-//     display: flex;
-// }
+.iAmContainerOne {
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+}
 
-// .iAmContainerTwo {
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     max-width: 568px;
-//     width: 100%;
-//     height: 186px;
-//     left: 159;
-//     gap: 8px;
-//     top: 10px;
-//     >.locatedContainerOne {
-//         position: relative;
-//         display: flex;
-//         align-items: center;
-//         justify-content: start;
-//         max-width: 568px;
-//         width: 100%;
-//         height: 56px;
-//         gap: 64px;
-//         >.iAmText {
-//             height: 49px;
-//             font-size: clamp(32px, 4vw, 54px);
-//             font-weight: 700;
-//             color: $primaryColorOne;
-//             margin: 0;
-//         }
-//     }
-// }
+.relocateArrowImg {
+    width: 22.95px;
+    height: 56px;
+}
 
-// .locatedText {
-//     color: $primaryColorTwo;
-//     font-size: 18px;
-//     margin: 0;
-//     position: relative;
-//     left: 15px;
-// }
+.relocateImg {
+    width: 30px;
+    height: 48.98px;
+}
 
-// .locatedImg {
-//     width: 33.31px;
-//     height: 41px;
-//     position: relative;
-//     right: 7px;
-// }
+.relocateContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    gap: 165px;
+    padding-left: 152px;
+    >.openToRelocate {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        gap: 20px;
+    }
+}
 
-// .locatedContainerTwo {
-//     display: flex;
-//     align-items: center;
-//     width: 235px;
-//     height: 57px;
-// }
+.relocateText {
+    position: relative;
+    font-size: 18px;
+    width: 96px;
+    height: 40px;
+    color: $primaryColorTwo;
+    left: 25px;
+    margin: 0;
+}
 
-// .iAmContainerOne {
-//     display: flex;
-//     justify-content: end;
-//     margin-top: 25px;
-// }
+.remoteContainerOne {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    >.remoteContainerTwo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 58px;
+        gap: 20px;
+        padding-left: 168px;
+    }
+}
 
-// .relocateArrowImg {
-//     width: 22.95px;
-//     height: 56px;
-// }
+.remoteText {
+    width: 125px;
+    color: $primaryColorTwo;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
 
-// .relocateImg {
-//     width: 30px;
-//     height: 48.98px;
-// }
+.remoteImg {
+    width: 53.58px;
+    height: 46.99px;
+}
 
-// .relocateContainer {
-//     position: relative;
-//     display: flex;
-//     height: 56px;
-//     gap: 180px;
-//     padding-left: 152px;
-//     >.openToRelocate {
-//         display: flex;
-//         align-items: center;
-//         height: 48px;
-//     }
-// }
-
-// .relocateText {
-//     position: relative;
-//     font-size: 18px;
-//     width: 96px;
-//     height: 40px;
-//     color: $primaryColorTwo;
-//     left: 25px;
-//     margin: 0;
-// }
-
-// .remoteContainerOne {
-//     display: flex;
-//     position: relative;
-//     justify-content: space-between;
-//     align-items: center;
-//     height: 58px;
-//     >.remoteContainerTwo {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         height: 58px;
-//         gap: 20px;
-//         padding-left: 168px;
-//     }
-// }
-
-// .remoteText {
-//     width: 125px;
-//     color: $primaryColorTwo;
-//     font-size: 18px;
-//     margin: 0;
-//     display: flex;
-//     align-items: center;
-// }
-
-// .remoteImg {
-//     width: 53.58px;
-//     height: 46.99px;
-// }
-
-// .remoteArrowOneImg {
-//     width: 23.85px;
-//     height: 39.95px;
-//     object-fit: cover;
-// }
+.remoteArrowOneImg {
+    width: 23.85px;
+    height: 39.95px;
+    object-fit: cover;
+}
 
 .letsTalkContainerOne {
     display: flex;
