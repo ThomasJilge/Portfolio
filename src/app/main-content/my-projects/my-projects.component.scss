@@ -28,7 +28,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 850px;
+    // height: 850px;
+    height: auto;
     left: 105px;
     >.projectOne {
         display: flex;
@@ -55,9 +56,16 @@
         width: 100%;
         gap: 30px;
     }
+    .projectThree {
+        display: flex;
+        max-width: 1134px;
+        width: 100%;
+        gap: 30px;
+        padding-top: 50px;
+    }
 }
 
-.projectOneImgContainer, .projectTwoImgContainer {
+.projectOneImgContainer, .projectTwoImgContainer, .projectThreeImgContainer {
     width: 100%;
 }
 
@@ -67,7 +75,7 @@
     height: 371px;
 }
 
-.projectOneHeadline {
+.projectOneHeadline, .projectThreeHeadline {
     color: $primaryColorTwo;
     font-size: clamp(36px, 4vw, 48px);
     font-weight: 700;
@@ -99,11 +107,11 @@
     height: 59px;
 }
 
-.projectOneLanguagesContainer {
+.projectOneLanguagesContainer, .projectThreeLanguagesContainer {
     letter-spacing: 0.2em;
     padding: 20px 0;
     width: 100%;
-    >.projectOneLanguages {
+    >.projectOneLanguages, .projectThreeLanguages {
         color: $primaryColorTwo;
         font-size: clamp(16px, 4vw, 18px);
         font-weight: 400;
@@ -127,12 +135,12 @@
     }
 }
 
-.projectOneInfo, .projectTwoInfo {
+.projectOneInfo, .projectTwoInfo, .projectThreeInfo {
     max-width: 499px;
     width: 100%;
 }
 
-.projectOneInfoText {
+.projectOneInfoText, .projectThreeInfoText {
     position: relative;
     color: $primaryColorTwo;
     margin: 0;
@@ -150,7 +158,7 @@
     font-weight: 400;
 }
 
-.projectOneInfoButtons {
+.projectOneInfoButtons, .projectThreeInfoButtons {
     display: flex;
     height: 52px;
     gap: 24px;
@@ -227,11 +235,11 @@
 
 @media only screen and (max-width: 1024px) {
 
-    .projectOne, .projectTwo {
+    .projectOne, .projectTwo, .projectThree {
         flex-direction: column-reverse !important;
     }
 
-    .projectOneDescription, .projectTwoDescription {
+    .projectOneDescription, .projectTwoDescription, .projectThreeDescription {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -239,29 +247,29 @@
         max-width: none !important;
     }
 
-    .projectOneDescriptionHeader, .projectTwoDescriptionHeader {
+    .projectOneDescriptionHeader, .projectTwoDescriptionHeader, .projectThreeDescriptionHeader {
         max-width: none !important;
         display: flex;
         justify-content: center;
         text-align: center;
     }
 
-    .projectOneLanguages, .projectTwoLanguages {
+    .projectOneLanguages, .projectTwoLanguages, .projectThreeLanguages {
         display: flex;
         justify-content: center !important;
     }
 
-    .projectOneInfoText, .projectTwoInfoText {
+    .projectOneInfoText, .projectTwoInfoText, .projectThreeInfoText {
         text-align: center;
     }
 
-    .projectOneImgContainer, .projectTwoImgContainer {
+    .projectOneImgContainer, .projectTwoImgContainer, .projectThreeImgContainer {
         max-width: none !important;
         display: flex;
         justify-content: center;
     }
 
-    .projectOneInfoButtons, .projectTwoInfoButtons {
+    .projectOneInfoButtons, .projectTwoInfoButtons, .projectThreeInfoButtons {
         display: none;
     }
 

@@ -29,7 +29,8 @@
   "MY_PROJECTS": {
     "PROJECTS": "Meine Projekte",
     "PROJECT_ONE": "Sprung-, Dreh- und Wurfspiel auf der Grundlage eines objektorientierten Ansatzes. Hilf Pepe dabei, Münzen und Tabascoflaschen zu finden, um gegen die verrückten Hühner zu kämpfen.",
-    "PROJECT_TWO": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop und weisen Funktionen, Benutzer und Kategorien zu."
+    "PROJECT_TWO": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop und weisen Funktionen, Benutzer und Kategorien zu.",
+    "PROJECT_THREE": "Cafe Webanwendung mit Buchungs- und Kontaktformularen die über n8n verarbeitet, automatisch Bestätigungen versendet und Fehler behandelt. Alle Daten werden sicher in Firebase gespeichert, wodurch Skalierbarkeit und zuverlässige Leistung gewährleistet sind."
   },
   "REFERNCE": {
     "REFERENCE_HEADER_ONE": "Brauchen Sie einen Teamplayer? Das sagen meine Kollegen über mich",

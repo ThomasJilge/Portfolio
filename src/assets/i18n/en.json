@@ -30,7 +30,8 @@
   "MY_PROJECTS": {
     "PROJECTS": "My Projects",
     "PROJECT_ONE": "Jump, rund and throw game based on object-oriented approach. Help Pepe to find coinsand tabasco salsa to fight against the crazyhen.",
-    "PROJECT_TWO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    "PROJECT_TWO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "PROJECT_THREE": "Cafe web application with booking and contact forms are processed via n8n, which automatically sends confirmations and handles errors. All data is securely stored in Firebase, ensuring scalability and reliable performance."
   },
   "REFERNCE": {
     "REFERENCE_HEADER_ONE": "Need a teamplayer? Here what my colleagues said about me",
