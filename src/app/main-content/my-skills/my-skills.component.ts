@@ -17,6 +17,7 @@ export class MySkillsComponent {
   }
 
 skillImages: { src: string; label: string; alt: string }[] = [
+  { src: '../../assets/img/skills/react3.png', label: 'React', alt: 'React logo, frontend framework skill' },
   { src: '../../assets/img/skills/angularNew.png', label: 'Angular', alt: 'Angular logo, frontend framework skill' },
   { src: '../../assets/img/skills/typescriptNew.png', label: 'TypeScript', alt: 'TypeScript logo, programming language skill' },
   { src: '../../assets/img/skills/javascriptNew.png', label: 'JavaScript', alt: 'JavaScript logo, programming language skill' },
